@@ -13,7 +13,7 @@ const CallBookingSection: React.FC = () => {
             Schedule your free 30-minute strategy session to discuss your goals and challenges, and discover how our coaching can help you achieve breakthrough results.
           </p>
           <a 
-            href="https://calendly.com/eliterealtycoaching/strategy-session" 
+            href="https://calendly.com/clockworkcoaching/strategy-session" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-block bg-white text-primary px-8 py-4 rounded-md font-bold text-lg shadow-md hover:bg-gray-100 transition duration-300"

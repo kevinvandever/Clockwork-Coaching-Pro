@@ -24,7 +24,7 @@ const TestimonialSection: React.FC = () => {
             </div>
             <div>
               <p className="text-lg italic text-neutral-700 mb-6">
-                "Working with Elite Realty Coaching transformed my business. I went from constantly putting out fires to having systems that run smoothly. My sales increased by 47% in the first six months, and I finally have time to focus on growth instead of just surviving. The investment has paid for itself many times over."
+                "Working with Clockwork Coaching transformed my business. I went from constantly putting out fires to having systems that run smoothly. My sales increased by 47% in the first six months, and I finally have time to focus on growth instead of just surviving. The investment has paid for itself many times over."
               </p>
               <div>
                 <p className="font-semibold text-neutral-900">Sarah Johnson</p>

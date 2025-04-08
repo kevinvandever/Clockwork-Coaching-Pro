@@ -158,7 +158,7 @@ const AssessmentSection: React.FC = () => {
                 </button>
                 
                 <p className="text-xs text-neutral-700 text-center">
-                  We'll never share your information. You'll also receive resources & exclusive offers. <a href="#" className="text-accent hover:underline">Privacy Policy</a>
+                  We'll never share your information. You'll also receive resources & exclusive offers from Clockwork Coaching. <a href="#" className="text-accent hover:underline">Privacy Policy</a>
                 </p>
               </form>
             </div>

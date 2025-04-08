@@ -14,7 +14,7 @@ import CookieConsent from '@/components/shared/CookieConsent';
 const Home: React.FC = () => {
   useEffect(() => {
     // Set page title
-    document.title = 'Elite Real Estate Coaching | Transform Your Real Estate Business';
+    document.title = 'Clockwork Coaching | Transform Your Real Estate Business';
     
     // Add Google Fonts
     const link = document.createElement('link');

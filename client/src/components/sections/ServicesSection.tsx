@@ -22,7 +22,7 @@ const ServicesSection: React.FC = () => {
       ctaAction: ''
     },
     {
-      title: "Elite Agent Mastermind",
+      title: "Clockwork Agent Mastermind",
       type: "EXCLUSIVE MASTERMIND GROUP",
       description: "This exclusive mastermind brings together top-performing real estate professionals to collaborate, share insights, and solve challenges together. Limited to 10 participants, this high-level group provides the support and accountability needed to achieve breakthrough results.",
       image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",

@@ -22,8 +22,8 @@ const Navigation: React.FC = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <a href="#" className="text-2xl font-display font-bold text-primary">
-              Elite<span className="text-accent">Realty</span>Coaching
+            <a href="#" className="text-2xl font-display font-bold">
+              <span className="text-primary">Clockwork</span> Coaching
             </a>
           </div>
           
