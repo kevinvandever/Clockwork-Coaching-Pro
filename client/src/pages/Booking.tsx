@@ -22,25 +22,22 @@ const Booking: React.FC = () => {
           <div className="elegant-container py-12 text-center">
             <h1 className="elegant-heading text-neutral-900 mb-6">Schedule a Personal Call with a Co-Founder</h1>
             <div className="w-20 h-0.5 bg-primary mx-auto mb-8"></div>
-            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+            <p className="text-lg text-neutral-600 max-w-3xl mx-auto mb-12">
               Take advantage of this unique opportunity to speak directly with one of our co-founders about how Clockwork Coaching can transform your real estate business.
             </p>
+            <a 
+              href={calendarUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="elegant-button inline-block text-lg px-8 py-4"
+            >
+              SCHEDULE YOUR CALL NOW
+            </a>
           </div>
         </div>
 
         <div className="elegant-section bg-white">
           <div className="elegant-container">
-            
-            <div className="text-center mb-12">
-              <a 
-                href={calendarUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="elegant-button inline-block text-lg px-8 py-4"
-              >
-                SCHEDULE YOUR CALL NOW
-              </a>
-            </div>
             
             <div className="grid md:grid-cols-2 gap-12 mb-12">
               <div className="p-8 border border-primary/20 bg-white shadow-sm hover:shadow-md transition duration-300">
