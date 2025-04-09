@@ -28,11 +28,9 @@ const Navigation: React.FC = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const calendarUrl = 'https://calendar.app.google/A7t5PwbYfgL6cZbJ8';
-  
   const handleBookCallClick = () => {
-    // Open calendar in new tab
-    window.open(calendarUrl, '_blank');
+    // Navigate to booking page
+    window.location.href = '/booking';
     if (isMobileMenuOpen) {
       setIsMobileMenuOpen(false);
     }

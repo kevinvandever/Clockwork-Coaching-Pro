@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'wouter';
 
-const calendarUrl = 'https://calendar.app.google/A7t5PwbYfgL6cZbJ8';
-
 const CallBookingSection: React.FC = () => {
   return (
     <section id="book-call" className="elegant-section bg-primary/10">
@@ -18,14 +16,12 @@ const CallBookingSection: React.FC = () => {
             Schedule your free 30-minute discovery call to discuss your goals and challenges, and discover how our coaching can help you achieve breakthrough results and scale your business efficiently.
           </p>
           
-          <a 
-            href={calendarUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link 
+            href="/booking"
             className="elegant-button inline-block"
           >
             BOOK YOUR FREE DISCOVERY CALL
-          </a>
+          </Link>
         </div>
       </div>
     </section>
