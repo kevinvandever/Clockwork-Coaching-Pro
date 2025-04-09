@@ -96,9 +96,9 @@ const Navigation: React.FC = () => {
           <div className="hidden md:block">
             <button 
               onClick={handleBookCallClick}
-              className="elegant-button"
+              className="elegant-button text-sm px-4 py-2"
             >
-              Book Your Free Discovery Call
+              Book Free Call
             </button>
           </div>
           
