@@ -3,7 +3,7 @@ import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
 import CookieConsent from '@/components/shared/CookieConsent';
 
-const calendarUrl = 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3NwoD69pRSmGTVjXm7huyWhdT7XBfZ8GhDzLf2XZ5NVhU_0WjhCEzOUELwNg9TzlSLKXBXpFgr?gv=true';
+const calendarUrl = 'https://calendar.app.google/A7t5PwbYfgL6cZbJ8';
 
 const Booking: React.FC = () => {
   const [showCalendar, setShowCalendar] = useState(false);
