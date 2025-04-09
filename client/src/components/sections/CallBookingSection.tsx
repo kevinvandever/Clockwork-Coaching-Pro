@@ -1,24 +1,27 @@
 import React from 'react';
-import { Button } from '@/components/ui/button';
 
 const CallBookingSection: React.FC = () => {
   return (
-    <section id="book-call" className="py-16 px-4 md:px-8 bg-primary text-white">
-      <div className="container mx-auto">
-        <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">
+    <section id="book-call" className="elegant-section bg-primary/10">
+      <div className="elegant-container">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="elegant-subheading text-neutral-500">TAKE THE NEXT STEP</p>
+          <h2 className="text-3xl md:text-4xl font-display font-medium mb-6 text-neutral-900">
             Ready to Transform Your Real Estate Business?
           </h2>
-          <p className="text-xl mb-8">
-            Schedule your free 30-minute strategy session to discuss your goals and challenges, and discover how our coaching can help you achieve breakthrough results.
+          <div className="w-20 h-0.5 bg-primary mx-auto mb-8"></div>
+          
+          <p className="text-neutral-700 mb-8 max-w-2xl mx-auto">
+            Schedule your free 30-minute discovery call to discuss your goals and challenges, and discover how our coaching can help you achieve breakthrough results and scale your business efficiently.
           </p>
+          
           <a 
             href="https://calendly.com/clockworkcoaching/strategy-session" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-block bg-white text-primary px-8 py-4 rounded-md font-bold text-lg shadow-md hover:bg-gray-100 transition duration-300"
+            className="elegant-button inline-block"
           >
-            Book Your Free Strategy Call
+            BOOK YOUR FREE DISCOVERY CALL
           </a>
         </div>
       </div>

@@ -1,50 +1,51 @@
 import React from 'react';
-import { Button } from '@/components/ui/button';
 import { useNavigation } from '@/hooks/useNavigation';
 
 const HeroSection: React.FC = () => {
   const { scrollToSection } = useNavigation();
 
   return (
-    <section id="hero" className="relative bg-gradient-to-r from-secondary to-secondary-light min-h-[90vh] flex items-center">
-      <div className="container mx-auto px-4 md:px-8 py-20">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="order-2 md:order-1">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-neutral-900 leading-tight mb-6">
-              Elevate Your Real Estate Business to New Heights
-            </h1>
-            <p className="text-xl md:text-2xl text-neutral-700 mb-8">
-              Personalized coaching for high-performing real estate agents and brokers ready to scale their success
-            </p>
-            <Button 
-              variant="cta" 
-              size="xl" 
-              onClick={() => scrollToSection('book-call')}
-            >
-              Book Your Free Strategy Session
-            </Button>
-          </div>
-          <div className="order-1 md:order-2 flex justify-center">
-            <img 
-              src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-              alt="Successful real estate professional" 
-              className="rounded-lg shadow-xl w-full max-w-md object-cover h-[500px]"
-            />
-          </div>
+    <section id="hero" className="relative min-h-screen flex items-center bg-white">
+      <div className="absolute inset-0 z-0">
+        <div className="h-full w-full bg-[url('https://images.unsplash.com/photo-1584738766473-61c083514bf4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center opacity-20"></div>
+      </div>
+
+      <div className="elegant-container relative z-10 py-24 md:py-32">
+        <div className="max-w-3xl mx-auto text-center">
+          <h1 className="elegant-heading mb-6 text-neutral-900">
+            Stop Spinning Your Wheels & Start Scaling Your Business
+          </h1>
+          
+          <p className="elegant-subheading text-neutral-600">
+            ONE-ON-ONE AND GROUP COACHING TO HELP GROW YOUR REAL ESTATE BUSINESS
+          </p>
+          
+          <button 
+            onClick={() => scrollToSection('book-call')}
+            className="elegant-button mt-8"
+          >
+            BOOK YOUR FREE DISCOVERY CALL
+          </button>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
-          <div className="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
-            <h3 className="font-display text-xl font-bold text-primary mb-2">Thriving Business</h3>
-            <p className="text-neutral-700">Create systems that generate consistent results and growth</p>
-          </div>
-          <div className="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
-            <h3 className="font-display text-xl font-bold text-primary mb-2">Empowered Team</h3>
-            <p className="text-neutral-700">Build and lead a high-performing team that delivers excellence</p>
-          </div>
-          <div className="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
-            <h3 className="font-display text-xl font-bold text-primary mb-2">Balanced Life</h3>
-            <p className="text-neutral-700">Achieve professional success without sacrificing personal fulfillment</p>
+      </div>
+      
+      <div className="absolute bottom-0 left-0 right-0 bg-primary/10 py-8">
+        <div className="elegant-container">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="text-center">
+              <h3 className="font-display text-xl font-medium text-primary mb-2">Thriving Business</h3>
+              <p className="text-neutral-700 text-sm">Create systems that generate consistent results and growth</p>
+            </div>
+            
+            <div className="text-center">
+              <h3 className="font-display text-xl font-medium text-primary mb-2">Empowered Team</h3>
+              <p className="text-neutral-700 text-sm">Build and lead a high-performing team that delivers excellence</p>
+            </div>
+            
+            <div className="text-center">
+              <h3 className="font-display text-xl font-medium text-primary mb-2">Balanced Life</h3>
+              <p className="text-neutral-700 text-sm">Achieve professional success without sacrificing personal fulfillment</p>
+            </div>
           </div>
         </div>
       </div>

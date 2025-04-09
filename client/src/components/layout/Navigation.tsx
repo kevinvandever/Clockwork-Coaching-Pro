@@ -1,10 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigation } from '@/hooks/useNavigation';
 import { Button } from '@/components/ui/button';
 
 const Navigation: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const { scrollToSection } = useNavigation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -18,11 +35,11 @@ const Navigation: React.FC = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-md">
-      <div className="container mx-auto px-4 md:px-8">
-        <div className="flex justify-between items-center py-4">
+    <header className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-sm py-2' : 'bg-transparent py-4'}`}>
+      <div className="elegant-container">
+        <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <a href="#" className="text-2xl font-display font-bold">
+            <a href="#" className="font-display font-medium text-2xl">
               <span className="text-primary">Clockwork</span> Coaching
             </a>
           </div>
@@ -32,7 +49,7 @@ const Navigation: React.FC = () => {
               <li>
                 <a 
                   onClick={() => handleNavClick('about')}
-                  className="text-neutral-700 hover:text-primary transition duration-300 cursor-pointer"
+                  className="text-neutral-700 hover:text-primary transition duration-300 cursor-pointer uppercase text-sm tracking-wider font-medium"
                 >
                   About
                 </a>
@@ -40,23 +57,31 @@ const Navigation: React.FC = () => {
               <li>
                 <a 
                   onClick={() => handleNavClick('services')} 
-                  className="text-neutral-700 hover:text-primary transition duration-300 cursor-pointer"
+                  className="text-neutral-700 hover:text-primary transition duration-300 cursor-pointer uppercase text-sm tracking-wider font-medium"
                 >
                   Services
                 </a>
               </li>
               <li>
                 <a 
+                  onClick={() => handleNavClick('testimonials')} 
+                  className="text-neutral-700 hover:text-primary transition duration-300 cursor-pointer uppercase text-sm tracking-wider font-medium"
+                >
+                  Testimonials
+                </a>
+              </li>
+              <li>
+                <a 
                   onClick={() => handleNavClick('process')} 
-                  className="text-neutral-700 hover:text-primary transition duration-300 cursor-pointer"
+                  className="text-neutral-700 hover:text-primary transition duration-300 cursor-pointer uppercase text-sm tracking-wider font-medium"
                 >
                   Process
                 </a>
               </li>
               <li>
                 <a 
-                  onClick={() => handleNavClick('assessment')} 
-                  className="text-neutral-700 hover:text-primary transition duration-300 cursor-pointer"
+                  onClick={() => handleNavClick('contact')} 
+                  className="text-neutral-700 hover:text-primary transition duration-300 cursor-pointer uppercase text-sm tracking-wider font-medium"
                 >
                   Contact
                 </a>
@@ -65,12 +90,12 @@ const Navigation: React.FC = () => {
           </nav>
           
           <div className="hidden md:block">
-            <Button 
-              variant="cta" 
+            <button 
               onClick={() => handleNavClick('book-call')}
+              className="elegant-button"
             >
-              Book Discovery Call
-            </Button>
+              Book Your Free Discovery Call
+            </button>
           </div>
           
           <div className="md:hidden">
@@ -85,12 +110,12 @@ const Navigation: React.FC = () => {
         </div>
         
         {/* Mobile Menu */}
-        <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'} pb-4`}>
+        <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'} py-4`}>
           <ul className="space-y-4">
             <li>
               <a 
                 onClick={() => handleNavClick('about')}
-                className="block py-2 text-neutral-700 hover:text-primary cursor-pointer"
+                className="block py-2 text-neutral-700 hover:text-primary cursor-pointer uppercase text-sm tracking-wider font-medium"
               >
                 About
               </a>
@@ -98,33 +123,41 @@ const Navigation: React.FC = () => {
             <li>
               <a 
                 onClick={() => handleNavClick('services')}
-                className="block py-2 text-neutral-700 hover:text-primary cursor-pointer"
+                className="block py-2 text-neutral-700 hover:text-primary cursor-pointer uppercase text-sm tracking-wider font-medium"
               >
                 Services
               </a>
             </li>
             <li>
               <a 
+                onClick={() => handleNavClick('testimonials')}
+                className="block py-2 text-neutral-700 hover:text-primary cursor-pointer uppercase text-sm tracking-wider font-medium"
+              >
+                Testimonials
+              </a>
+            </li>
+            <li>
+              <a 
                 onClick={() => handleNavClick('process')}
-                className="block py-2 text-neutral-700 hover:text-primary cursor-pointer"
+                className="block py-2 text-neutral-700 hover:text-primary cursor-pointer uppercase text-sm tracking-wider font-medium"
               >
                 Process
               </a>
             </li>
             <li>
               <a 
-                onClick={() => handleNavClick('assessment')}
-                className="block py-2 text-neutral-700 hover:text-primary cursor-pointer"
+                onClick={() => handleNavClick('contact')}
+                className="block py-2 text-neutral-700 hover:text-primary cursor-pointer uppercase text-sm tracking-wider font-medium"
               >
                 Contact
               </a>
             </li>
-            <li>
+            <li className="pt-2">
               <a 
                 onClick={() => handleNavClick('book-call')}
-                className="block py-2 bg-primary text-white px-4 rounded text-center cursor-pointer"
+                className="block py-3 px-4 elegant-button text-center cursor-pointer w-full"
               >
-                Book Discovery Call
+                Book Your Free Discovery Call
               </a>
             </li>
           </ul>
