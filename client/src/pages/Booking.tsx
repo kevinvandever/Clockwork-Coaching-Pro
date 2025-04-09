@@ -29,14 +29,14 @@ const Booking: React.FC = () => {
               href={calendarUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="elegant-button inline-block text-lg px-8 py-4"
+              className="elegant-button inline-block text-lg px-8 py-4 mb-8"
             >
               SCHEDULE YOUR CALL NOW
             </a>
           </div>
         </div>
 
-        <div className="elegant-section bg-white">
+        <div className="elegant-section bg-white pt-6">
           <div className="elegant-container">
             
             <div className="grid md:grid-cols-2 gap-12 mb-12">
