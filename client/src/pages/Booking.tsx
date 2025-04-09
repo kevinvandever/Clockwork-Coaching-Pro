@@ -15,7 +15,7 @@ type Coach = {
 const coaches: Coach[] = [
   {
     id: 'joe',
-    name: 'Joe Smith',
+    name: 'Joe Quiros',
     title: 'Co-founder & Real Estate Expert',
     description: 'With over 15 years in real estate and having built a successful brokerage, Joe specializes in helping agents scale their business and implement efficient systems.',
     imgUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
@@ -23,7 +23,7 @@ const coaches: Coach[] = [
   },
   {
     id: 'kevin',
-    name: 'Kevin Johnson',
+    name: 'Kevin Vandever',
     title: 'Co-founder & Technology Strategist',
     description: 'A technology expert with a background in automation and AI, Kevin helps real estate professionals leverage technology to streamline operations and increase profitability.',
     imgUrl: 'https://images.unsplash.com/photo-1531123414780-f74242c2b052?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80',
