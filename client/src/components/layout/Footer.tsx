@@ -6,9 +6,11 @@ const Footer: React.FC = () => {
   const { scrollToSection } = useNavigation();
   const [location] = useLocation();
 
+  const calendarUrl = 'https://calendar.app.google/A7t5PwbYfgL6cZbJ8';
+  
   const handleBookCallClick = () => {
-    // Navigate to the booking page
-    window.location.href = '/booking';
+    // Open calendar in new tab
+    window.open(calendarUrl, '_blank');
   };
 
   return (

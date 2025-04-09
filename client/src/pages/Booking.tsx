@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
 import CookieConsent from '@/components/shared/CookieConsent';
@@ -6,11 +6,13 @@ import CookieConsent from '@/components/shared/CookieConsent';
 const calendarUrl = 'https://calendar.app.google/A7t5PwbYfgL6cZbJ8';
 
 const Booking: React.FC = () => {
-  const [showCalendar, setShowCalendar] = useState(false);
-
   React.useEffect(() => {
     document.title = 'Book Your Free Discovery Call | Clockwork Coaching';
   }, []);
+
+  const handleScheduleClick = () => {
+    window.open(calendarUrl, '_blank');
+  };
 
   return (
     <>
@@ -28,90 +30,64 @@ const Booking: React.FC = () => {
 
         <div className="elegant-section bg-white">
           <div className="elegant-container">
-            {!showCalendar ? (
-              <>
-                <h2 className="text-3xl md:text-4xl font-display font-medium mb-6 text-center">
-                  Meet Our Coaches
-                </h2>
-                <div className="w-20 h-0.5 bg-primary mx-auto mb-12"></div>
-                
-                <div className="grid md:grid-cols-2 gap-12 mb-12">
-                  <div className="p-8 border border-primary/20 bg-primary/5">
-                    <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
-                      <img 
-                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-                        alt="Joe Quiros" 
-                        className="w-32 h-32 rounded-full object-cover"
-                      />
-                      <div>
-                        <h3 className="font-display text-2xl font-medium text-neutral-900 mb-2">
-                          Joe Quiros
-                        </h3>
-                        <p className="text-primary mb-4">Co-founder & Real Estate Expert</p>
-                        <p className="text-neutral-700 mb-6 leading-relaxed">
-                          With over 15 years in real estate and having built a successful brokerage, Joe specializes in helping agents scale their business and implement efficient systems.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="p-8 border border-primary/20 bg-primary/5">
-                    <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
-                      <img 
-                        src="https://images.unsplash.com/photo-1531123414780-f74242c2b052?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-                        alt="Kevin Vandever" 
-                        className="w-32 h-32 rounded-full object-cover"
-                      />
-                      <div>
-                        <h3 className="font-display text-2xl font-medium text-neutral-900 mb-2">
-                          Kevin Vandever
-                        </h3>
-                        <p className="text-primary mb-4">Co-founder & Technology Strategist</p>
-                        <p className="text-neutral-700 mb-6 leading-relaxed">
-                          A technology expert with a background in automation and AI, Kevin helps real estate professionals leverage technology to streamline operations and increase profitability.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="text-center mt-8">
-                  <p className="text-neutral-700 mb-8 max-w-2xl mx-auto">
-                    Book your free 30-minute discovery call with either Joe or Kevin to discuss your business goals and challenges.
-                  </p>
-                  <button 
-                    className="elegant-button"
-                    onClick={() => setShowCalendar(true)}
-                  >
-                    SCHEDULE YOUR FREE DISCOVERY CALL
-                  </button>
-                </div>
-              </>
-            ) : (
-              <div className="max-w-4xl mx-auto">
-                <div className="flex justify-between items-center mb-8">
-                  <button 
-                    onClick={() => setShowCalendar(false)}
-                    className="flex items-center text-primary hover:text-primary/80 transition"
-                  >
-                    <i className="fas fa-arrow-left mr-2"></i> Back to Coaches
-                  </button>
+            <h2 className="text-3xl md:text-4xl font-display font-medium mb-6 text-center">
+              Meet Our Coaches
+            </h2>
+            <div className="w-20 h-0.5 bg-primary mx-auto mb-12"></div>
+            
+            <div className="grid md:grid-cols-2 gap-12 mb-12">
+              <div className="p-8 border border-primary/20 bg-primary/5">
+                <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
+                  <img 
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                    alt="Joe Quiros" 
+                    className="w-32 h-32 rounded-full object-cover"
+                  />
                   <div>
-                    <h3 className="font-display text-2xl font-medium text-neutral-900">
-                      Schedule Your Discovery Call
+                    <h3 className="font-display text-2xl font-medium text-neutral-900 mb-2">
+                      Joe Quiros
                     </h3>
+                    <p className="text-primary mb-4">Co-founder & Real Estate Expert</p>
+                    <p className="text-neutral-700 mb-6 leading-relaxed">
+                      With over 15 years in real estate and having built a successful brokerage, Joe specializes in helping agents scale their business and implement efficient systems.
+                    </p>
                   </div>
-                </div>
-                
-                <div className="aspect-w-16 aspect-h-9">
-                  <iframe 
-                    src={calendarUrl} 
-                    className="w-full h-[800px] border-0"
-                    title="Clockwork Coaching Calendar"
-                  ></iframe>
                 </div>
               </div>
-            )}
+              
+              <div className="p-8 border border-primary/20 bg-primary/5">
+                <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
+                  <img 
+                    src="https://images.unsplash.com/photo-1531123414780-f74242c2b052?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                    alt="Kevin Vandever" 
+                    className="w-32 h-32 rounded-full object-cover"
+                  />
+                  <div>
+                    <h3 className="font-display text-2xl font-medium text-neutral-900 mb-2">
+                      Kevin Vandever
+                    </h3>
+                    <p className="text-primary mb-4">Co-founder & Technology Strategist</p>
+                    <p className="text-neutral-700 mb-6 leading-relaxed">
+                      A technology expert with a background in automation and AI, Kevin helps real estate professionals leverage technology to streamline operations and increase profitability.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="text-center mt-8">
+              <p className="text-neutral-700 mb-8 max-w-2xl mx-auto">
+                Book your free 30-minute discovery call with either Joe or Kevin to discuss your business goals and challenges.
+              </p>
+              <a 
+                href={calendarUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="elegant-button inline-block"
+              >
+                SCHEDULE YOUR FREE DISCOVERY CALL
+              </a>
+            </div>
           </div>
         </div>
         
