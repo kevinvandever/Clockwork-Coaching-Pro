@@ -20,23 +20,24 @@ const Booking: React.FC = () => {
       <main>
         <div className="pt-24 bg-primary/5">
           <div className="elegant-container py-12 text-center">
-            <h1 className="elegant-heading text-neutral-900 mb-6">Book Your Free Discovery Call</h1>
+            <h1 className="elegant-heading text-neutral-900 mb-6">Schedule a Personal Call with Our Co-Founders</h1>
             <div className="w-20 h-0.5 bg-primary mx-auto mb-8"></div>
             <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-              Schedule a 30-minute discovery call with our co-founders to explore how Clockwork Coaching can help your real estate business.
+              Take advantage of this unique opportunity to speak directly with one of our co-founders about how Clockwork Coaching can transform your real estate business.
             </p>
           </div>
         </div>
 
         <div className="elegant-section bg-white">
           <div className="elegant-container">
-            <h2 className="text-3xl md:text-4xl font-display font-medium mb-6 text-center">
-              Meet Our Coaches
-            </h2>
-            <div className="w-20 h-0.5 bg-primary mx-auto mb-12"></div>
+            <div className="bg-primary/5 p-6 mb-12 rounded-lg text-center">
+              <p className="text-xl font-medium text-neutral-900">
+                Your free 30-minute discovery call will be with one of our co-founders
+              </p>
+            </div>
             
             <div className="grid md:grid-cols-2 gap-12 mb-12">
-              <div className="p-8 border border-primary/20 bg-primary/5">
+              <div className="p-8 border border-primary/20 bg-white shadow-sm hover:shadow-md transition duration-300">
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
                   <img 
                     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
@@ -55,7 +56,7 @@ const Booking: React.FC = () => {
                 </div>
               </div>
               
-              <div className="p-8 border border-primary/20 bg-primary/5">
+              <div className="p-8 border border-primary/20 bg-white shadow-sm hover:shadow-md transition duration-300">
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
                   <img 
                     src="https://images.unsplash.com/photo-1531123414780-f74242c2b052?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
@@ -75,17 +76,20 @@ const Booking: React.FC = () => {
               </div>
             </div>
             
-            <div className="text-center mt-8">
+            <div className="text-center mt-10 bg-primary/10 p-8 rounded-lg">
+              <p className="text-xl font-medium text-neutral-900 mb-4">
+                Ready to transform your real estate business?
+              </p>
               <p className="text-neutral-700 mb-8 max-w-2xl mx-auto">
-                Book your free 30-minute discovery call with either Joe or Kevin to discuss your business goals and challenges.
+                Book your free 30-minute discovery call with either Joe or Kevin to discuss your specific business goals and challenges.
               </p>
               <a 
                 href={calendarUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="elegant-button inline-block"
+                className="elegant-button inline-block text-lg px-8 py-4"
               >
-                SCHEDULE YOUR FREE DISCOVERY CALL
+                SCHEDULE YOUR CALL NOW
               </a>
             </div>
           </div>
