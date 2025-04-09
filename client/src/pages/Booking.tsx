@@ -31,6 +31,17 @@ const Booking: React.FC = () => {
         <div className="elegant-section bg-white">
           <div className="elegant-container">
             
+            <div className="text-center mb-12">
+              <a 
+                href={calendarUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="elegant-button inline-block text-lg px-8 py-4"
+              >
+                SCHEDULE YOUR CALL NOW
+              </a>
+            </div>
+            
             <div className="grid md:grid-cols-2 gap-12 mb-12">
               <div className="p-8 border border-primary/20 bg-white shadow-sm hover:shadow-md transition duration-300">
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
@@ -69,23 +80,6 @@ const Booking: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            
-            <div className="text-center mt-10 bg-primary/10 p-8 rounded-lg">
-              <p className="text-xl font-medium text-neutral-900 mb-4">
-                Ready to transform your real estate business?
-              </p>
-              <p className="text-neutral-700 mb-8 max-w-2xl mx-auto">
-                Book your free 30-minute discovery call with either Joe or Kevin to discuss your specific business goals and challenges.
-              </p>
-              <a 
-                href={calendarUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="elegant-button inline-block text-lg px-8 py-4"
-              >
-                SCHEDULE YOUR CALL NOW
-              </a>
             </div>
           </div>
         </div>
