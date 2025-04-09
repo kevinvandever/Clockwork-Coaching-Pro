@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'wouter';
 
 const CallBookingSection: React.FC = () => {
   return (
@@ -15,14 +16,12 @@ const CallBookingSection: React.FC = () => {
             Schedule your free 30-minute discovery call to discuss your goals and challenges, and discover how our coaching can help you achieve breakthrough results and scale your business efficiently.
           </p>
           
-          <a 
-            href="https://calendly.com/clockworkcoaching/strategy-session" 
-            target="_blank" 
-            rel="noopener noreferrer"
+          <Link 
+            href="/booking"
             className="elegant-button inline-block"
           >
             BOOK YOUR FREE DISCOVERY CALL
-          </a>
+          </Link>
         </div>
       </div>
     </section>

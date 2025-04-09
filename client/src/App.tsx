@@ -9,6 +9,7 @@ import Services from "@/pages/Services";
 import Testimonials from "@/pages/Testimonials";
 import Process from "@/pages/Process";
 import Contact from "@/pages/Contact";
+import Booking from "@/pages/Booking";
 
 function Router() {
   return (
@@ -19,6 +20,7 @@ function Router() {
       <Route path="/testimonials" component={Testimonials} />
       <Route path="/process" component={Process} />
       <Route path="/contact" component={Contact} />
+      <Route path="/booking" component={Booking} />
       <Route component={NotFound} />
     </Switch>
   );

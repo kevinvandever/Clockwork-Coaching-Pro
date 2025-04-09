@@ -29,12 +29,8 @@ const Navigation: React.FC = () => {
   };
 
   const handleBookCallClick = () => {
-    // If on homepage, scroll to section, otherwise navigate to homepage first
-    if (location === '/') {
-      scrollToSection('book-call');
-    } else {
-      window.location.href = '/#book-call';
-    }
+    // Navigate to the booking page
+    window.location.href = '/booking';
     if (isMobileMenuOpen) {
       setIsMobileMenuOpen(false);
     }
