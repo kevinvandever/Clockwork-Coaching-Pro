@@ -1,17 +1,28 @@
 import React from 'react';
 import { useNavigation } from '@/hooks/useNavigation';
+import { Link, useLocation } from 'wouter';
 
 const Footer: React.FC = () => {
   const { scrollToSection } = useNavigation();
+  const [location] = useLocation();
+
+  const handleBookCallClick = () => {
+    // If on homepage, scroll to section, otherwise navigate to homepage first
+    if (location === '/') {
+      scrollToSection('book-call');
+    } else {
+      window.location.href = '/#book-call';
+    }
+  };
 
   return (
     <footer className="bg-white border-t border-gray-100 py-12">
       <div className="elegant-container">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="md:col-span-2">
-            <h3 className="font-display text-xl font-medium mb-6">
+            <Link href="/" className="font-display text-xl font-medium mb-6 inline-block">
               <span className="text-primary">Clockwork</span> Coaching
-            </h3>
+            </Link>
             <p className="text-neutral-600 mb-6 max-w-xs">
               Transforming real estate businesses through strategic coaching and proven systems for sustainable success.
             </p>
@@ -35,44 +46,44 @@ const Footer: React.FC = () => {
             <h4 className="text-sm uppercase tracking-wider font-medium text-neutral-900 mb-6">Navigation</h4>
             <ul className="space-y-3">
               <li>
-                <a 
-                  onClick={() => scrollToSection('about')}
-                  className="text-neutral-500 hover:text-primary transition duration-300 cursor-pointer text-sm"
+                <Link 
+                  href="/about"
+                  className="text-neutral-500 hover:text-primary transition duration-300 text-sm"
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a 
-                  onClick={() => scrollToSection('services')}
-                  className="text-neutral-500 hover:text-primary transition duration-300 cursor-pointer text-sm"
+                <Link 
+                  href="/services"
+                  className="text-neutral-500 hover:text-primary transition duration-300 text-sm"
                 >
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a 
-                  onClick={() => scrollToSection('testimonials')}
-                  className="text-neutral-500 hover:text-primary transition duration-300 cursor-pointer text-sm"
+                <Link 
+                  href="/testimonials"
+                  className="text-neutral-500 hover:text-primary transition duration-300 text-sm"
                 >
                   Testimonials
-                </a>
+                </Link>
               </li>
               <li>
-                <a 
-                  onClick={() => scrollToSection('process')}
-                  className="text-neutral-500 hover:text-primary transition duration-300 cursor-pointer text-sm"
+                <Link 
+                  href="/process"
+                  className="text-neutral-500 hover:text-primary transition duration-300 text-sm"
                 >
                   Process
-                </a>
+                </Link>
               </li>
               <li>
-                <a 
-                  onClick={() => scrollToSection('book-call')}
-                  className="text-neutral-500 hover:text-primary transition duration-300 cursor-pointer text-sm"
+                <Link 
+                  href="/contact"
+                  className="text-neutral-500 hover:text-primary transition duration-300 text-sm"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -90,7 +101,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="pt-4">
                 <button 
-                  onClick={() => scrollToSection('book-call')}
+                  onClick={handleBookCallClick}
                   className="elegant-button text-sm"
                 >
                   BOOK A CALL

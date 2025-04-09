@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigation } from '@/hooks/useNavigation';
-import { Button } from '@/components/ui/button';
+import { Link, useLocation } from 'wouter';
 
 const Navigation: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { scrollToSection } = useNavigation();
+  const [location] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,8 +28,13 @@ const Navigation: React.FC = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const handleNavClick = (sectionId: string) => {
-    scrollToSection(sectionId);
+  const handleBookCallClick = () => {
+    // If on homepage, scroll to section, otherwise navigate to homepage first
+    if (location === '/') {
+      scrollToSection('book-call');
+    } else {
+      window.location.href = '/#book-call';
+    }
     if (isMobileMenuOpen) {
       setIsMobileMenuOpen(false);
     }
@@ -39,59 +45,59 @@ const Navigation: React.FC = () => {
       <div className="elegant-container">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <a href="#" className="font-display font-medium text-2xl">
+            <Link href="/" className="font-display font-medium text-2xl">
               <span className="text-primary">Clockwork</span> Coaching
-            </a>
+            </Link>
           </div>
           
           <nav className="hidden md:block">
             <ul className="flex space-x-8">
               <li>
-                <a 
-                  onClick={() => handleNavClick('about')}
-                  className="text-neutral-700 hover:text-primary transition duration-300 cursor-pointer uppercase text-sm tracking-wider font-medium"
+                <Link 
+                  href="/about"
+                  className="text-neutral-700 hover:text-primary transition duration-300 uppercase text-sm tracking-wider font-medium"
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a 
-                  onClick={() => handleNavClick('services')} 
-                  className="text-neutral-700 hover:text-primary transition duration-300 cursor-pointer uppercase text-sm tracking-wider font-medium"
+                <Link 
+                  href="/services"
+                  className="text-neutral-700 hover:text-primary transition duration-300 uppercase text-sm tracking-wider font-medium"
                 >
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a 
-                  onClick={() => handleNavClick('testimonials')} 
-                  className="text-neutral-700 hover:text-primary transition duration-300 cursor-pointer uppercase text-sm tracking-wider font-medium"
+                <Link 
+                  href="/testimonials"
+                  className="text-neutral-700 hover:text-primary transition duration-300 uppercase text-sm tracking-wider font-medium"
                 >
                   Testimonials
-                </a>
+                </Link>
               </li>
               <li>
-                <a 
-                  onClick={() => handleNavClick('process')} 
-                  className="text-neutral-700 hover:text-primary transition duration-300 cursor-pointer uppercase text-sm tracking-wider font-medium"
+                <Link 
+                  href="/process"
+                  className="text-neutral-700 hover:text-primary transition duration-300 uppercase text-sm tracking-wider font-medium"
                 >
                   Process
-                </a>
+                </Link>
               </li>
               <li>
-                <a 
-                  onClick={() => handleNavClick('contact')} 
-                  className="text-neutral-700 hover:text-primary transition duration-300 cursor-pointer uppercase text-sm tracking-wider font-medium"
+                <Link 
+                  href="/contact"
+                  className="text-neutral-700 hover:text-primary transition duration-300 uppercase text-sm tracking-wider font-medium"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
           
           <div className="hidden md:block">
             <button 
-              onClick={() => handleNavClick('book-call')}
+              onClick={handleBookCallClick}
               className="elegant-button"
             >
               Book Your Free Discovery Call
@@ -113,52 +119,57 @@ const Navigation: React.FC = () => {
         <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'} py-4`}>
           <ul className="space-y-4">
             <li>
-              <a 
-                onClick={() => handleNavClick('about')}
-                className="block py-2 text-neutral-700 hover:text-primary cursor-pointer uppercase text-sm tracking-wider font-medium"
+              <Link 
+                href="/about"
+                className="block py-2 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a 
-                onClick={() => handleNavClick('services')}
-                className="block py-2 text-neutral-700 hover:text-primary cursor-pointer uppercase text-sm tracking-wider font-medium"
+              <Link 
+                href="/services"
+                className="block py-2 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a 
-                onClick={() => handleNavClick('testimonials')}
-                className="block py-2 text-neutral-700 hover:text-primary cursor-pointer uppercase text-sm tracking-wider font-medium"
+              <Link 
+                href="/testimonials"
+                className="block py-2 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 Testimonials
-              </a>
+              </Link>
             </li>
             <li>
-              <a 
-                onClick={() => handleNavClick('process')}
-                className="block py-2 text-neutral-700 hover:text-primary cursor-pointer uppercase text-sm tracking-wider font-medium"
+              <Link 
+                href="/process"
+                className="block py-2 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 Process
-              </a>
+              </Link>
             </li>
             <li>
-              <a 
-                onClick={() => handleNavClick('contact')}
-                className="block py-2 text-neutral-700 hover:text-primary cursor-pointer uppercase text-sm tracking-wider font-medium"
+              <Link 
+                href="/contact"
+                className="block py-2 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact
-              </a>
+              </Link>
             </li>
             <li className="pt-2">
-              <a 
-                onClick={() => handleNavClick('book-call')}
-                className="block py-3 px-4 elegant-button text-center cursor-pointer w-full"
+              <button 
+                onClick={handleBookCallClick}
+                className="block py-3 px-4 elegant-button text-center w-full"
               >
                 Book Your Free Discovery Call
-              </a>
+              </button>
             </li>
           </ul>
         </div>
