@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '@/components/ui/button';
+import { Link } from 'wouter';
 import { useNavigation } from '@/hooks/useNavigation';
 
 const ObstaclesSection: React.FC = () => {
@@ -46,14 +46,12 @@ const ObstaclesSection: React.FC = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button 
-            variant="cta" 
-            size="lg" 
-            onClick={() => window.location.href = '/contact'}
-            className="text-lg px-8 py-4"
+          <Link 
+            href="/contact"
+            className="elegant-button"
           >
             BOOK YOUR FREE DISCOVERY CALL
-          </Button>
+          </Link>
         </div>
       </div>
     </section>
