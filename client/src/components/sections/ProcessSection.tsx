@@ -8,7 +8,7 @@ const ProcessSection: React.FC = () => {
   const steps = [
     {
       number: 1,
-      title: "Book Your Strategy Call",
+      title: "Book Your Call With a Cofounder",
       description: "Schedule your complimentary 30-minute strategy session to discuss your current challenges and goals"
     },
     {
