@@ -47,7 +47,7 @@ const Navigation: React.FC = () => {
           </div>
 
           <nav className="hidden md:block">
-            <ul className="flex space-x-8">
+            <ul className="flex justify-between w-[600px]">
               <li>
                 <Link 
                   href="/about"
@@ -74,23 +74,18 @@ const Navigation: React.FC = () => {
               </li>
               <li>
                 <Link 
-                  href="/join-club"
-                  className="text-neutral-700 hover:text-primary transition duration-300 uppercase text-sm tracking-wider font-medium"
-                >
-                  The Club
-                </Link>
-              </li>
-            </ul>
-          </nav>
-
-          <nav className="hidden md:block">
-            <ul className="flex space-x-8">
-              <li>
-                <Link 
                   href="/contact"
                   className="text-neutral-700 hover:text-primary transition duration-300 uppercase text-sm tracking-wider font-medium"
                 >
                   Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/join-club"
+                  className="text-neutral-700 hover:text-primary transition duration-300 uppercase text-sm tracking-wider font-medium"
+                >
+                  The Club
                 </Link>
               </li>
             </ul>
@@ -139,20 +134,20 @@ const Navigation: React.FC = () => {
             </li>
             <li>
               <Link 
-                href="/join-club"
-                className="block py-2 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                The Club
-              </Link>
-            </li>
-            <li>
-              <Link 
                 href="/contact"
                 className="block py-2 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact Us
+              </Link>
+            </li>
+            <li>
+              <Link 
+                href="/join-club"
+                className="block py-2 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                The Club
               </Link>
             </li>
           </ul>
