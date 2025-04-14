@@ -60,7 +60,7 @@ const Contact: React.FC = () => {
                   <div className="p-6 border border-primary/20 bg-white shadow-sm">
                     <div className="flex flex-col items-start gap-4">
                       <img 
-                        src="https://images.unsplash.com/photo-1531123414780-f74242c2b052?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                        src="/images/65A38D1C-91C6-4936-B507-D4207B334B31_1_105_c.jpeg" 
                         alt="Kevin Vandever" 
                         className="w-24 h-24 rounded-full object-cover"
                       />
