@@ -9,7 +9,7 @@ const HeroSection: React.FC = () => {
     <>
       <section id="hero" className="relative h-screen flex items-center bg-white">
         <div className="absolute inset-0 z-0">
-          <div className="h-full w-full bg-[url('/images/your-hero-image.jpg')] bg-cover bg-center opacity-20"></div>
+          <div className="h-full w-full bg-[url('https://images.unsplash.com/photo-1584738766473-61c083514bf4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center opacity-20"></div>
         </div>
 
         <div className="elegant-container relative z-10 py-24 md:py-32">
