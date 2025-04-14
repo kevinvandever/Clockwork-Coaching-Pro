@@ -167,12 +167,13 @@ const Contact: React.FC = () => {
                       ></textarea>
                     </div>
                     
-                    <button
+                    <Button
                       type="submit"
-                      className="elegant-button w-full"
+                      variant="cta"
+                      className="w-full"
                     >
                       SEND MESSAGE
-                    </button>
+                    </Button>
                   </form>
                 </div>
               </div>

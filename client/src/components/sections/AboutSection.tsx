@@ -39,12 +39,12 @@ const AboutSection: React.FC = () => {
               This is about making sure you don't get left behind.
             </p>
             
-            <button 
+            <Button 
               onClick={() => scrollToSection('book-call')}
-              className="elegant-button"
+              variant="cta"
             >
               LEARN HOW WE CAN HELP YOU
-            </button>
+            </Button>
           </div>
           
           <div className="relative">

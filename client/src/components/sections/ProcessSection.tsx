@@ -1,11 +1,10 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { useNavigation } from '@/hooks/useNavigation';
 
 const ProcessSection: React.FC = () => {
   const { scrollToSection } = useNavigation();
-  
+
   const steps = [
     {
       number: 1,
@@ -32,7 +31,7 @@ const ProcessSection: React.FC = () => {
             Three Steps to Small Business Success
           </h2>
         </div>
-        
+
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {steps.map((step) => (
             <div key={step.number} className="text-center">
@@ -48,7 +47,7 @@ const ProcessSection: React.FC = () => {
             </div>
           ))}
         </div>
-        
+
         <div className="text-center mt-12">
           <Button 
             variant="cta" 
