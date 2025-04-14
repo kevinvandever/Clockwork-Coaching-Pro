@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigation } from '@/hooks/useNavigation';
-import { Link } from 'wouter'; // Added import for Link component
+import { Link } from 'wouter';
 
 const ServicesSection: React.FC = () => {
   const { scrollToSection } = useNavigation();

@@ -2,7 +2,7 @@ import React from 'react';
 
 const TestimonialSection: React.FC = () => {
   return (
-    <section className="py-16 px-4 md:px-8 bg-secondary">
+    <section className="py-16 md:py-24 bg-neutral-50">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
@@ -12,7 +12,7 @@ const TestimonialSection: React.FC = () => {
             Here's what our clients are saying
           </p>
         </div>
-        
+
         <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8 md:p-12">
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="w-32 h-32 rounded-full overflow-hidden flex-shrink-0">
