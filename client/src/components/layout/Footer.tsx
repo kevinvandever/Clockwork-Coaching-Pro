@@ -1,16 +1,12 @@
+
 import React from 'react';
 import { useNavigation } from '@/hooks/useNavigation';
 import { Link, useLocation } from 'wouter';
-import { CALENDAR_URL } from '@/lib/constants';
+import { CALENDAR_URL, COMPANY_EMAIL, COMPANY_PHONE } from '@/lib/constants';
 
 const Footer: React.FC = () => {
   const { scrollToSection } = useNavigation();
   const [location] = useLocation();
-
-  const handleBookCallClick = () => {
-    // Navigate to booking page
-    window.location.href = '/booking';
-  };
 
   return (
     <footer className="bg-white border-t border-gray-100 py-12">
@@ -84,13 +80,13 @@ const Footer: React.FC = () => {
                 <div className="bg-primary/10 p-3 rounded-full w-10 h-10 flex items-center justify-center mr-3">
                   <i className="fas fa-envelope text-primary"></i>
                 </div>
-                <span className="text-sm">kv@clockworkcoaching.club</span>
+                <span className="text-sm">{COMPANY_EMAIL}</span>
               </li>
               <li className="flex items-center">
                 <div className="bg-primary/10 p-3 rounded-full w-10 h-10 flex items-center justify-center mr-3">
                   <i className="fas fa-phone text-primary"></i>
                 </div>
-                <span className="text-sm">(555) 123-4567</span>
+                <span className="text-sm">{COMPANY_PHONE}</span>
               </li>
               <li className="flex items-center">
                 <div className="bg-primary/10 p-3 rounded-full w-10 h-10 flex items-center justify-center mr-3">
