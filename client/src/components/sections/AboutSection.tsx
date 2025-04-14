@@ -9,22 +9,34 @@ const AboutSection: React.FC = () => {
       <div className="elegant-container">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="elegant-subheading text-neutral-500">ABOUT US</p>
+            <p className="elegant-subheading text-neutral-500">HERE TO HELP</p>
             <h2 className="text-3xl md:text-4xl font-display font-medium mb-6 text-neutral-900">
-              Helping Real Estate Professionals Build Sustainable Success
+              ✨ You've Worked Too Hard to Fall Behind Now.
             </h2>
             <div className="w-20 h-0.5 bg-primary mb-8"></div>
             
             <p className="text-neutral-700 mb-5 leading-relaxed">
-              Building a thriving real estate business requires more than just closing deals. It demands strategic vision, efficient systems, and exceptional leadership—skills that don't always come naturally even to top-producing agents.
+              You've put in the time. You've built your business through hard work and real connections. You've seen new trends come and go—some were helpful, most weren't.
             </p>
             
             <p className="text-neutral-700 mb-5 leading-relaxed">
-              With over 20 years of combined experience in real estate and business optimization, we've helped hundreds of agents and brokers transform their businesses from stressful and chaotic to systematized and profitable.
+              And you handled it all just fine. But this feels different. Things are changing faster than ever. And there's something new: AI. Real tools that other agents are using to help more clients, stay in touch, and run their businesses easier.
+            </p>
+            
+            <p className="text-neutral-700 mb-5 leading-relaxed">
+              The top agents aren't just working harder—they're working smarter.
+            </p>
+            
+            <p className="text-neutral-700 mb-5 leading-relaxed">
+              That's why we started Clockwork Coaching. Not to change how you do everything, but to help you keep up with a market that won't slow down.
+            </p>
+            
+            <p className="text-neutral-700 mb-5 leading-relaxed">
+              We'll show you the right tools, teach them fast, and make sure you stay in control of the business you've worked so hard to build.
             </p>
             
             <p className="text-neutral-700 mb-8 leading-relaxed">
-              Our unique approach combines deep real estate industry knowledge with cutting-edge business strategies and AI technologies to create customized solutions that deliver measurable results. We don't just teach theory—we guide you through implementation every step of the way.
+              This is about making sure you don't get left behind.
             </p>
             
             <button 
