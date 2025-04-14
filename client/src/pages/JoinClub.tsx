@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'wouter';
 import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
 import CookieConsent from '@/components/shared/CookieConsent';
