@@ -6,7 +6,6 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import About from "@/pages/About";
 import Services from "@/pages/Services";
-import Testimonials from "@/pages/Testimonials";
 import Process from "@/pages/Process";
 import Contact from "@/pages/Contact";
 import Booking from "@/pages/Booking";
@@ -17,7 +16,6 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/services" component={Services} />
-      <Route path="/testimonials" component={Testimonials} />
       <Route path="/process" component={Process} />
       <Route path="/contact" component={Contact} />
       <Route path="/booking" component={Booking} />

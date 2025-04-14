@@ -45,7 +45,7 @@ const Navigation: React.FC = () => {
               <span className="text-primary">Clockwork</span> Coaching
             </Link>
           </div>
-          
+
           <nav className="hidden md:block">
             <ul className="flex space-x-8">
               <li>
@@ -66,14 +66,6 @@ const Navigation: React.FC = () => {
               </li>
               <li>
                 <Link 
-                  href="/testimonials"
-                  className="text-neutral-700 hover:text-primary transition duration-300 uppercase text-sm tracking-wider font-medium"
-                >
-                  Testimonials
-                </Link>
-              </li>
-              <li>
-                <Link 
                   href="/process"
                   className="text-neutral-700 hover:text-primary transition duration-300 uppercase text-sm tracking-wider font-medium"
                 >
@@ -90,7 +82,7 @@ const Navigation: React.FC = () => {
               </li>
             </ul>
           </nav>
-          
+
           <div className="hidden md:block">
             <button 
               onClick={handleBookCallClick}
@@ -99,7 +91,7 @@ const Navigation: React.FC = () => {
               Book Your Free Discovery Call
             </button>
           </div>
-          
+
           <div className="md:hidden">
             <button 
               onClick={toggleMobileMenu} 
@@ -110,7 +102,7 @@ const Navigation: React.FC = () => {
             </button>
           </div>
         </div>
-        
+
         {/* Mobile Menu */}
         <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'} py-4`}>
           <ul className="space-y-4">
@@ -130,15 +122,6 @@ const Navigation: React.FC = () => {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Services
-              </Link>
-            </li>
-            <li>
-              <Link 
-                href="/testimonials"
-                className="block py-2 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Testimonials
               </Link>
             </li>
             <li>
