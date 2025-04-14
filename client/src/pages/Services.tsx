@@ -45,7 +45,7 @@ const Services: React.FC = () => {
                   onClick={() => scrollToSection('book-call')} 
                   className="elegant-button"
                 >
-                  REQUEST A CUSTOM PACKAGE
+                  Book Your Free Discovery Call
                 </button>
               </div>
               

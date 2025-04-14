@@ -51,7 +51,7 @@ const ObstaclesSection: React.FC = () => {
             size="lg" 
             onClick={() => scrollToSection('book-call')}
           >
-            Book Your Free Strategy Session
+            Book Your Free Discovery Call
           </Button>
         </div>
       </div>

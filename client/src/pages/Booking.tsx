@@ -31,7 +31,7 @@ const Booking: React.FC = () => {
               rel="noopener noreferrer"
               className="elegant-button inline-block text-lg px-8 py-4 mb-8"
             >
-              SCHEDULE YOUR CALL NOW
+              Book Your Free Discovery Call
             </a>
           </div>
         </div>

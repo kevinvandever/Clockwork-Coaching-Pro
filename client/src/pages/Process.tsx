@@ -89,7 +89,7 @@ const Process: React.FC = () => {
                     onClick={() => scrollToSection('book-call')} 
                     className="elegant-button mt-4"
                   >
-                    START YOUR JOURNEY
+                    Book Your Free Discovery Call
                   </button>
                 </div>
               </div>
