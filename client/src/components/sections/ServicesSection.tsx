@@ -68,12 +68,18 @@ const ServicesSection: React.FC = () => {
                 {service.description}
               </p>
 
-              <button
-                onClick={() => service.ctaAction ? scrollToSection(service.ctaAction) : null}
-                className="elegant-button mt-auto self-start"
-              >
-                {service.ctaText}
-              </button>
+              {service.ctaAction.startsWith('/') ? (
+                <Link href={service.ctaAction} className="elegant-button mt-auto self-start">
+                  {service.ctaText}
+                </Link>
+              ) : (
+                <button
+                  onClick={() => service.ctaAction ? scrollToSection(service.ctaAction) : null}
+                  className="elegant-button mt-auto self-start"
+                >
+                  {service.ctaText}
+                </button>
+              )}
             </div>
           ))}
         </div>
