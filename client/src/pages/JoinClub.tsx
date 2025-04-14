@@ -4,7 +4,7 @@ import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
 import CookieConsent from '@/components/shared/CookieConsent';
 import { Toaster } from '@/components/ui/toaster';
-import { toast } from '@/components/ui/use-toast';
+import { toast } from '@/hooks/use-toast';
 
 const JoinClub: React.FC = () => {
   const [email, setEmail] = useState('');
