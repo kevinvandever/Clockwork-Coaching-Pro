@@ -4,19 +4,19 @@ import { useNavigation } from '@/hooks/useNavigation';
 
 const ObstaclesSection: React.FC = () => {
   const { scrollToSection } = useNavigation();
-  
+
   const obstacles = [
     {
-      title: "Overwhelmed?",
-      description: "Are you juggling too many responsibilities and feeling stretched too thin to grow your business strategically?"
+      title: "Inconsistent Income",
+      description: "Want to stop riding the revenue roller coaster"
     },
     {
-      title: "Plateaued?",
-      description: "Have your sales hit a ceiling despite your best efforts to implement new strategies and systems?"
+      title: "Dependent on Referrals",
+      description: "Referrals are great, but it's impossible to know when they come"
     },
     {
-      title: "Uncertain?",
-      description: "Are you unsure about the right next steps to scale your business in today's competitive market?"
+      title: "No Time to Learn",
+      description: "Too busy working in your business to work on your business"
     }
   ];
 
@@ -31,7 +31,7 @@ const ObstaclesSection: React.FC = () => {
             Are these obstacles standing in the way of your business growth?
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {obstacles.map((obstacle, index) => (
             <div key={index} className="bg-secondary rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow duration-300">
@@ -44,7 +44,7 @@ const ObstaclesSection: React.FC = () => {
             </div>
           ))}
         </div>
-        
+
         <div className="text-center mt-12">
           <Button 
             variant="cta" 
