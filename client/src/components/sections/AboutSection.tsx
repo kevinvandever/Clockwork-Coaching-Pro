@@ -50,7 +50,7 @@ const AboutSection: React.FC = () => {
           <div className="relative">
             <div className="absolute -left-4 -top-4 w-24 h-24 bg-primary/10 -z-10"></div>
             <img 
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+              src="/images/65A38D1C-91C6-4936-B507-D4207B334B31_1_105_c.jpeg" 
               alt="Professional real estate coach" 
               className="w-full object-cover relative z-10"
             />
