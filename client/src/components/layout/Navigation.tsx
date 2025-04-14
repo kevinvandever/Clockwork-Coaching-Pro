@@ -74,14 +74,6 @@ const Navigation: React.FC = () => {
               </li>
               <li>
                 <Link 
-                  href="/contact"
-                  className="text-neutral-700 hover:text-primary transition duration-300 uppercase text-sm tracking-wider font-medium"
-                >
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link 
                   href="/join-club"
                   className="text-neutral-700 hover:text-primary transition duration-300 uppercase text-sm tracking-wider font-medium"
                 >
@@ -139,15 +131,6 @@ const Navigation: React.FC = () => {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Process
-              </Link>
-            </li>
-            <li>
-              <Link 
-                href="/contact"
-                className="block py-2 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Contact
               </Link>
             </li>
             <li>
