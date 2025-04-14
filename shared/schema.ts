@@ -24,7 +24,7 @@ export const leads = pgTable("leads", {
   email: text("email").notNull(),
   phone: text("phone"),
   message: text("message"),
-  type: text("type").notNull(), // 'assessment' or 'booking'
+  type: text("type").notNull(), // 'assessment', 'booking', 'club_notify', or 'club_message'
   createdAt: timestamp("created_at").notNull(),
 });
 
