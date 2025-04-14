@@ -3,7 +3,7 @@ import { useNavigation } from '@/hooks/useNavigation';
 
 const ServicesSection: React.FC = () => {
   const { scrollToSection } = useNavigation();
-  
+
   const services = [
     {
       title: "🛠️ Clockwork Bootcamp",
@@ -27,7 +27,7 @@ const ServicesSection: React.FC = () => {
       description: "A testing ground and resource library for agents who want to stay curious, experiment smarter, and learn from what's working now. Tools, templates, trainings, and community—all in one place.",
       image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       ctaText: "GET NOTIFIED",
-      ctaAction: ''
+      ctaAction: '/notifications'
     }
   ];
 
@@ -41,7 +41,7 @@ const ServicesSection: React.FC = () => {
           </h2>
           <div className="w-20 h-0.5 bg-primary mx-auto"></div>
         </div>
-        
+
         <div className="grid md:grid-cols-3 gap-10">
           {services.map((service, index) => (
             <div 
@@ -55,19 +55,19 @@ const ServicesSection: React.FC = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
                 />
               </div>
-              
+
               <p className="uppercase text-xs font-medium tracking-wider text-neutral-500 mb-2">
                 {service.type}
               </p>
-              
+
               <h3 className="font-display text-2xl font-medium text-neutral-900 mb-4">
                 {service.title}
               </h3>
-              
+
               <p className="text-neutral-600 mb-6 text-sm leading-relaxed flex-grow">
                 {service.description}
               </p>
-              
+
               <button
                 onClick={() => service.ctaAction ? scrollToSection(service.ctaAction) : null}
                 className="elegant-button mt-auto self-start"

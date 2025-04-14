@@ -50,25 +50,12 @@ const CallBookingSection: React.FC = () => {
             Schedule your free 30-minute discovery call to discuss your goals and challenges, and discover how our coaching can help you achieve breakthrough results and scale your business efficiently.
           </p>
 
-          <div className="space-y-6">
-            <Link 
-              href="/contact"
-              className="elegant-button inline-block"
-            >
-              Book Your Free Discovery Call
-            </Link>
-            <div className="bg-primary/5 p-8 rounded-lg">
-              <h3 className="text-2xl font-display font-medium mb-4">Stay Updated</h3>
-              <div className="flex gap-4">
-                <Link
-                  href="/notifications"
-                  className="elegant-button w-full"
-                >
-                  Get Notified
-                </Link>
-              </div>
-            </div>
-          </div>
+          <Link 
+            href="/contact"
+            className="elegant-button inline-block"
+          >
+            Book Your Free Discovery Call
+          </Link>
         </div>
       </div>
     </section>
