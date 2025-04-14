@@ -17,7 +17,7 @@ const CallBookingSection: React.FC = () => {
           </p>
           
           <Link 
-            href="/booking"
+            href="/contact"
             className="elegant-button inline-block"
           >
             Book Your Free Discovery Call

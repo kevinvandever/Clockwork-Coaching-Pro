@@ -4,12 +4,13 @@ import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
 import CookieConsent from '@/components/shared/CookieConsent';
 import { COMPANY_EMAIL, COMPANY_PHONE } from '@/lib/constants';
+import { Button } from '@/components/ui/button';
 
 const calendarUrl = 'https://calendar.app.google/A7t5PwbYfgL6cZbJ8';
 
 const Contact: React.FC = () => {
   React.useEffect(() => {
-    document.title = 'Contact Us | Clockwork Coaching';
+    document.title = 'Contact & Book a Call | Clockwork Coaching';
   }, []);
 
   return (
@@ -18,7 +19,7 @@ const Contact: React.FC = () => {
       <main>
         <div className="pt-24 bg-primary/5">
           <div className="elegant-container py-12 text-center">
-            <h1 className="elegant-heading text-neutral-900 mb-6">Contact Us</h1>
+            <h1 className="elegant-heading text-neutral-900 mb-6">Contact & Book a Call</h1>
             <div className="w-20 h-0.5 bg-primary mx-auto mb-8"></div>
             <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
               Schedule a personal call with our co-founders or reach out through other channels - we're here to help you transform your real estate business.
@@ -80,7 +81,7 @@ const Contact: React.FC = () => {
                   rel="noopener noreferrer"
                   className="elegant-button inline-block text-lg px-8 py-4 mb-8 w-full text-center"
                 >
-                  Schedule Your Free Discovery Call
+                  BOOK YOUR FREE DISCOVERY CALL
                 </a>
               </div>
               
