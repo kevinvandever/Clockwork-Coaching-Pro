@@ -89,7 +89,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-3 text-neutral-500">
               <li className="flex items-center space-x-2 text-sm">
                 <i className="fas fa-envelope text-primary"></i>
-                <span>hello@clockworkcoaching.com</span>
+                <span>kv@clockworkcoaching.club</span>
               </li>
               <li className="flex items-center space-x-2 text-sm">
                 <i className="fas fa-phone text-primary"></i>

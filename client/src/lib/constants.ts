@@ -1,5 +1,5 @@
 export const COMPANY_NAME = "Clockwork Coaching";
-export const COMPANY_EMAIL = "hello@clockworkcoaching.com";
+export const COMPANY_EMAIL = "kv@clockworkcoaching.club";
 export const COMPANY_PHONE = "(555) 123-4567";
 
 export const BENEFITS = [
