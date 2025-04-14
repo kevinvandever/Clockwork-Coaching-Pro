@@ -57,7 +57,7 @@ const ProcessSection: React.FC = () => {
             size="lg" 
             onClick={() => scrollToSection('book-call')}
           >
-            Book Your Free Strategy Call
+            Book Your Free Discovery Call
           </Button>
         </div>
       </div>
