@@ -119,17 +119,69 @@ const Contact: React.FC = () => {
                     Send Us a Message
                   </h3>
                   
-                  <form className="space-y-6">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-neutral-700 mb-1">
-                        Name
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        className="w-full p-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                        placeholder="Your name"
-                      />
+                  <form className="space-y-6" onSubmit={async (e) => {
+                    e.preventDefault();
+                    const formData = new FormData(e.currentTarget);
+                    const firstName = formData.get('firstName')?.toString() || '';
+                    const lastName = formData.get('lastName')?.toString() || '';
+                    const email = formData.get('email')?.toString() || '';
+                    const phone = formData.get('phone')?.toString() || '';
+                    const message = formData.get('message')?.toString() || '';
+
+                    try {
+                      const response = await fetch('/api/booking-leads', {
+                        method: 'POST',
+                        headers: {
+                          'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                          firstName,
+                          lastName,
+                          email,
+                          phone,
+                          message
+                        }),
+                      });
+
+                      if (response.ok) {
+                        alert('Message sent successfully!');
+                        e.currentTarget.reset();
+                      } else {
+                        alert('Failed to send message. Please try again.');
+                      }
+                    } catch (error) {
+                      console.error('Error:', error);
+                      alert('Failed to send message. Please try again.');
+                    }
+                  }}>
+                    <div className="grid grid-cols-2 gap-6">
+                      <div>
+                        <label htmlFor="firstName" className="block text-sm font-medium text-neutral-700 mb-1">
+                          First Name
+                        </label>
+                        <input
+                          type="text"
+                          id="firstName"
+                          name="firstName"
+                          required
+                          className="w-full p-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                          placeholder="Your first name"
+                        />
+                      </div>
+                      
+                      <div>
+                        <label htmlFor="lastName" className="block text-sm font-medium text-neutral-700 mb-1">
+                          Last Name
+                        </label>
+                        <input
+                          type="text"
+                          id="lastName"
+                          name="lastName"
+                          required
+                          className="w-full p-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                          placeholder="Your last name"
+                        />
+                      </div>
                     </div>
                     
                     <div>
@@ -139,6 +191,8 @@ const Contact: React.FC = () => {
                       <input
                         type="email"
                         id="email"
+                        name="email"
+                        required
                         className="w-full p-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                         placeholder="Your email address"
                       />
@@ -151,6 +205,7 @@ const Contact: React.FC = () => {
                       <input
                         type="tel"
                         id="phone"
+                        name="phone"
                         className="w-full p-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                         placeholder="Your phone number"
                       />
@@ -162,7 +217,9 @@ const Contact: React.FC = () => {
                       </label>
                       <textarea
                         id="message"
+                        name="message"
                         rows={4}
+                        required
                         className="w-full p-3 border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                         placeholder="How can we help you?"
                       ></textarea>
