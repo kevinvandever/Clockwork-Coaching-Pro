@@ -60,16 +60,9 @@ const CallBookingSection: React.FC = () => {
             <div className="bg-primary/5 p-8 rounded-lg">
               <h3 className="text-2xl font-display font-medium mb-4">Stay Updated</h3>
               <div className="flex gap-4">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-4 py-2 rounded border"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
                 <Link
                   href="/notifications"
-                  className="elegant-button"
+                  className="elegant-button w-full"
                 >
                   Get Notified
                 </Link>
