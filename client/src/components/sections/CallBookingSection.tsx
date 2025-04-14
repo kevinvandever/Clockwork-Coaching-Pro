@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Assuming react-router-dom is used
+import { Link } from 'wouter';
 
 const CallBookingSection: React.FC = () => {
   return (
@@ -17,7 +17,7 @@ const CallBookingSection: React.FC = () => {
           </p>
 
           <Link 
-            to="/contact"
+            href="/contact"
             className="elegant-button inline-block"
           >
             Book Your Free Discovery Call
