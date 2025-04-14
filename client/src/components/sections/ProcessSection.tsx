@@ -53,6 +53,7 @@ const ProcessSection: React.FC = () => {
             variant="cta" 
             size="lg" 
             onClick={() => scrollToSection('book-call')}
+            className="text-lg px-8 py-4"
           >
             BOOK YOUR FREE DISCOVERY CALL
           </Button>
