@@ -78,19 +78,19 @@ const Footer: React.FC = () => {
             <ul className="space-y-4 text-neutral-500">
               <li className="flex items-center">
                 <div className="bg-primary/10 p-3 rounded-full w-10 h-10 flex items-center justify-center mr-4">
-                  <i className="fas fa-envelope text-primary"></i>
+                  <i className="fas fa-envelope text-primary text-lg"></i>
                 </div>
                 <span className="text-sm">{COMPANY_EMAIL}</span>
               </li>
               <li className="flex items-center">
                 <div className="bg-primary/10 p-3 rounded-full w-10 h-10 flex items-center justify-center mr-4">
-                  <i className="fas fa-phone text-primary"></i>
+                  <i className="fas fa-phone text-primary text-lg"></i>
                 </div>
                 <span className="text-sm">{COMPANY_PHONE}</span>
               </li>
               <li className="flex items-center">
                 <div className="bg-primary/10 p-3 rounded-full w-10 h-10 flex items-center justify-center mr-4">
-                  <i className="fas fa-calendar-alt text-primary"></i>
+                  <i className="fas fa-calendar-alt text-primary text-lg"></i>
                 </div>
                 <a 
                   href={CALENDAR_URL}

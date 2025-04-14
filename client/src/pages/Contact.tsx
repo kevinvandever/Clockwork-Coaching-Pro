@@ -94,7 +94,7 @@ const Contact: React.FC = () => {
                 <div className="space-y-6 mb-10">
                   <div className="flex items-start">
                     <div className="bg-primary/10 p-3 rounded-full w-10 h-10 flex items-center justify-center mr-4">
-                      <i className="fas fa-envelope text-primary"></i>
+                      <i className="fas fa-envelope text-primary text-lg"></i>
                     </div>
                     <div>
                       <p className="font-medium text-neutral-900 mb-1">Email Us</p>
@@ -104,7 +104,7 @@ const Contact: React.FC = () => {
                   
                   <div className="flex items-start">
                     <div className="bg-primary/10 p-3 rounded-full w-10 h-10 flex items-center justify-center mr-4">
-                      <i className="fas fa-phone text-primary"></i>
+                      <i className="fas fa-phone text-primary text-lg"></i>
                     </div>
                     <div>
                       <p className="font-medium text-neutral-900 mb-1">Call Us</p>
