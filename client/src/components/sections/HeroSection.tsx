@@ -32,7 +32,7 @@ const HeroSection: React.FC = () => {
         </div>
       </section>
 
-      <section className="bg-white py-16">
+      <section className="bg-secondary/50 py-16">
         <div className="elegant-container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="text-center">
