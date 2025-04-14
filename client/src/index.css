@@ -98,7 +98,7 @@
   }
   
   .elegant-subheading {
-    @apply text-base md:text-lg font-light tracking-wider uppercase mb-4 text-primary;
+    @apply text-base md:text-lg font-light tracking-wider uppercase mb-4 text-neutral-800;
   }
   
   .elegant-button {
