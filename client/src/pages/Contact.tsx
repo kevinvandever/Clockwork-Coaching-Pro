@@ -19,10 +19,10 @@ const Contact: React.FC = () => {
       <main>
         <div className="pt-24 bg-primary/5">
           <div className="elegant-container py-12 text-center">
-            <h1 className="elegant-heading text-neutral-900 mb-6">Contact & Book a Call</h1>
+            <h1 className="elegant-heading text-neutral-900 mb-6">Let's Transform Your Business Together</h1>
             <div className="w-20 h-0.5 bg-primary mx-auto mb-8"></div>
             <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-              Schedule a personal call with our co-founders or reach out through other channels - we're here to help you transform your real estate business.
+              Connect with our co-founders directly and discover how we can help you achieve your real estate business goals.
             </p>
           </div>
         </div>
