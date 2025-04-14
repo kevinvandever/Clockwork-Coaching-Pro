@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { useNavigation } from '@/hooks/useNavigation';
+import { Link } from 'wouter';
 
 const HeroSection: React.FC = () => {
   const { scrollToSection } = useNavigation();
