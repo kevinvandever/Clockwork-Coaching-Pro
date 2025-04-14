@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
 import CookieConsent from '@/components/shared/CookieConsent';
-import { useToast } from '@/hooks/use-toast';
+import { useToast } from '@/components/ui/use-toast';
 
 const JoinClub: React.FC = () => {
   const [email, setEmail] = useState('');
