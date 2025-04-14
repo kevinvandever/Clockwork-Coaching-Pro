@@ -81,7 +81,7 @@ const Contact: React.FC = () => {
                   rel="noopener noreferrer"
                   className="elegant-button inline-block text-lg px-8 py-4 mb-8 w-full text-center"
                 >
-                  BOOK YOUR FREE DISCOVERY CALL
+                  Find a Time That Works For You
                 </a>
               </div>
               
