@@ -77,16 +77,16 @@ const JoinClub: React.FC = () => {
             <h2 className="text-2xl font-display font-medium mb-4">
               What to Expect
             </h2>
-            <ul className="space-y-4 text-left">
-              <li className="flex items-center">
+            <ul className="space-y-4">
+              <li className="flex items-center justify-center">
                 <i className="fas fa-check-circle text-primary mr-3"></i>
                 <span>Exclusive member resources and tools</span>
               </li>
-              <li className="flex items-center">
+              <li className="flex items-center justify-center">
                 <i className="fas fa-check-circle text-primary mr-3"></i>
                 <span>Priority access to coaching sessions</span>
               </li>
-              <li className="flex items-center">
+              <li className="flex items-center justify-center">
                 <i className="fas fa-check-circle text-primary mr-3"></i>
                 <span>Community networking opportunities</span>
               </li>
