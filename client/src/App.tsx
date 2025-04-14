@@ -9,6 +9,7 @@ import Services from "@/pages/Services";
 import Process from "@/pages/Process";
 import Contact from "@/pages/Contact";
 import Booking from "@/pages/Booking";
+import JoinClub from './pages/JoinClub'; // Added import for JoinClub component
 
 function Router() {
   return (
@@ -19,6 +20,7 @@ function Router() {
       <Route path="/process" component={Process} />
       <Route path="/contact" component={Contact} />
       <Route path="/booking" component={Booking} />
+      <Route path="/join-club" component={JoinClub} /> {/* Added route for JoinClub */}
       <Route component={NotFound} />
     </Switch>
   );
