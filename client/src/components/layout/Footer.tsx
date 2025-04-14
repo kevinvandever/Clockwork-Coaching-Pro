@@ -79,24 +79,28 @@ const Footer: React.FC = () => {
           
           <div>
             <h4 className="text-sm uppercase tracking-wider font-medium text-neutral-900 mb-6">Contact Us</h4>
-            <ul className="space-y-3 text-neutral-500">
-              <li className="flex items-center space-x-2 text-sm">
-                <i className="fas fa-envelope text-primary"></i>
-                <span>kv@clockworkcoaching.club</span>
+            <ul className="space-y-4 text-neutral-500">
+              <li className="flex items-center">
+                <div className="bg-primary/10 p-3 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                  <i className="fas fa-envelope text-primary"></i>
+                </div>
+                <span className="text-sm">kv@clockworkcoaching.club</span>
               </li>
-              <li className="flex items-center space-x-2 text-sm">
-                <i className="fas fa-phone text-primary"></i>
-                <span>(555) 123-4567</span>
+              <li className="flex items-center">
+                <div className="bg-primary/10 p-3 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                  <i className="fas fa-phone text-primary"></i>
+                </div>
+                <span className="text-sm">(555) 123-4567</span>
               </li>
-              <li className="flex items-center space-x-2 text-sm">
-                <div className="bg-primary/10 p-3 rounded-full">
+              <li className="flex items-center">
+                <div className="bg-primary/10 p-3 rounded-full w-10 h-10 flex items-center justify-center mr-3">
                   <i className="fas fa-calendar-alt text-primary"></i>
                 </div>
                 <a 
                   href={CALENDAR_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-neutral-500 hover:text-primary transition duration-300"
+                  className="text-sm text-neutral-500 hover:text-primary transition duration-300"
                 >
                   Book Your Free Discovery Call
                 </a>
