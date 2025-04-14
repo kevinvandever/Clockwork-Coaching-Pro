@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { useNavigation } from '@/hooks/useNavigation';
@@ -8,18 +9,18 @@ const ProcessSection: React.FC = () => {
   const steps = [
     {
       number: 1,
-      title: "Book Your Call With a Cofounder",
-      description: "Schedule your complimentary 30-minute strategy session to discuss your current challenges and goals"
+      title: "Book Your Discovery Call",
+      description: "Click the button below to book your call w/ Co-founder KV."
     },
     {
       number: 2,
-      title: "Create Your Growth Plan",
-      description: "Together we'll develop a customized roadmap to achieve your specific business objectives"
+      title: "Design the Strategy",
+      description: "Together we'll craft a custom strategy to supercharge your business"
     },
     {
       number: 3,
-      title: "Implement & Succeed",
-      description: "We'll guide you through implementation with ongoing support to ensure your success"
+      title: "Implement & Win",
+      description: "We'll be there every step of the way as we put the plan into action"
     }
   ];
 
@@ -28,11 +29,8 @@ const ProcessSection: React.FC = () => {
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-            How It Works
+            Three Steps to Small Business Success
           </h2>
-          <p className="text-xl text-neutral-700 max-w-3xl mx-auto">
-            Three steps to transform your real estate business
-          </p>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
