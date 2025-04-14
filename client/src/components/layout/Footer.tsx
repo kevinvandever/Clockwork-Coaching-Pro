@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigation } from '@/hooks/useNavigation';
 import { Link, useLocation } from 'wouter';
+import { CALENDAR_URL } from '@/lib/constants';
 
 const Footer: React.FC = () => {
   const { scrollToSection } = useNavigation();
@@ -88,12 +89,14 @@ const Footer: React.FC = () => {
                 <span>(555) 123-4567</span>
               </li>
               <li className="pt-4">
-                <button 
-                  onClick={handleBookCallClick}
-                  className="elegant-button text-sm"
+                <a 
+                  href={CALENDAR_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="elegant-button text-sm inline-block"
                 >
-                  BOOK A CALL
-                </button>
+                  BOOK A CALL WITH A COFOUNDER
+                </a>
               </li>
             </ul>
           </div>
