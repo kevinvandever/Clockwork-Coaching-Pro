@@ -34,15 +34,15 @@ const About: React.FC = () => {
                   Real Estate Business Growth Specialists
                 </h2>
                 <div className="w-20 h-0.5 bg-primary mb-8"></div>
-                
+
                 <p className="text-neutral-700 mb-5 leading-relaxed">
                   With years of experience in the real estate industry, our team brings specialized knowledge and proven strategies to help agents and brokers scale their businesses efficiently.
                 </p>
-                
+
                 <p className="text-neutral-700 mb-5 leading-relaxed">
                   We understand the unique challenges faced by real estate professionals in today's competitive market. Our coaching programs are designed to address these specific pain points and create sustainable growth.
                 </p>
-                
+
                 <p className="text-neutral-700 mb-5 leading-relaxed">
                   By combining industry expertise with innovative business strategies and technologies, we provide comprehensive solutions that deliver measurable results for your real estate business.
                 </p>

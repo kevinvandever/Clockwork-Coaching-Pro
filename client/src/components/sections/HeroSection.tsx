@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useNavigation } from '@/hooks/useNavigation';
 import { Link } from 'wouter';
@@ -18,11 +17,11 @@ const HeroSection: React.FC = () => {
             <h1 className="elegant-heading mb-6 text-neutral-900">
               Don't Get Left Behind
             </h1>
-            
+
             <p className="elegant-subheading text-neutral-800">
               FUTURE-PROOF YOUR BUSINESS WITH DONE-FOR-YOU AI SYSTEMS AND PERSONALIZED 1:1 COACHING
             </p>
-            
+
             <Link 
               href="/contact"
               className="elegant-button mt-8 inline-block"
@@ -39,11 +38,11 @@ const HeroSection: React.FC = () => {
             <div className="text-center">
               <h3 className="font-display text-xl font-medium text-primary mb-2">Curated Tools</h3>
             </div>
-            
+
             <div className="text-center">
               <h3 className="font-display text-xl font-medium text-primary mb-2">Customized Coaching</h3>
             </div>
-            
+
             <div className="text-center">
               <h3 className="font-display text-xl font-medium text-primary mb-2">Consistent Referrals</h3>
             </div>
