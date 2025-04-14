@@ -30,7 +30,7 @@ const Navigation: React.FC = () => {
 
   const handleBookCallClick = () => {
     // Navigate to booking page
-    window.location.href = '/booking';
+    window.location.href = '/contact'; // Changed to redirect to the combined contact page
     if (isMobileMenuOpen) {
       setIsMobileMenuOpen(false);
     }
