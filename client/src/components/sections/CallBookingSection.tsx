@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'wouter';
+import { Link } from 'react-router-dom'; // Assuming react-router-dom is used
 
 const CallBookingSection: React.FC = () => {
   return (
@@ -11,13 +11,13 @@ const CallBookingSection: React.FC = () => {
             Ready to Transform Your Real Estate Business?
           </h2>
           <div className="w-20 h-0.5 bg-primary mx-auto mb-8"></div>
-          
+
           <p className="text-neutral-700 mb-8 max-w-2xl mx-auto">
             Schedule your free 30-minute discovery call to discuss your goals and challenges, and discover how our coaching can help you achieve breakthrough results and scale your business efficiently.
           </p>
-          
+
           <Link 
-            href="/contact"
+            to="/contact"
             className="elegant-button inline-block"
           >
             Book Your Free Discovery Call

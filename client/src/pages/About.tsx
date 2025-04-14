@@ -4,6 +4,7 @@ import Footer from '@/components/layout/Footer';
 import AboutSection from '@/components/sections/AboutSection';
 import CallBookingSection from '@/components/sections/CallBookingSection';
 import CookieConsent from '@/components/shared/CookieConsent';
+import { useNavigate } from '@/lib/utils';
 
 const About: React.FC = () => {
   React.useEffect(() => {
