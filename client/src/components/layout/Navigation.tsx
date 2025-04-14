@@ -85,7 +85,7 @@ const Navigation: React.FC = () => {
                   href="/join-club"
                   className="text-neutral-700 hover:text-primary transition duration-300 uppercase text-sm tracking-wider font-medium"
                 >
-                  Join the Club
+                  The Club
                 </Link>
               </li>
             </ul>
@@ -156,7 +156,7 @@ const Navigation: React.FC = () => {
                 className="block py-2 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Join the Club
+                The Club
               </Link>
             </li>
             <li className="pt-2">
