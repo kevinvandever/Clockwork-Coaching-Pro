@@ -13,11 +13,11 @@ const HeroSection: React.FC = () => {
       <div className="elegant-container relative z-10 py-24 md:py-32">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="elegant-heading mb-6 text-neutral-900">
-            Stop Spinning Your Wheels & Start Scaling Your Business
+            Don't Get Left Behind
           </h1>
           
           <p className="elegant-subheading text-neutral-600">
-            ONE-ON-ONE AND GROUP COACHING TO HELP GROW YOUR REAL ESTATE BUSINESS
+            FUTURE-PROOF YOUR BUSINESS WITH DONE-FOR-YOU AI SYSTEMS AND PERSONALIZED 1:1 COACHING
           </p>
           
           <button 
