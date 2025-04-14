@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigation } from '@/hooks/useNavigation';
+import { Button } from '@/components/ui/button';
 
 const AboutSection: React.FC = () => {
   const { scrollToSection } = useNavigation();
