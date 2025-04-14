@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
@@ -44,13 +43,13 @@ const JoinClub: React.FC = () => {
       <Navigation />
       <div className="min-h-[60vh] flex flex-col items-center justify-center py-24">
         <h1 className="text-4xl md:text-5xl font-display font-bold mb-6 text-center">
-          Join the Club
+          Clockwork Coaching Club
         </h1>
         <div className="text-center max-w-2xl mx-auto px-4">
           <p className="text-xl text-neutral-700 mb-8">
             Coming Soon! Our exclusive membership platform is under development.
           </p>
-          
+
           <div className="bg-primary/5 p-8 rounded-lg mb-8">
             <h2 className="text-2xl font-display font-medium mb-4">
               Stay Updated
@@ -63,18 +62,12 @@ const JoinClub: React.FC = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full px-4 py-2 rounded border mb-4"
               />
-              <div className="space-y-4">
+              <div>
                 <button
                   onClick={() => handleSubmit('notify')}
                   className="elegant-button w-full"
                 >
                   Get Notified When We Launch
-                </button>
-                <button
-                  onClick={() => handleSubmit('message')}
-                  className="elegant-button w-full"
-                >
-                  Send Me More Information
                 </button>
               </div>
             </div>
