@@ -3,12 +3,11 @@ import React, { useState } from 'react';
 import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
 import CookieConsent from '@/components/shared/CookieConsent';
-import { useToast } from '@/components/ui/use-toast';
+import { Toaster } from '@/components/ui/toaster';
+import { toast } from '@/components/ui/use-toast';
 
 const JoinClub: React.FC = () => {
   const [email, setEmail] = useState('');
-  const { toast } = useToast();
-
   const handleSubmit = async (type: 'notify' | 'message') => {
     try {
       const response = await fetch('/api/booking-leads', {
@@ -104,6 +103,7 @@ const JoinClub: React.FC = () => {
       </div>
       <Footer />
       <CookieConsent />
+      <Toaster />
     </>
   );
 };
