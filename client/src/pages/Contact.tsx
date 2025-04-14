@@ -118,6 +118,7 @@ const Contact: React.FC = () => {
                   <h3 className="font-display text-2xl font-medium text-neutral-900 mb-6">
                     Send Us a Message
                   </h3>
+                  <p className="text-sm text-neutral-500 mb-6">Fields marked with * are required</p>
                   
                   <form className="space-y-6" onSubmit={async (e) => {
                     e.preventDefault();
@@ -157,7 +158,7 @@ const Contact: React.FC = () => {
                     <div className="grid grid-cols-2 gap-6">
                       <div>
                         <label htmlFor="firstName" className="block text-sm font-medium text-neutral-700 mb-1">
-                          First Name
+                          First Name *
                         </label>
                         <input
                           type="text"
@@ -171,7 +172,7 @@ const Contact: React.FC = () => {
                       
                       <div>
                         <label htmlFor="lastName" className="block text-sm font-medium text-neutral-700 mb-1">
-                          Last Name
+                          Last Name *
                         </label>
                         <input
                           type="text"
@@ -186,7 +187,7 @@ const Contact: React.FC = () => {
                     
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium text-neutral-700 mb-1">
-                        Email
+                        Email *
                       </label>
                       <input
                         type="email"
@@ -200,7 +201,7 @@ const Contact: React.FC = () => {
                     
                     <div>
                       <label htmlFor="phone" className="block text-sm font-medium text-neutral-700 mb-1">
-                        Phone
+                        Phone (Optional)
                       </label>
                       <input
                         type="tel"
@@ -213,7 +214,7 @@ const Contact: React.FC = () => {
                     
                     <div>
                       <label htmlFor="message" className="block text-sm font-medium text-neutral-700 mb-1">
-                        Message
+                        Message *
                       </label>
                       <textarea
                         id="message"
