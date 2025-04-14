@@ -83,14 +83,18 @@ const Navigation: React.FC = () => {
             </ul>
           </nav>
 
-          <div className="hidden md:block">
-            <button 
-              onClick={handleBookCallClick}
-              className="elegant-button"
-            >
-              BOOK YOUR FREE DISCOVERY CALL
-            </button>
-          </div>
+          <nav className="hidden md:block">
+            <ul className="flex space-x-8">
+              <li>
+                <Link 
+                  href="/contact"
+                  className="text-neutral-700 hover:text-primary transition duration-300 uppercase text-sm tracking-wider font-medium"
+                >
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+          </nav>
 
           <div className="md:hidden">
             <button 
@@ -142,13 +146,14 @@ const Navigation: React.FC = () => {
                 The Club
               </Link>
             </li>
-            <li className="pt-2">
-              <button 
-                onClick={handleBookCallClick}
-                className="block py-3 px-4 elegant-button text-center w-full"
+            <li>
+              <Link 
+                href="/contact"
+                className="block py-2 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
-                BOOK YOUR FREE DISCOVERY CALL
-              </button>
+                Contact Us
+              </Link>
             </li>
           </ul>
         </div>
