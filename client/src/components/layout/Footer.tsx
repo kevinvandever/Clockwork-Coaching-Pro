@@ -88,14 +88,17 @@ const Footer: React.FC = () => {
                 <i className="fas fa-phone text-primary"></i>
                 <span>(555) 123-4567</span>
               </li>
-              <li className="pt-4">
+              <li className="flex items-center space-x-2 text-sm">
+                <div className="bg-primary/10 p-3 rounded-full">
+                  <i className="fas fa-calendar-alt text-primary"></i>
+                </div>
                 <a 
                   href={CALENDAR_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="elegant-button text-sm inline-block"
+                  className="text-neutral-500 hover:text-primary transition duration-300"
                 >
-                  BOOK A CALL WITH A COFOUNDER
+                  Book Your Free Discovery Call
                 </a>
               </li>
             </ul>
