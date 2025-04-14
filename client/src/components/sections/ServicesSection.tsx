@@ -6,28 +6,28 @@ const ServicesSection: React.FC = () => {
   
   const services = [
     {
-      title: "The Realtor's Advantage",
-      type: "ONE-ON-ONE COACHING",
-      description: "This 12-month intensive program provides personalized guidance to transform your real estate business. We'll develop a customized growth strategy, implement effective systems, and coach you through the challenges of scaling your business to new heights.",
+      title: "🛠️ Clockwork Bootcamp",
+      type: "5-WEEK PROGRAM",
+      description: "A foundational program designed to get Realtors up to speed fast. We'll help you eliminate inefficiencies, streamline your systems, and find the 2–3 AI tools that can make the biggest impact in your business—without the overwhelm.",
       image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       ctaText: "LEARN MORE",
       ctaAction: 'book-call'
     },
     {
-      title: "Real Estate Accelerator",
-      type: "GROUP COACHING",
-      description: "Join a select group of ambitious real estate professionals for this 6-month program. You'll benefit from collective wisdom, accountability, and our proven growth framework, with two private coaching sessions included to address your specific challenges.",
+      title: "🔄 Clockwork Pro",
+      type: "1:1 COACHING",
+      description: "Ongoing monthly 1:1 coaching for agents who want to stay ahead. We'll keep you in the loop on the latest tools, trends, and market shifts—while continuing to refine and optimize the systems we built together.",
       image: "https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      ctaText: "JOIN WAITLIST",
-      ctaAction: ''
+      ctaText: "JOIN NOW",
+      ctaAction: 'book-call'
     },
     {
-      title: "Clockwork Agent Mastermind",
-      type: "MASTERMIND GROUP",
-      description: "This exclusive mastermind brings together top-performing real estate professionals to collaborate, share insights, and solve challenges together. Limited to 10 participants, this high-level group provides the support and accountability needed to achieve breakthrough results.",
+      title: "🔬 The Clockwork Lab",
+      type: "COMING SOON",
+      description: "A testing ground and resource library for agents who want to stay curious, experiment smarter, and learn from what's working now. Tools, templates, trainings, and community—all in one place.",
       image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      ctaText: "APPLY NOW",
-      ctaAction: 'book-call'
+      ctaText: "GET NOTIFIED",
+      ctaAction: ''
     }
   ];
 
@@ -35,9 +35,9 @@ const ServicesSection: React.FC = () => {
     <section id="services" className="elegant-section bg-white">
       <div className="elegant-container">
         <div className="text-center mb-16">
-          <p className="elegant-subheading text-neutral-500">OUR COACHING SOLUTIONS</p>
+          <p className="elegant-subheading text-neutral-500">WORK WITH US</p>
           <h2 className="text-3xl md:text-4xl font-display font-medium mb-6">
-            Transform Your Real Estate Business
+            Choose Your Path to Growth
           </h2>
           <div className="w-20 h-0.5 bg-primary mx-auto"></div>
         </div>
