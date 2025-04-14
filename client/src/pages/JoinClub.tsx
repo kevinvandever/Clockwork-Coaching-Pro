@@ -56,21 +56,12 @@ const JoinClub: React.FC = () => {
               Stay Updated
             </h2>
             <div className="max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-4 py-2 rounded border mb-4"
-              />
-              <div>
-                <Link
-                  href="/notifications"
-                  className="elegant-button w-full"
-                >
-                  Get Notified When We Launch
-                </Link>
-              </div>
+              <Link
+                href="/notifications"
+                className="elegant-button w-full"
+              >
+                Get Notified When We Launch
+              </Link>
             </div>
           </div>
 
