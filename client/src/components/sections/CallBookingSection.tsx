@@ -67,12 +67,12 @@ const CallBookingSection: React.FC = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                <button
-                  onClick={() => handleSubmit('notify')}
+                <Link
+                  href="/notifications"
                   className="elegant-button"
                 >
                   Get Notified
-                </button>
+                </Link>
               </div>
             </div>
           </div>

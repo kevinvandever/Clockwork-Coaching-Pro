@@ -63,12 +63,12 @@ const JoinClub: React.FC = () => {
                 className="w-full px-4 py-2 rounded border mb-4"
               />
               <div>
-                <button
-                  onClick={() => handleSubmit('notify')}
+                <Link
+                  href="/notifications"
                   className="elegant-button w-full"
                 >
                   Get Notified When We Launch
-                </button>
+                </Link>
               </div>
             </div>
           </div>
