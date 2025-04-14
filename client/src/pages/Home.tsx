@@ -6,7 +6,6 @@ import ObstaclesSection from '@/components/sections/ObstaclesSection';
 import AboutSection from '@/components/sections/AboutSection';
 import ServicesSection from '@/components/sections/ServicesSection';
 import ProcessSection from '@/components/sections/ProcessSection';
-import AssessmentSection from '@/components/sections/AssessmentSection';
 import CallBookingSection from '@/components/sections/CallBookingSection';
 import CookieConsent from '@/components/shared/CookieConsent';
 
@@ -42,7 +41,6 @@ const Home: React.FC = () => {
         <AboutSection />
         <ServicesSection />
         <ProcessSection />
-        <AssessmentSection />
         <CallBookingSection />
       </main>
       <Footer />
