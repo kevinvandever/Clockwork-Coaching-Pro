@@ -88,7 +88,7 @@ const Navigation: React.FC = () => {
               onClick={handleBookCallClick}
               className="elegant-button"
             >
-              Book Your Free Discovery Call
+              BOOK YOUR FREE DISCOVERY CALL
             </button>
           </div>
 
@@ -147,7 +147,7 @@ const Navigation: React.FC = () => {
                 onClick={handleBookCallClick}
                 className="block py-3 px-4 elegant-button text-center w-full"
               >
-                Book Your Free Discovery Call
+                BOOK YOUR FREE DISCOVERY CALL
               </button>
             </li>
           </ul>

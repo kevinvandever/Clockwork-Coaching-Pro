@@ -6,60 +6,60 @@
   :root {
     --background: 40 33% 98%;
     --foreground: 240 10% 15%;
-    
+
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
- 
+
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
- 
+
     --primary: 38 52% 65%;
     --primary-foreground: 0 0% 100%;
- 
+
     --secondary: 40 30% 96%;
     --secondary-foreground: 240 5.9% 10%;
- 
+
     --muted: 40 20% 96%;
     --muted-foreground: 240 3.8% 46.1%;
- 
+
     --accent: 354 70% 80%;
     --accent-foreground: 240 5.9% 10%;
- 
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 38 30% 90%;
     --input: 38 30% 90%;
     --ring: 38 52% 65%;
- 
+
     --radius: 0.3rem;
   }
- 
+
   .dark {
     --background: 20 14.3% 4.1%;
     --foreground: 0 0% 95%;
- 
+
     --card: 24 9.8% 10%;
     --card-foreground: 0 0% 95%;
- 
+
     --popover: 0 0% 9%;
     --popover-foreground: 0 0% 95%;
- 
+
     --primary: 38 52% 65%;
     --primary-foreground: 240 5.9% 10%;
- 
+
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
- 
+
     --muted: 0 0% 15%;
     --muted-foreground: 240 5% 64.9%;
- 
+
     --accent: 354 70% 80%;
     --accent-foreground: 0 0% 98%;
- 
+
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 85.7% 97.3%;
- 
+
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 38 52% 65%;
@@ -84,27 +84,27 @@
   .font-display {
     font-family: 'Playfair Display', serif;
   }
-  
+
   .font-body {
     font-family: 'Raleway', sans-serif;
   }
-  
+
   .elegant-container {
     @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
   }
-  
+
   .elegant-heading {
     @apply text-4xl md:text-5xl lg:text-6xl font-display font-medium leading-[1.1] mb-6;
   }
-  
+
   .elegant-subheading {
     @apply text-base md:text-lg font-light tracking-wider uppercase mb-4 text-neutral-800;
   }
-  
+
   .elegant-button {
-    @apply bg-primary text-white uppercase tracking-wider py-3.5 px-8 text-sm font-medium transition-all duration-300 hover:bg-primary/90 hover:shadow-lg hover:-translate-y-0.5 rounded-sm;
+    @apply bg-primary text-white font-medium px-8 py-4 rounded hover:bg-primary/90 transition-colors duration-200 uppercase tracking-wider text-lg;
   }
-  
+
   .elegant-section {
     @apply py-20 md:py-28;
   }
@@ -112,7 +112,7 @@
   .gradient-text {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
   }
-  
+
   .hover-card {
     @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
   }

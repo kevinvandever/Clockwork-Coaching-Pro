@@ -26,7 +26,7 @@ const HeroSection: React.FC = () => {
               onClick={() => scrollToSection('book-call')}
               className="elegant-button mt-8"
             >
-              Book Your Free Discovery Call
+              BOOK YOUR FREE DISCOVERY CALL
             </button>
           </div>
         </div>
