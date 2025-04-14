@@ -22,12 +22,12 @@ const HeroSection: React.FC = () => {
               FUTURE-PROOF YOUR BUSINESS WITH DONE-FOR-YOU AI SYSTEMS AND PERSONALIZED 1:1 COACHING
             </p>
             
-            <button 
-              onClick={() => scrollToSection('book-call')}
-              className="elegant-button mt-8"
+            <Link 
+              href="/contact"
+              className="elegant-button mt-8 inline-block"
             >
               BOOK YOUR FREE DISCOVERY CALL
-            </button>
+            </Link>
           </div>
         </div>
       </section>

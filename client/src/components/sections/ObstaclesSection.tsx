@@ -49,7 +49,7 @@ const ObstaclesSection: React.FC = () => {
           <Button 
             variant="cta" 
             size="lg" 
-            onClick={() => scrollToSection('book-call')}
+            onClick={() => window.location.href = '/contact'}
             className="text-lg px-8 py-4"
           >
             BOOK YOUR FREE DISCOVERY CALL
