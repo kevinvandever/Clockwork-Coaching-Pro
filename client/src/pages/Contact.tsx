@@ -93,7 +93,7 @@ const Contact: React.FC = () => {
                 
                 <div className="space-y-6 mb-10">
                   <div className="flex items-start">
-                    <div className="bg-primary/10 p-3 rounded-full mr-4">
+                    <div className="bg-primary/10 p-3 rounded-full w-10 h-10 flex items-center justify-center mr-4">
                       <i className="fas fa-envelope text-primary"></i>
                     </div>
                     <div>
@@ -103,7 +103,7 @@ const Contact: React.FC = () => {
                   </div>
                   
                   <div className="flex items-start">
-                    <div className="bg-primary/10 p-3 rounded-full mr-4">
+                    <div className="bg-primary/10 p-3 rounded-full w-10 h-10 flex items-center justify-center mr-4">
                       <i className="fas fa-phone text-primary"></i>
                     </div>
                     <div>

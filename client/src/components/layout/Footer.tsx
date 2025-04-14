@@ -77,19 +77,19 @@ const Footer: React.FC = () => {
             <h4 className="text-sm uppercase tracking-wider font-medium text-neutral-900 mb-6">Contact Us</h4>
             <ul className="space-y-4 text-neutral-500">
               <li className="flex items-center">
-                <div className="bg-primary/10 p-3 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                <div className="bg-primary/10 p-3 rounded-full w-10 h-10 flex items-center justify-center mr-4">
                   <i className="fas fa-envelope text-primary"></i>
                 </div>
                 <span className="text-sm">{COMPANY_EMAIL}</span>
               </li>
               <li className="flex items-center">
-                <div className="bg-primary/10 p-3 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                <div className="bg-primary/10 p-3 rounded-full w-10 h-10 flex items-center justify-center mr-4">
                   <i className="fas fa-phone text-primary"></i>
                 </div>
                 <span className="text-sm">{COMPANY_PHONE}</span>
               </li>
               <li className="flex items-center">
-                <div className="bg-primary/10 p-3 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                <div className="bg-primary/10 p-3 rounded-full w-10 h-10 flex items-center justify-center mr-4">
                   <i className="fas fa-calendar-alt text-primary"></i>
                 </div>
                 <a 
