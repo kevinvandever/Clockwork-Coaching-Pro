@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigation } from '@/hooks/useNavigation';
 import { Link } from 'wouter';
+import { ABTest, useAbTestConversion } from '@/components/AbTest';
 
 const HeroSection: React.FC = () => {
   const { scrollToSection } = useNavigation();
@@ -14,9 +15,20 @@ const HeroSection: React.FC = () => {
 
         <div className="elegant-container relative z-10 py-24 md:py-32">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="elegant-heading mb-6 text-neutral-900">
-              Don't Get Left Behind
-            </h1>
+            <ABTest 
+              id="hero-heading" 
+              variants={[
+                <h1 className="elegant-heading mb-6 text-neutral-900">
+                  Don't Get Left Behind
+                </h1>,
+                <h1 className="elegant-heading mb-6 text-neutral-900">
+                  Future-Proof Your Business Today
+                </h1>
+              ]}
+              onVariantSelected={(variant) => {
+                console.log(`Hero heading variant ${variant} shown to user`);
+              }}
+            />
 
             <p className="elegant-subheading text-neutral-800">
               FUTURE-PROOF YOUR BUSINESS WITH DONE-FOR-YOU AI SYSTEMS AND PERSONALIZED 1:1 COACHING
@@ -25,6 +37,10 @@ const HeroSection: React.FC = () => {
             <Link 
               href="/contact"
               className="elegant-button mt-8 inline-block"
+              onClick={() => {
+                const trackConversion = useAbTestConversion('hero-heading');
+                trackConversion('cta_click');
+              }}
             >
               BOOK YOUR FREE DISCOVERY CALL
             </Link>
