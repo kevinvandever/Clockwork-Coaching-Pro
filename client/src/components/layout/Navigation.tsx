@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigation } from '@/hooks/useNavigation';
 import { Link, useLocation } from 'wouter';
-import { ThemeToggle } from '@/components/ui/theme-toggle'; // Added import for ThemeToggle
 
 const Navigation: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

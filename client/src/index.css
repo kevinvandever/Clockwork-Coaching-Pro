@@ -63,21 +63,6 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 38 52% 65%;
-    
-    --sidebar-background: 20 14.3% 4.1%;
-    --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 38 52% 65%;
-    --sidebar-primary-foreground: 240 5.9% 10%;
-    --sidebar-accent: 354 70% 80%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 38 52% 65%;
-    
-    --chart-1: 38 52% 65%;
-    --chart-2: 354 70% 80%;
-    --chart-3: 240 5% 64.9%;
-    --chart-4: 240 3.7% 15.9%;
-    --chart-5: 0 62.8% 30.6%;
   }
 }
 
