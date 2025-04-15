@@ -102,7 +102,7 @@
   }
 
   .elegant-button {
-    @apply bg-primary text-white font-medium px-8 py-4 rounded hover:bg-primary/90 transition-colors duration-200 uppercase tracking-wider text-lg;
+    @apply bg-primary text-white font-medium px-8 py-4 rounded-md hover:bg-primary/90 transition-all duration-300 uppercase tracking-wider text-lg shadow-md hover:shadow-lg hover:-translate-y-0.5;
   }
 
   .elegant-section {
@@ -117,14 +117,54 @@
     @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
   }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+  /* Enhanced animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
 
-.fade-in {
-  animation: fadeIn 0.8s ease-out forwards;
-}
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
 
+  @keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
 
+  .fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .slide-in {
+    animation: slideIn 0.8s ease-out forwards;
+  }
+
+  .scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+
+  /* Custom design elements */
+  .accent-border {
+    @apply border-l-4 border-primary pl-4;
+  }
+
+  .glass-effect {
+    @apply bg-white/80 backdrop-blur-sm;
+  }
+
+  .section-divider {
+    @apply w-24 h-1 bg-primary/70 rounded-full my-6;
+  }
+  
+  .floating-element {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
 }

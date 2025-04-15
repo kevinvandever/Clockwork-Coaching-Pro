@@ -6,25 +6,30 @@ const AboutSection: React.FC = () => {
   const { scrollToSection } = useNavigation();
 
   return (
-    <section id="about" className="elegant-section bg-white">
-      <div className="elegant-container">
+    <section id="about" className="elegant-section bg-white relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -translate-x-24 -translate-y-24"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/5 rounded-full translate-x-20 translate-y-1/3"></div>
+      
+      <div className="elegant-container relative z-10">
         <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div>
-            <p className="elegant-subheading text-neutral-500">HERE TO HELP</p>
-            <h2 className="text-3xl md:text-4xl font-display font-medium mb-6 text-neutral-900">
+          <div className="fade-in">
+            <p className="elegant-subheading text-primary">HERE TO HELP</p>
+            <h2 className="text-3xl md:text-4xl font-display font-medium mb-6 text-neutral-900 gradient-text">
               ✨ You've Worked Too Hard to Fall Behind Now.
             </h2>
-            <div className="w-20 h-0.5 bg-primary mb-8"></div>
+            <div className="section-divider"></div>
             
-            <p className="text-neutral-700 mb-5 leading-relaxed">
-              You've put in the time. You've built your business through hard work and real connections. You've seen new trends come and go—some were helpful, most weren't.
-            </p>
+            <div className="accent-border mb-6">
+              <p className="text-neutral-700 mb-5 leading-relaxed">
+                You've put in the time. You've built your business through hard work and real connections. You've seen new trends come and go—some were helpful, most weren't.
+              </p>
+            </div>
             
             <p className="text-neutral-700 mb-5 leading-relaxed">
               And you handled it all just fine. But this feels different. Things are changing faster than ever. And there's something new: AI. Real tools that other agents are using to help more clients, stay in touch, and run their businesses easier.
             </p>
             
-            <p className="text-neutral-700 mb-5 leading-relaxed">
+            <p className="text-neutral-700 mb-5 leading-relaxed font-medium">
               The top agents aren't just working harder—they're working smarter.
             </p>
             
