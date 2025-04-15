@@ -12,7 +12,7 @@ const ObstaclesSection: React.FC = () => {
     },
     {
       title: "Dependent on Referrals",
-      description: "Referrals are great, but it's impossible to know when they come"
+      description: "Referrals are great, but it's impossible to know when they will come"
     },
     {
       title: "No Time to Learn",
