@@ -6,7 +6,7 @@ import CookieConsent from '@/components/shared/CookieConsent';
 import { COMPANY_EMAIL, COMPANY_PHONE } from '@/lib/constants';
 import { Button } from '@/components/ui/button';
 
-const calendarUrl = 'https://calendar.app.google/A7t5PwbYfgL6cZbJ8';
+const calendarUrl = 'https://calendar.app.google/HAGdU8iJDvstoJmD6';
 
 const Contact: React.FC = () => {
   React.useEffect(() => {
