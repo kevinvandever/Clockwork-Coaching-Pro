@@ -11,7 +11,7 @@ const ObstaclesSection: React.FC = () => {
       description: "Want to stop riding the revenue roller coaster"
     },
     {
-      title: "Constant Revenue",
+      title: "Dependent on Referrals",
       description: "Referrals are great, but it's impossible to know when they come"
     },
     {
