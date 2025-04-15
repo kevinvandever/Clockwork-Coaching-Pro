@@ -52,15 +52,20 @@ const CallBookingSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="bg-white p-8 rounded-lg shadow-xl hover-card">
-          <iframe 
-            src="https://calendar.app.google/HAGdU8iJDvstoJmD6"
-            width="100%" 
-            height="700px" 
-            frameBorder="0"
-            title="Schedule a call"
-            className="rounded-md"
-          ></iframe>
+        <div className="bg-white p-8 rounded-lg shadow-xl hover-card text-center">
+          <h3 className="text-2xl font-display font-medium mb-6 text-neutral-900">Ready to take your business to the next level?</h3>
+          <p className="text-lg text-neutral-700 mb-8">
+            We're here to help you achieve your business goals with personalized coaching and actionable strategies.
+          </p>
+          <Link 
+            to="/contact" 
+            className="bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-md text-lg inline-block transition-all duration-300 shadow-md hover:shadow-lg"
+          >
+            Get in Touch With Us
+          </Link>
+          <p className="mt-6 text-neutral-600">
+            Our team will respond promptly to schedule your free discovery call.
+          </p>
         </div>
       </div>
     </section>
