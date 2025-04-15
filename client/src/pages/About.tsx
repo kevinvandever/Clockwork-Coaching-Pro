@@ -49,7 +49,7 @@ const About: React.FC = () => {
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-8 z-20 transform transition-transform duration-300">
                   <h3 className="font-display text-3xl font-medium text-white mb-2">
-                    Joe Quiros
+                    Joe "JoeQ" Quiros
                   </h3>
                   <p className="text-primary font-medium mb-4">Co-founder & Real Estate Expert</p>
                   <p className="text-white mb-6 leading-relaxed opacity-90">
@@ -82,7 +82,7 @@ const About: React.FC = () => {
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-8 z-20 transform transition-transform duration-300">
                   <h3 className="font-display text-3xl font-medium text-white mb-2">
-                    Kevin Vandever
+                    Kevin "KV" Vandever
                   </h3>
                   <p className="text-primary font-medium mb-4">Co-founder & Technology Strategist</p>
                   <p className="text-white mb-6 leading-relaxed opacity-90">
