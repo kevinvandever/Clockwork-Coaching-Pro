@@ -16,7 +16,7 @@ const ObstaclesSection: React.FC = () => {
     },
     {
       title: "No Time to Learn",
-      description: "Too busy working in your business to work on your business"
+      description: "Too busy working inside your business to learn outside of it"
     }
   ];
 
