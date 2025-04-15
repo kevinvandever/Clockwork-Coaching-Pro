@@ -8,7 +8,7 @@ const ObstaclesSection: React.FC = () => {
   const obstacles = [
     {
       title: "Inconsistent Income",
-      description: "Want to stop riding the revenue roller coaster"
+      description: "Stop the revenue roller coaster and build a dependable income"
     },
     {
       title: "Dependent on Referrals",
