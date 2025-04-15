@@ -12,6 +12,8 @@ import Booking from "@/pages/Booking";
 import JoinClub from './pages/JoinClub';
 import NotificationsContact from './pages/NotificationsContact';
 import { useEffect } from 'react';
+import AbTestResults from './pages/AbTestResults';
+import TestHeadings from './pages/TestHeadings';
 
 // Custom hook to scroll to top on route change
 function useScrollToTop() {
@@ -34,6 +36,8 @@ function Router() {
       <Route path="/booking" component={Booking} />
       <Route path="/join-club" component={JoinClub} />
       <Route path="/notifications" component={NotificationsContact} />
+      <Route path="/abtest-results" component={AbTestResults} />
+      <Route path="/test-headings/:variant?" component={TestHeadings} />
       <Route component={NotFound} />
     </Switch>
   );

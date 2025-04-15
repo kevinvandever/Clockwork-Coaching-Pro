@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { useAnalytics } from '@/hooks/useAnalytics';
 
 // A simple A/B test component that randomly selects a variant to display
 interface ABTestProps {
@@ -10,6 +11,7 @@ interface ABTestProps {
 
 export const ABTest: React.FC<ABTestProps> = ({ variants, id, onVariantSelected }) => {
   const [selectedVariant, setSelectedVariant] = useState<number | null>(null);
+  const { trackAbTest } = useAnalytics();
 
   useEffect(() => {
     // Check if we've already assigned a variant for this user
@@ -26,20 +28,15 @@ export const ABTest: React.FC<ABTestProps> = ({ variants, id, onVariantSelected 
       setSelectedVariant(variant);
       onVariantSelected?.(variant);
       
-      // Send analytics event
+      // Send impression to analytics
       try {
-        // This is a placeholder - replace with your actual analytics code
         console.log(`A/B Test '${id}': User shown variant ${variant}`);
-        // Example if using Google Analytics:
-        // window.gtag?.('event', 'ab_test_impression', {
-        //   'ab_test_id': id,
-        //   'ab_test_variant': variant
-        // });
+        trackAbTest.impression(id, variant.toString());
       } catch (e) {
         console.error('Error sending analytics event:', e);
       }
     }
-  }, [id, variants.length, onVariantSelected]);
+  }, [id, variants.length, onVariantSelected, trackAbTest]);
 
   if (selectedVariant === null) {
     return null; // Return nothing while determining variant
@@ -50,18 +47,14 @@ export const ABTest: React.FC<ABTestProps> = ({ variants, id, onVariantSelected 
 
 // Helper hook to track conversion events
 export const useAbTestConversion = (testId: string) => {
+  const { trackAbTest } = useAnalytics();
+  
   return (action: string) => {
     try {
       const variant = localStorage.getItem(`ab-test-${testId}`);
       if (variant) {
-        // This is a placeholder - replace with your actual analytics code
         console.log(`A/B Test '${testId}': User with variant ${variant} completed action: ${action}`);
-        // Example if using Google Analytics:
-        // window.gtag?.('event', 'ab_test_conversion', {
-        //   'ab_test_id': testId,
-        //   'ab_test_variant': variant,
-        //   'ab_test_action': action
-        // });
+        trackAbTest.conversion(testId, variant, action);
       }
     } catch (e) {
       console.error('Error tracking conversion:', e);

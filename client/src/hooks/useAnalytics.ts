@@ -1,39 +1,69 @@
+import { useCallback, useEffect } from 'react';
 
-import { useCallback } from 'react';
+// Track A/B test impression
+const trackAbTestImpression = async (testId: string, variantId: string) => {
+  try {
+    const response = await fetch('/api/abtest/impression', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ testId, variantId }),
+    });
 
-// This is a simple analytics hook that can be expanded with your preferred analytics service
+    if (!response.ok) {
+      console.error('Failed to track A/B test impression');
+    }
+  } catch (error) {
+    console.error('Error tracking A/B test impression:', error);
+  }
+};
+
+// Track A/B test conversion
+const trackAbTestConversion = async (testId: string, variantId: string, action: string) => {
+  try {
+    const response = await fetch('/api/abtest/conversion', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ testId, variantId, action }),
+    });
+
+    if (!response.ok) {
+      console.error('Failed to track A/B test conversion');
+    }
+  } catch (error) {
+    console.error('Error tracking A/B test conversion:', error);
+  }
+};
+
 export const useAnalytics = () => {
-  const trackEvent = useCallback((category: string, action: string, label?: string, value?: number) => {
-    // Log to console for development
-    console.log(`Analytics Event: ${category} - ${action} - ${label || 'N/A'} - ${value || 'N/A'}`);
-    
-    // Here you would integrate with your actual analytics service
-    // Examples:
-    
-    // Google Analytics (GA4)
-    // window.gtag?.('event', action, {
-    //   event_category: category,
-    //   event_label: label,
-    //   value: value
-    // });
-    
-    // Or send to your backend for logging
-    // fetch('/api/analytics/event', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify({ category, action, label, value })
-    // });
+  // Track page views
+  const trackPageView = (path: string) => {
+    console.log(`Page viewed: ${path}`);
+    // Implement actual analytics tracking here
+  };
+
+  // Track events
+  const trackEvent = (category: string, action: string, label?: string) => {
+    console.log(`Event tracked: ${category} - ${action} ${label ? `- ${label}` : ''}`);
+    // Implement actual analytics tracking here
+  };
+
+  // Track A/B test
+  const trackAbTest = {
+    impression: trackAbTestImpression,
+    conversion: trackAbTestConversion
+  };
+
+  useEffect(() => {
+    // Initialize analytics here if needed
   }, []);
 
-  const trackPageView = useCallback((path: string, title?: string) => {
-    console.log(`Page View: ${path} - ${title || 'N/A'}`);
-    
-    // Google Analytics (GA4)
-    // window.gtag?.('event', 'page_view', {
-    //   page_path: path,
-    //   page_title: title
-    // });
-  }, []);
-
-  return { trackEvent, trackPageView };
+  return {
+    trackPageView,
+    trackEvent,
+    trackAbTest
+  };
 };

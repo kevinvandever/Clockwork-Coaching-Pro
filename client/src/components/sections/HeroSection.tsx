@@ -38,7 +38,9 @@ const HeroSection: React.FC = () => {
               href="/contact"
               className="elegant-button mt-8 inline-block"
               onClick={() => {
+                // Create a function that will track the conversion
                 const trackConversion = useAbTestConversion('hero-heading');
+                // Track the click conversion
                 trackConversion('cta_click');
               }}
             >
