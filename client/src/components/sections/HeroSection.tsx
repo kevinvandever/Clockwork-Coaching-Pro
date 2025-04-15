@@ -44,7 +44,7 @@ const HeroSection: React.FC = () => {
             </div>
 
             <div className="text-center">
-              <h3 className="font-display text-xl font-medium text-primary mb-2">Consistent Referrals</h3>
+              <h3 className="font-display text-xl font-medium text-primary mb-2">Consistent Revenue</h3>
             </div>
           </div>
         </div>
