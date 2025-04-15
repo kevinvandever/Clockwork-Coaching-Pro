@@ -54,7 +54,6 @@ const ObstaclesSection: React.FC = () => {
           >
             BOOK YOUR FREE DISCOVERY CALL
           </Link>
-          <Link href="/process" className="elegant-button mt-4" onClick={useScrollToTop()}>Learn More About Our Process</Link>
         </div>
       </div>
     </section>

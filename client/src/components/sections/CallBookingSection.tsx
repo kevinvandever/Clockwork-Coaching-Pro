@@ -64,9 +64,6 @@ const CallBookingSection: React.FC = () => {
             Get in Touch With Us
           </Link>
         </div>
-        <p className="text-center text-neutral-600 mb-8">
-                Not ready to talk yet? <a href="/process" className="text-primary hover:text-primary/80">Learn more about our approach</a> or <a href="/services" className="text-primary hover:text-primary/80">browse our services</a>.
-              </p>
       </div>
     </section>
   );

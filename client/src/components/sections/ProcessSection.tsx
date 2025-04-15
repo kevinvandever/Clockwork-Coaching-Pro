@@ -52,10 +52,10 @@ const ProcessSection: React.FC = () => {
           <Button 
             variant="cta" 
             size="lg" 
-            onClick={() => window.location.href = '/process'}
+            onClick={() => window.location.href = '/contact'}
             className="text-lg px-8 py-4"
           >
-            LEARN MORE ABOUT OUR APPROACH
+            BOOK YOUR FREE DISCOVERY CALL
           </Button>
         </div>
       </div>
