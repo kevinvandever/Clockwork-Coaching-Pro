@@ -45,7 +45,7 @@ const Contact: React.FC = () => {
                   <div className="p-6 border border-primary/20 bg-white shadow-sm">
                     <div className="flex flex-col items-start gap-4">
                       <img 
-                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                        src="/images/Joe-Quiros-(cropped 300x300 square, saved for print)-JTG_0661.jpeg" 
                         alt="Joe Quiros" 
                         className="w-24 h-24 rounded-full object-cover"
                       />
