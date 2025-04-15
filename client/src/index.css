@@ -167,4 +167,40 @@
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0px); }
   }
+  
+  /* Mobile optimization utilities */
+  .touch-target {
+    @apply min-h-[44px] min-w-[44px]; /* Ensure touch targets are at least 44x44px */
+  }
+  
+  .mobile-container {
+    @apply px-4 sm:px-6 md:px-8;
+  }
+  
+  .mobile-text {
+    @apply text-base md:text-lg;
+  }
+  
+  .mobile-heading {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl;
+  }
+  
+  .mobile-subheading {
+    @apply text-lg sm:text-xl md:text-2xl;
+  }
+  
+  /* Optimize for tap targets on mobile */
+  @media (max-width: 768px) {
+    button, a {
+      @apply py-2.5 px-3;
+    }
+    
+    input, select, textarea {
+      @apply py-3;
+    }
+    
+    .elegant-button {
+      @apply text-base px-6 py-3;
+    }
+  }
 }

@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigation } from '@/hooks/useNavigation';
 import { Link, useLocation } from 'wouter';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const Navigation: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { scrollToSection } = useNavigation();
   const [location] = useLocation();
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,11 +39,11 @@ const Navigation: React.FC = () => {
   };
 
   return (
-    <header className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-sm py-2' : 'bg-transparent py-4'}`}>
+    <header className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-sm py-2' : 'bg-white md:bg-transparent py-3 md:py-4'}`}>
       <div className="elegant-container">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <Link href="/" className="font-display font-medium text-2xl">
+            <Link href="/" className="font-display font-medium text-xl md:text-2xl">
               <span className="text-primary">Clockwork</span> Coaching
             </Link>
           </div>
@@ -94,21 +96,26 @@ const Navigation: React.FC = () => {
           <div className="md:hidden">
             <button 
               onClick={toggleMobileMenu} 
-              className="text-neutral-700 focus:outline-none"
+              className="text-neutral-700 focus:outline-none focus:ring-2 focus:ring-primary/30 p-2 rounded-md transition-all duration-200 active:scale-95"
               aria-label="Toggle mobile menu"
+              aria-expanded={isMobileMenuOpen}
             >
-              <i className="fas fa-bars text-2xl"></i>
+              <i className={`fas ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'} text-2xl transition-all duration-200`}></i>
             </button>
           </div>
         </div>
 
         {/* Mobile Menu */}
-        <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'} py-4`}>
-          <ul className="space-y-4">
+        <div 
+          className={`md:hidden fixed left-0 right-0 top-[65px] bg-white shadow-lg transition-all duration-300 ease-in-out ${
+            isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
+          } overflow-hidden z-50`}
+        >
+          <ul className="py-4 px-6 space-y-0">
             <li>
               <Link 
                 href="/about"
-                className="block py-2 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
+                className="block py-3.5 border-b border-neutral-100 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 About
@@ -117,7 +124,7 @@ const Navigation: React.FC = () => {
             <li>
               <Link 
                 href="/services"
-                className="block py-2 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
+                className="block py-3.5 border-b border-neutral-100 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Services
@@ -126,7 +133,7 @@ const Navigation: React.FC = () => {
             <li>
               <Link 
                 href="/process"
-                className="block py-2 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
+                className="block py-3.5 border-b border-neutral-100 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Process
@@ -135,7 +142,7 @@ const Navigation: React.FC = () => {
             <li>
               <Link 
                 href="/contact"
-                className="block py-2 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
+                className="block py-3.5 border-b border-neutral-100 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact Us
@@ -144,7 +151,7 @@ const Navigation: React.FC = () => {
             <li>
               <Link 
                 href="/join-club"
-                className="block py-2 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
+                className="block py-3.5 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 The Club
