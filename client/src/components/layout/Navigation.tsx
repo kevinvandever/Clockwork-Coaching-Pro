@@ -54,6 +54,7 @@ const Navigation: React.FC = () => {
                 <Link 
                   href="/about"
                   className="text-neutral-700 hover:text-primary transition duration-300 uppercase text-sm tracking-wider font-medium"
+                  onClick={() => window.scrollTo(0, 0)}
                 >
                   About
                 </Link>
@@ -62,6 +63,7 @@ const Navigation: React.FC = () => {
                 <Link 
                   href="/services"
                   className="text-neutral-700 hover:text-primary transition duration-300 uppercase text-sm tracking-wider font-medium"
+                  onClick={() => window.scrollTo(0, 0)}
                 >
                   Services
                 </Link>
@@ -70,6 +72,7 @@ const Navigation: React.FC = () => {
                 <Link 
                   href="/process"
                   className="text-neutral-700 hover:text-primary transition duration-300 uppercase text-sm tracking-wider font-medium"
+                  onClick={() => window.scrollTo(0, 0)}
                 >
                   Process
                 </Link>
@@ -78,6 +81,7 @@ const Navigation: React.FC = () => {
                 <Link 
                   href="/contact"
                   className="text-neutral-700 hover:text-primary transition duration-300 uppercase text-sm tracking-wider font-medium"
+                  onClick={() => window.scrollTo(0, 0)}
                 >
                   Contact Us
                 </Link>
@@ -86,6 +90,7 @@ const Navigation: React.FC = () => {
                 <Link 
                   href="/join-club"
                   className="text-neutral-700 hover:text-primary transition duration-300 uppercase text-sm tracking-wider font-medium"
+                  onClick={() => window.scrollTo(0, 0)}
                 >
                   The Club
                 </Link>
@@ -116,7 +121,7 @@ const Navigation: React.FC = () => {
               <Link 
                 href="/about"
                 className="block py-3.5 border-b border-neutral-100 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {setIsMobileMenuOpen(false); window.scrollTo(0, 0);}}
               >
                 About
               </Link>
@@ -125,7 +130,7 @@ const Navigation: React.FC = () => {
               <Link 
                 href="/services"
                 className="block py-3.5 border-b border-neutral-100 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {setIsMobileMenuOpen(false); window.scrollTo(0, 0);}}
               >
                 Services
               </Link>
@@ -134,7 +139,7 @@ const Navigation: React.FC = () => {
               <Link 
                 href="/process"
                 className="block py-3.5 border-b border-neutral-100 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {setIsMobileMenuOpen(false); window.scrollTo(0, 0);}}
               >
                 Process
               </Link>
@@ -143,7 +148,7 @@ const Navigation: React.FC = () => {
               <Link 
                 href="/contact"
                 className="block py-3.5 border-b border-neutral-100 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {setIsMobileMenuOpen(false); window.scrollTo(0, 0);}}
               >
                 Contact Us
               </Link>
@@ -152,7 +157,7 @@ const Navigation: React.FC = () => {
               <Link 
                 href="/join-club"
                 className="block py-3.5 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {setIsMobileMenuOpen(false); window.scrollTo(0, 0);}}
               >
                 The Club
               </Link>
