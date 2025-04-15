@@ -12,7 +12,7 @@ const ObstaclesSection: React.FC = () => {
     },
     {
       title: "Dependent on Referrals",
-      description: "Move beyond waiting for random referrals. Build a systematic approach to new business"
+      description: "Referrals are great, but it's impossible to know when they will come"
     },
     {
       title: "No Time to Learn",
