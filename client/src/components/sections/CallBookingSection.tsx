@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'wouter';
+import { useNavigation } from '@/hooks/useNavigation';
+import { useScrollToTop } from '@/hooks/useScrollToTop';
 import { toast } from '@/hooks/use-toast'; // Assuming this hook exists
 
 const CallBookingSection: React.FC = () => {
   const [email, setEmail] = useState('');
+  const scrollToTop = useScrollToTop();
 
   const handleSubmit = async (type: 'notify') => {
     try {
@@ -55,6 +58,7 @@ const CallBookingSection: React.FC = () => {
         <div className="text-center">
           <Link 
             to="/contact" 
+            onClick={scrollToTop}
             className="bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-md text-lg inline-block transition-all duration-300 shadow-md hover:shadow-lg"
           >
             Get in Touch With Us

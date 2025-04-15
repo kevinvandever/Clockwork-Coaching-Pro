@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'wouter';
 import { useNavigation } from '@/hooks/useNavigation';
+import { useScrollToTop } from '@/hooks/useScrollToTop';
 
 const ObstaclesSection: React.FC = () => {
   const { scrollToSection } = useNavigation();
@@ -49,6 +50,7 @@ const ObstaclesSection: React.FC = () => {
           <Link 
             href="/contact"
             className="elegant-button"
+            onClick={useScrollToTop()}
           >
             BOOK YOUR FREE DISCOVERY CALL
           </Link>
