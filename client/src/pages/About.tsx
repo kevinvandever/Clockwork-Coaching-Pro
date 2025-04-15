@@ -47,6 +47,9 @@ const About: React.FC = () => {
                   alt="Joe Quiros - Co-founder"
                   className="w-full h-[500px] object-cover transition-transform duration-500 group-hover:scale-105"
                 />
+                <div className="absolute top-4 right-4 bg-primary/90 text-white px-3 py-1 rounded-lg z-20 font-medium">
+                  JoeQ
+                </div>
                 <div className="absolute bottom-0 left-0 right-0 p-8 z-20 transform transition-transform duration-300">
                   <h3 className="font-display text-3xl font-medium text-white mb-2">
                     Joe Quiros
@@ -56,6 +59,12 @@ const About: React.FC = () => {
                     With over 15 years in real estate and having built a successful brokerage, Joe specializes in helping agents scale their business and implement efficient systems.
                   </p>
                   <div className="flex gap-4">
+                    <a href="mailto:JoeQ@clockworkcoaching.club" className="text-white hover:text-primary transition-colors flex items-center gap-2">
+                      <i className="fas fa-envelope text-xl"></i>
+                      <span className="text-sm">JoeQ@clockworkcoaching.club</span>
+                    </a>
+                  </div>
+                  <div className="flex gap-4 mt-2">
                     <a href="#" className="text-white hover:text-primary transition-colors">
                       <i className="fab fa-linkedin text-xl"></i>
                     </a>
@@ -74,6 +83,9 @@ const About: React.FC = () => {
                   alt="Kevin Vandever - Co-founder"
                   className="w-full h-[500px] object-cover transition-transform duration-500 group-hover:scale-105"
                 />
+                <div className="absolute top-4 right-4 bg-primary/90 text-white px-3 py-1 rounded-lg z-20 font-medium">
+                  KV
+                </div>
                 <div className="absolute bottom-0 left-0 right-0 p-8 z-20 transform transition-transform duration-300">
                   <h3 className="font-display text-3xl font-medium text-white mb-2">
                     Kevin Vandever
@@ -83,6 +95,12 @@ const About: React.FC = () => {
                     A technology expert with a background in automation and AI, Kevin helps real estate professionals leverage technology to streamline operations and increase profitability.
                   </p>
                   <div className="flex gap-4">
+                    <a href="mailto:KV@clockworkcoaching.club" className="text-white hover:text-primary transition-colors flex items-center gap-2">
+                      <i className="fas fa-envelope text-xl"></i>
+                      <span className="text-sm">KV@clockworkcoaching.club</span>
+                    </a>
+                  </div>
+                  <div className="flex gap-4 mt-2">
                     <a href="#" className="text-white hover:text-primary transition-colors">
                       <i className="fab fa-linkedin text-xl"></i>
                     </a>
