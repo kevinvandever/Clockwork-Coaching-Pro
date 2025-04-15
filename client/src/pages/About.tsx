@@ -47,9 +47,6 @@ const About: React.FC = () => {
                   alt="Joe Quiros - Co-founder"
                   className="w-full h-[500px] object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute top-4 right-4 bg-primary/90 text-white px-3 py-1 rounded-lg z-20 font-medium">
-                  JoeQ
-                </div>
                 <div className="absolute bottom-0 left-0 right-0 p-8 z-20 transform transition-transform duration-300">
                   <h3 className="font-display text-3xl font-medium text-white mb-2">
                     Joe Quiros
@@ -83,9 +80,6 @@ const About: React.FC = () => {
                   alt="Kevin Vandever - Co-founder"
                   className="w-full h-[500px] object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute top-4 right-4 bg-primary/90 text-white px-3 py-1 rounded-lg z-20 font-medium">
-                  KV
-                </div>
                 <div className="absolute bottom-0 left-0 right-0 p-8 z-20 transform transition-transform duration-300">
                   <h3 className="font-display text-3xl font-medium text-white mb-2">
                     Kevin Vandever
