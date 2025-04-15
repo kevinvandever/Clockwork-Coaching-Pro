@@ -54,7 +54,7 @@ const CallBookingSection: React.FC = () => {
 
         <div className="bg-white p-8 rounded-lg shadow-xl hover-card">
           <iframe 
-            src="https://calendly.com/clockworkcoaching/discovery-call?embed_domain=clockworkcoaching.co&embed_type=Inline&hide_landing_page_details=1&hide_gdpr_banner=1&primary_color=dd9d53"
+            src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Mw4OGaPnLWCiSiF8h8K0xmqjC1RKXAIpvLbF0axbgU4FJwqB6F2y4qTMFMBH91p9xsP_Xb4YT?gv=true"
             width="100%" 
             height="700px" 
             frameBorder="0"
