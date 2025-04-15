@@ -4,8 +4,8 @@
 
 @layer base {
   :root {
-    --background: 40 33% 98%;
-    --foreground: 240 10% 15%;
+    --background: 40 30% 99%;
+    --foreground: 240 10% 12%;
 
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
@@ -13,7 +13,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
 
-    --primary: 38 52% 65%;
+    --primary: 38 75% 58%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 40 30% 96%;
@@ -22,7 +22,7 @@
     --muted: 40 20% 96%;
     --muted-foreground: 240 3.8% 46.1%;
 
-    --accent: 354 70% 80%;
+    --accent: 354 75% 75%;
     --accent-foreground: 240 5.9% 10%;
 
     --destructive: 0 84.2% 60.2%;
@@ -30,9 +30,9 @@
 
     --border: 38 30% 90%;
     --input: 38 30% 90%;
-    --ring: 38 52% 65%;
+    --ring: 38 75% 58%;
 
-    --radius: 0.3rem;
+    --radius: 0.4rem;
   }
 
   .dark {
@@ -102,11 +102,19 @@
   }
 
   .elegant-button {
-    @apply bg-primary text-white font-medium px-8 py-4 rounded-md hover:bg-primary/90 transition-all duration-300 uppercase tracking-wider text-lg shadow-md hover:shadow-lg hover:-translate-y-0.5;
+    @apply bg-primary text-white font-medium px-8 py-4 rounded-md hover:bg-primary/90 transition-all duration-300 uppercase tracking-wider text-lg shadow-md hover:shadow-lg hover:-translate-y-0.5 relative overflow-hidden;
+  }
+  
+  .elegant-button::after {
+    @apply content-[''] absolute top-0 left-[-100%] w-full h-full bg-white/20 skew-x-[-45deg] transition-all duration-500;
+  }
+  
+  .elegant-button:hover::after {
+    @apply left-[100%];
   }
 
   .elegant-section {
-    @apply py-20 md:py-28;
+    @apply py-20 md:py-28 relative;
   }
 
   .gradient-text {
@@ -114,7 +122,15 @@
   }
 
   .hover-card {
-    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1 relative;
+  }
+  
+  .hover-card::before {
+    @apply content-[''] absolute -inset-0.5 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg blur opacity-0 transition duration-300;
+  }
+  
+  .hover-card:hover::before {
+    @apply opacity-100;
   }
 
   /* Enhanced animations */
@@ -132,6 +148,17 @@
     from { opacity: 0; transform: scale(0.95); }
     to { opacity: 1; transform: scale(1); }
   }
+  
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  
+  @keyframes pulseGlow {
+    0% { box-shadow: 0 0 0 0 rgba(var(--primary), 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(var(--primary), 0); }
+    100% { box-shadow: 0 0 0 0 rgba(var(--primary), 0); }
+  }
 
   .fade-in {
     animation: fadeIn 0.8s ease-out forwards;
@@ -144,6 +171,31 @@
   .scale-in {
     animation: scaleIn 0.5s ease-out forwards;
   }
+  
+  .shimmer {
+    background: linear-gradient(90deg, 
+      rgba(255,255,255,0) 0%, 
+      rgba(255,255,255,0.2) 50%, 
+      rgba(255,255,255,0) 100%);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+  
+  .pulse-glow {
+    animation: pulseGlow 2s infinite;
+  }
+  
+  .stagger-fade-in > * {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+  
+  .stagger-fade-in > *:nth-child(1) { animation-delay: 0.1s; }
+  .stagger-fade-in > *:nth-child(2) { animation-delay: 0.2s; }
+  .stagger-fade-in > *:nth-child(3) { animation-delay: 0.3s; }
+  .stagger-fade-in > *:nth-child(4) { animation-delay: 0.4s; }
+  .stagger-fade-in > *:nth-child(5) { animation-delay: 0.5s; }
+  .stagger-fade-in > *:nth-child(6) { animation-delay: 0.6s; }
 
   /* Custom design elements */
   .accent-border {
