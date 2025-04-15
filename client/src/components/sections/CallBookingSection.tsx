@@ -47,11 +47,11 @@ const CallBookingSection: React.FC = () => {
         <div className="text-center mb-12 scale-in">
           <span className="px-4 py-1 bg-primary/20 text-primary font-medium rounded-full text-sm inline-block mb-3">YOUR TRANSFORMATION STARTS HERE</span>
           <h2 className="text-3xl md:text-4xl font-display font-medium mb-4 gradient-text">
-            Ready to Transform Your Real Estate Business?
+            Ready to Transform Your Business?
           </h2>
           <div className="section-divider mx-auto"></div>
           <p className="text-lg text-neutral-700 max-w-2xl mx-auto mt-6">
-            Book a free 30-minute strategy call with one of our co-founders. We'll analyze your current situation and provide actionable steps to improve your systems and increase your revenue.
+            Book a free 20-minute strategy call with one of our co-founders. We'll analyze your current situation and provide actionable steps to improve your systems and increase your revenue.
           </p>
         </div>
 
