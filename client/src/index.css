@@ -97,6 +97,16 @@
     @apply text-4xl md:text-5xl lg:text-6xl font-display font-medium leading-[1.1] mb-6;
   }
 
+
+/* About page styles */
+.elegant-section .group:hover .transform {
+  transform: translateY(-8px);
+}
+
+.elegant-heading {
+  font-family: 'Playfair Display', serif;
+}
+
   .elegant-subheading {
     @apply text-base md:text-lg font-light tracking-wider uppercase mb-4 text-neutral-800;
   }
