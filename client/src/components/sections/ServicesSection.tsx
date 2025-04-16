@@ -26,7 +26,7 @@ const ServicesSection: React.FC = () => {
       title: "🔬 The Clockwork Lab",
       type: "COMING SOON",
       description: "A testing ground and resource library for agents who want to stay curious, experiment smarter, and learn from what's working now. Tools, templates, trainings, and community—all in one place.",
-      image: "https://via.placeholder.com/800x600", // Placeholder image
+      image: "https://images.unsplash.com/photo-1602647396547-41855036682e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvbGxhYm9yYXRvcnklMjB3b3JrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60", // Replaced placeholder
       ctaText: "GET NOTIFIED",
       ctaAction: '/notifications'
     }
