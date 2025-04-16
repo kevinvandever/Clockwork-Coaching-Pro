@@ -39,14 +39,16 @@ const Services: React.FC = () => {
                   We understand that every real estate business is unique. That's why we offer customized coaching packages tailored to your specific needs and goals.
                 </p>
                 <p className="text-neutral-700 mb-6 leading-relaxed">
-                  Our team will work with you to create a personalized coaching plan that addresses your specific challenges and helps you achieve your desired outcomes.
+                  Together we'll develop an actionable roadmap that leverages your strengths and creates sustainable growth opportunities for your business.
                 </p>
-                <button 
-                  onClick={() => scrollToSection('book-call')} 
-                  className="elegant-button"
-                >
-                  Book Your Free Discovery Call
-                </button>
+                <div className="mt-auto">
+                  <button 
+                    onClick={() => scrollToSection('book-call')} 
+                    className="elegant-button"
+                  >
+                    Book Your Free Discovery Call
+                  </button>
+                </div>
               </div>
               
               <div className="p-8 border border-primary/20 bg-primary/5">
@@ -57,14 +59,16 @@ const Services: React.FC = () => {
                   Many coaching programs fall short when it comes to implementation. At Clockwork Coaching, we provide hands-on support to help you implement the strategies and systems we recommend.
                 </p>
                 <p className="text-neutral-700 mb-6 leading-relaxed">
-                  Our team will work alongside you to ensure you're able to successfully implement the changes needed to transform your business.
+                  From systems setup to team training, we're there every step of the way to ensure your new strategies take root and deliver lasting results.
                 </p>
-                <button 
-                  onClick={() => scrollToSection('book-call')} 
-                  className="elegant-button"
-                >
-                  LEARN MORE
-                </button>
+                <div className="mt-auto">
+                  <button 
+                    onClick={() => scrollToSection('book-call')} 
+                    className="elegant-button"
+                  >
+                    LEARN MORE
+                  </button>
+                </div>
               </div>
             </div>
           </div>
