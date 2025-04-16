@@ -86,7 +86,7 @@ const About: React.FC = () => {
                   </h3>
                   <p className="text-primary font-medium mb-4">Co-founder & Technology Strategist</p>
                   <p className="text-white mb-6 leading-relaxed opacity-90">
-                    A technology expert with a background in automation and AI, Kevin helps real estate professionals leverage technology to streamline operations and increase profitability.
+                    A seasoned technology leader with extensive experience mentoring teams and implementing AI solutions, Kevin has led multiple successful technology transformations. With deep expertise in Generative AI and automation, he specializes in helping real estate professionals leverage cutting-edge technology to streamline operations and achieve exponential growth.
                   </p>
                   <div className="flex gap-4">
                     <a href="mailto:KV@clockworkcoaching.club" className="text-white hover:text-primary transition-colors flex items-center gap-2">
