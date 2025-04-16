@@ -43,7 +43,7 @@ const About: React.FC = () => {
               <div className="relative group overflow-hidden rounded-xl shadow-lg">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent z-10"></div>
                 <img 
-                  src="/images/Joe-Quiros-(cropped 300x300 square, saved for print)-JTG_0661.jpeg"
+                  src="/images/32677DBA-A5C7-49EE-9E59-47CD3EDFFE0B_1_201_a.jpeg"
                   alt="Joe Quiros - Co-founder"
                   className="w-full h-[500px] object-cover transition-transform duration-500 group-hover:scale-105"
                 />
