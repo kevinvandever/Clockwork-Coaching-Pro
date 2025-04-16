@@ -26,7 +26,7 @@ const ServicesSection: React.FC = () => {
       title: "🔬 The Clockwork Lab",
       type: "COMING SOON",
       description: "A testing ground and resource library for agents who want to stay curious, experiment smarter, and learn from what's working now. Tools, templates, trainings, and community—all in one place.",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      image: "https://via.placeholder.com/800x600", // Placeholder image
       ctaText: "GET NOTIFIED",
       ctaAction: '/notifications'
     }
@@ -53,7 +53,7 @@ const ServicesSection: React.FC = () => {
                 <img 
                   src={service.image} 
                   alt={service.title} 
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                  className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" 
                 />
               </div>
 
