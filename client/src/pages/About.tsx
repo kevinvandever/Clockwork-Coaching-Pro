@@ -53,7 +53,7 @@ const About: React.FC = () => {
                   </h3>
                   <p className="text-primary font-medium mb-4">Co-founder & Real Estate Expert</p>
                   <p className="text-white mb-6 leading-relaxed opacity-90">
-                    With over 15 years in real estate and having built a successful brokerage, Joe specializes in helping agents scale their business and implement efficient systems.
+                    With over 15 years in real estate and technology, a former Real Trends top agent, an original 100 Compass agent, and a multi-year $1,000,000+ GCI Team Lead, Joe specializes in helping realtors implement predictable revenue to their business.
                   </p>
                   <div className="flex gap-4">
                     <a href="mailto:JoeQ@clockworkcoaching.club" className="text-white hover:text-primary transition-colors flex items-center gap-2">
