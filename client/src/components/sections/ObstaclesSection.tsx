@@ -22,7 +22,7 @@ const ObstaclesSection: React.FC = () => {
   ];
 
   return (
-    <section id="obstacles" className="py-16 px-4 md:px-8 bg-white">
+    <section id="obstacles" className="py-8 px-4 md:px-8 bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
