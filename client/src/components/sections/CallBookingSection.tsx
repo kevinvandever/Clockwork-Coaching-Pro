@@ -51,7 +51,7 @@ const CallBookingSection: React.FC = () => {
           </h2>
           <div className="section-divider mx-auto"></div>
           <p className="text-lg text-neutral-700 max-w-2xl mx-auto mt-6">
-            Book a free 20-minute strategy call with one of our co-founders. We'll analyze your current situation and provide actionable steps to improve your systems and increase your revenue.
+            Book a free 20-minute strategy call with one of our co-founders. We'll analyze your current business and provide actionable steps to improve your systems and increase your revenue.
           </p>
         </div>
 
