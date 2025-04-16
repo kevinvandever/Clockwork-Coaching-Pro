@@ -10,7 +10,7 @@ const ServicesSection: React.FC = () => {
       title: "🛠️ Clockwork Bootcamp",
       type: "5-WEEK PROGRAM",
       description: "A foundational program designed to get Realtors up to speed fast. We'll help you eliminate inefficiencies, streamline your systems, and find the 2–3 AI tools that can make the biggest impact in your business—without the overwhelm.",
-      image: "https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       ctaText: "LEARN MORE",
       ctaAction: 'book-call'
     },
@@ -18,7 +18,7 @@ const ServicesSection: React.FC = () => {
       title: "🔄 Clockwork Pro",
       type: "1:1 COACHING",
       description: "Ongoing monthly 1:1 coaching for agents who want to stay ahead. We'll keep you in the loop on the latest tools, trends, and market shifts—while continuing to refine and optimize the systems we built together.",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       ctaText: "JOIN NOW",
       ctaAction: 'book-call'
     },
@@ -49,11 +49,11 @@ const ServicesSection: React.FC = () => {
               key={index} 
               className="group relative flex flex-col"
             >
-              <div className="aspect-[4/3] w-full mb-6 overflow-hidden">
+              <div className="aspect-[4/3] w-full mb-6 overflow-hidden rounded-lg shadow-lg">
                 <img 
                   src={service.image} 
                   alt={service.title} 
-                  className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
                 />
               </div>
 
