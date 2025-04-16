@@ -38,7 +38,7 @@ export const SERVICES = [
     title: "The Realtor's Advantage",
     type: "ONE-ON-ONE COACHING PROGRAM",
     description: "This 12-month intensive program provides personalized guidance to transform your real estate business. We'll develop a customized growth strategy, implement effective systems, and coach you through the challenges of scaling your business to new heights.",
-    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "https://placeholder.com/image1.jpg", // Placeholder - Replace with diverse image URL
     ctaText: "Schedule Consultation",
     ctaAction: 'book-call'
   },
@@ -46,7 +46,7 @@ export const SERVICES = [
     title: "Real Estate Accelerator",
     type: "GROUP COACHING PROGRAM",
     description: "Join a select group of ambitious real estate professionals for this 6-month program. You'll benefit from collective wisdom, accountability, and our proven growth framework, with two private coaching sessions included to address your specific challenges.",
-    image: "https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "https://placeholder.com/image2.jpg", // Placeholder - Replace with diverse image URL
     ctaText: "Join Waitlist",
     ctaAction: ''
   },
@@ -54,7 +54,7 @@ export const SERVICES = [
     title: "Clockwork Agent Mastermind",
     type: "EXCLUSIVE MASTERMIND GROUP",
     description: "This exclusive mastermind brings together top-performing real estate professionals to collaborate, share insights, and solve challenges together. Limited to 10 participants, this high-level group provides the support and accountability needed to achieve breakthrough results.",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "https://placeholder.com/image3.jpg", // Placeholder - Replace with diverse image URL
     ctaText: "Apply Now",
     ctaAction: 'book-call'
   }
