@@ -52,7 +52,7 @@ const JoinClub: React.FC = () => {
           </p>
 
           <div className="bg-primary/5 p-8 rounded-lg mb-8">
-            <h2 className="text-2xl font-display font-medium mb-4">
+            <h2 className="text-2xl font-display font-medium mb-6">
               Stay Updated
             </h2>
             <div className="max-w-md mx-auto">
