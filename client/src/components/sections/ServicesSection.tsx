@@ -65,7 +65,7 @@ const ServicesSection: React.FC = () => {
                 {service.title}
               </h3>
 
-              <p className="text-neutral-600 mb-6 text-sm leading-relaxed flex-grow">
+              <p className="text-neutral-600 mb-8 text-sm leading-relaxed flex-grow">
                 {service.description}
               </p>
 
