@@ -19,7 +19,8 @@ const AboutSection: React.FC = () => {
             <div className="accent-border mb-4 bg-gradient-to-r from-primary/5 to-transparent px-4 py-3 rounded-r-lg">
               <p className="text-neutral-700 leading-relaxed">
                 You've put in the time. You've built your business through hard work and real connections. You've seen new trends come and go—some were helpful, most weren't. Now, you're ready to take your business to the next level by implementing the right systems and strategies.
-              </p>div>
+              </p>
+            </div>
 
             <div className="accent-border mb-4 bg-gradient-to-r from-primary/5 to-transparent px-4 py-3 rounded-r-lg">
               <p className="text-neutral-700 leading-relaxed">
