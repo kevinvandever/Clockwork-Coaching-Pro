@@ -20,11 +20,11 @@ const Process: React.FC = () => {
       <main>
         <div className="elegant-section bg-gradient-to-b from-white to-neutral-50">
           <div className="elegant-container">
-            <div className="max-w-4xl mx-auto text-center mb-16">
-              <h2 className="text-2xl md:text-3xl font-display font-medium mb-6">
+            <div className="max-w-4xl mx-auto text-center mb-12">
+              <h2 className="text-xl md:text-2xl font-display font-medium mb-4">
                 ✨ You've Worked Too Hard to Fall Behind Now
               </h2>
-              <div className="w-20 h-0.5 bg-primary/80 mx-auto mb-8"></div>
+              <div className="w-20 h-0.5 bg-primary/80 mx-auto mb-6"></div>
               <p className="text-neutral-600 text-lg leading-relaxed">
                 Our proven methodology transforms your real estate business through systematic optimization and strategic growth.
               </p>
