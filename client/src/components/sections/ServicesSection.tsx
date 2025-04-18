@@ -33,7 +33,7 @@ const ServicesSection: React.FC = () => {
   ];
 
   return (
-    <section id="services" className="py-8 md:py-12 pb-0 md:pb-0 bg-white">
+    <section id="services" className="py-4 md:py-6 pb-0 md:pb-0 bg-white">
       <div className="elegant-container">
         <div className="text-center mb-8">
           <p className="elegant-subheading text-neutral-500">WORK WITH US</p>
