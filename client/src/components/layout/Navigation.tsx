@@ -49,11 +49,20 @@ const Navigation: React.FC = () => {
           </div>
 
           <nav className="hidden md:block">
-            <ul className="flex justify-between w-[600px]">
+            <ul className="flex justify-between w-[700px]">
+              <li>
+                <Link 
+                  href="/"
+                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${location === '/' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  Home
+                </Link>
+              </li>
               <li>
                 <Link 
                   href="/about"
-                  className="text-neutral-700 hover:text-primary transition duration-300 uppercase text-sm tracking-wider font-medium"
+                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${location === '/about' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
                   onClick={() => window.scrollTo(0, 0)}
                 >
                   About
@@ -62,7 +71,7 @@ const Navigation: React.FC = () => {
               <li>
                 <Link 
                   href="/services"
-                  className="text-neutral-700 hover:text-primary transition duration-300 uppercase text-sm tracking-wider font-medium"
+                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${location === '/services' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
                   onClick={() => window.scrollTo(0, 0)}
                 >
                   Services
@@ -71,7 +80,7 @@ const Navigation: React.FC = () => {
               <li>
                 <Link 
                   href="/process"
-                  className="text-neutral-700 hover:text-primary transition duration-300 uppercase text-sm tracking-wider font-medium"
+                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${location === '/process' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
                   onClick={() => window.scrollTo(0, 0)}
                 >
                   Process
@@ -80,7 +89,7 @@ const Navigation: React.FC = () => {
               <li>
                 <Link 
                   href="/contact"
-                  className="text-neutral-700 hover:text-primary transition duration-300 uppercase text-sm tracking-wider font-medium"
+                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${location === '/contact' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
                   onClick={() => window.scrollTo(0, 0)}
                 >
                   Contact Us
@@ -89,7 +98,7 @@ const Navigation: React.FC = () => {
               <li>
                 <Link 
                   href="/join-club"
-                  className="text-neutral-700 hover:text-primary transition duration-300 uppercase text-sm tracking-wider font-medium"
+                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${location === '/join-club' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
                   onClick={() => window.scrollTo(0, 0)}
                 >
                   The Club
@@ -119,8 +128,17 @@ const Navigation: React.FC = () => {
           <ul className="py-4 px-6 space-y-0">
             <li>
               <Link 
+                href="/"
+                className={`block py-3.5 border-b border-neutral-100 ${location === '/' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium`}
+                onClick={() => {setIsMobileMenuOpen(false); window.scrollTo(0, 0);}}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link 
                 href="/about"
-                className="block py-3.5 border-b border-neutral-100 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
+                className={`block py-3.5 border-b border-neutral-100 ${location === '/about' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium`}
                 onClick={() => {setIsMobileMenuOpen(false); window.scrollTo(0, 0);}}
               >
                 About
@@ -129,7 +147,7 @@ const Navigation: React.FC = () => {
             <li>
               <Link 
                 href="/services"
-                className="block py-3.5 border-b border-neutral-100 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
+                className={`block py-3.5 border-b border-neutral-100 ${location === '/services' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium`}
                 onClick={() => {setIsMobileMenuOpen(false); window.scrollTo(0, 0);}}
               >
                 Services
@@ -138,7 +156,7 @@ const Navigation: React.FC = () => {
             <li>
               <Link 
                 href="/process"
-                className="block py-3.5 border-b border-neutral-100 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
+                className={`block py-3.5 border-b border-neutral-100 ${location === '/process' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium`}
                 onClick={() => {setIsMobileMenuOpen(false); window.scrollTo(0, 0);}}
               >
                 Process
@@ -147,7 +165,7 @@ const Navigation: React.FC = () => {
             <li>
               <Link 
                 href="/contact"
-                className="block py-3.5 border-b border-neutral-100 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
+                className={`block py-3.5 border-b border-neutral-100 ${location === '/contact' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium`}
                 onClick={() => {setIsMobileMenuOpen(false); window.scrollTo(0, 0);}}
               >
                 Contact Us
@@ -156,7 +174,7 @@ const Navigation: React.FC = () => {
             <li>
               <Link 
                 href="/join-club"
-                className="block py-3.5 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium"
+                className={`block py-3.5 ${location === '/join-club' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium`}
                 onClick={() => {setIsMobileMenuOpen(false); window.scrollTo(0, 0);}}
               >
                 The Club
