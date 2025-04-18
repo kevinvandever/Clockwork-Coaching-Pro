@@ -20,7 +20,7 @@ const Process: React.FC = () => {
       <main>
         <div className="elegant-section bg-gradient-to-b from-white to-neutral-50">
           <div className="elegant-container">
-            <div className="max-w-3xl mx-auto text-center mb-16">
+            <div className="max-w-4xl mx-auto text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-display font-medium mb-6">
                 You've Worked Too Hard to Fall Behind Now
               </h2>
