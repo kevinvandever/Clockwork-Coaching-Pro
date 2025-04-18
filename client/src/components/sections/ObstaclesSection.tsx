@@ -33,13 +33,13 @@ const ObstaclesSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {obstacles.map((obstacle, index) => (
-            <div key={index} className="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <h3 className="font-display text-2xl font-bold text-primary mb-4">
+            <div key={index} className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <h3 className="font-display text-2xl font-bold text-primary mb-3">
                 {obstacle.title}
               </h3>
-              <p className="text-neutral-700 mb-4">
+              <p className="text-neutral-700 mb-3 line-clamp-2">
                 {obstacle.description}
               </p>
             </div>
