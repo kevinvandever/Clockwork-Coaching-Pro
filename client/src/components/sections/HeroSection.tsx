@@ -34,6 +34,14 @@ const HeroSection: React.FC = () => {
               FUTURE-PROOF YOUR BUSINESS WITH DONE-FOR-YOU AI SYSTEMS AND PERSONALIZED 1:1 COACHING
             </p>
 
+            <p className="text-lg text-neutral-700 mb-8 leading-relaxed max-w-2xl">
+              You built your real estate business the right way. Through genuine relationships. By truly caring about your clients. And delivering results time after time.
+            </p>
+
+            <p className="text-lg text-neutral-700 mb-8 leading-relaxed max-w-2xl">
+              And you handled it all just fine. But this feels different. Things are changing faster than ever. And there's something new: AI. Real tools that other agents are using to help more clients, stay in touch, and run their businesses easier.
+            </p>
+
             <Link 
               href="/contact"
               className="elegant-button mt-8 inline-block"
