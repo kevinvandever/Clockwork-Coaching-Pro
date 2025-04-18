@@ -50,22 +50,19 @@ const HeroSection: React.FC = () => {
         </div>
       </section>
 
-      <section className="bg-primary/10 py-12">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="text-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
-              <div className="h-1 w-16 bg-primary mx-auto mb-4"></div>
-              <h3 className="font-display text-xl font-medium text-neutral-900">Curated Tools</h3>
+      <section className="bg-[hsl(38,75%,58%)] py-6">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <h3 className="font-display text-xl font-medium text-white uppercase tracking-wider">Booming Business</h3>
             </div>
 
-            <div className="text-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
-              <div className="h-1 w-16 bg-primary mx-auto mb-4"></div>
-              <h3 className="font-display text-xl font-medium text-neutral-900">Customized Coaching</h3>
+            <div className="text-center">
+              <h3 className="font-display text-xl font-medium text-white uppercase tracking-wider">Aligned Staff</h3>
             </div>
 
-            <div className="text-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
-              <div className="h-1 w-16 bg-primary mx-auto mb-4"></div>
-              <h3 className="font-display text-xl font-medium text-neutral-900">Consistent Revenue</h3>
+            <div className="text-center">
+              <h3 className="font-display text-xl font-medium text-white uppercase tracking-wider">Joyful Spirit</h3>
             </div>
           </div>
         </div>
