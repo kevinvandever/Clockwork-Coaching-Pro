@@ -17,7 +17,7 @@ const Services: React.FC = () => {
     <>
       <Navigation />
       <main>
-        <div className="pt-24 bg-primary/5">
+        <div className="pt-16 bg-primary/5">
           <div className="elegant-container py-12 text-center">
             <h1 className="elegant-heading text-neutral-900 mb-6">Our Services</h1>
             <div className="w-20 h-0.5 bg-primary mx-auto mb-8"></div>
