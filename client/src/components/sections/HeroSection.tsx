@@ -54,15 +54,15 @@ const HeroSection: React.FC = () => {
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <h3 className="font-display text-xl font-medium text-white uppercase tracking-wider">Booming Business</h3>
+              <h3 className="font-display text-xl font-medium text-white uppercase tracking-wider">Curated Tools</h3>
             </div>
 
             <div className="text-center">
-              <h3 className="font-display text-xl font-medium text-white uppercase tracking-wider">Aligned Staff</h3>
+              <h3 className="font-display text-xl font-medium text-white uppercase tracking-wider">Customized Coaching</h3>
             </div>
 
             <div className="text-center">
-              <h3 className="font-display text-xl font-medium text-white uppercase tracking-wider">Joyful Spirit</h3>
+              <h3 className="font-display text-xl font-medium text-white uppercase tracking-wider">Consistent Revenue</h3>
             </div>
           </div>
         </div>
