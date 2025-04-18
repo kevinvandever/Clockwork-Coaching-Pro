@@ -3,7 +3,7 @@ import { Link } from 'wouter';
 
 const AboutSection: React.FC = () => {
   return (
-    <section id="about" className="pt-2 pb-0 md:pt-2 md:pb-0 bg-white relative overflow-hidden">
+    <section id="about" className="pt-2 pb-0 md:pt-2 md:pb-0 bg-white relative overflow-hidden" style={{marginBottom: '-4rem'}}>
       <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -translate-x-24 -translate-y-24 blur-xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/5 rounded-full translate-x-20 translate-y-1/3 blur-xl"></div>
 
