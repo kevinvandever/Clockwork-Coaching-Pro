@@ -17,18 +17,6 @@ const Process: React.FC = () => {
     <>
       <Navigation />
       <main>
-        <div className="pt-24 bg-primary/5">
-          <div className="elegant-container py-12 text-center">
-            <h1 className="elegant-heading text-neutral-900 mb-6">Our Coaching Process</h1>
-            <div className="w-20 h-0.5 bg-primary mx-auto mb-8"></div>
-            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-              Learn about our proven methodology for transforming real estate businesses.
-            </p>
-          </div>
-        </div>
-
-        <ProcessSection />
-
         <div className="elegant-section bg-white">
           <div className="elegant-container">
             <p className="elegant-subheading text-neutral-500 text-center">OUR METHODOLOGY</p>
@@ -95,7 +83,6 @@ const Process: React.FC = () => {
             </div>
           </div>
         </div>
-
       </main>
       <Footer />
       <CookieConsent />
