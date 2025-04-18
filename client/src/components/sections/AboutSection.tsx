@@ -16,13 +16,13 @@ const AboutSection: React.FC = () => {
             </h2>
             <div className="section-divider"></div>
 
-            <div className="accent-border mb-6 bg-gradient-to-r from-primary/5 to-transparent px-6 py-4 rounded-r-lg">
-              <p className="text-neutral-700 mb-5 leading-relaxed">
+            <div className="accent-border mb-4 bg-gradient-to-r from-primary/5 to-transparent px-4 py-3 rounded-r-lg">
+              <p className="text-neutral-700 leading-relaxed">
                 You've put in the time. You've built your business through hard work and real connections. You've seen new trends come and go—some were helpful, most weren't.
               </p>
             </div>
 
-            <div className="accent-border mb-6 bg-gradient-to-r from-primary/5 to-transparent px-6 py-4 rounded-r-lg">
+            <div className="accent-border mb-4 bg-gradient-to-r from-primary/5 to-transparent px-4 py-3 rounded-r-lg">
               <p className="text-neutral-700 leading-relaxed">
                 And you handled it all just fine. But this feels different. Things are changing faster than ever. And there's something new: AI. Real tools that other agents are using to help more clients, stay in touch, and run their businesses easier.
               </p>
