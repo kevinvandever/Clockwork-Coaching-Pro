@@ -9,7 +9,7 @@ const ProcessSection: React.FC = () => {
     {
       number: 1,
       title: "Book Your Discovery Call",
-      description: "Click the button below to book your call with a Co-founder."
+      description: "Click the button below to book your call with a Co-founder"
     },
     {
       number: 2,
