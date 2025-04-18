@@ -76,7 +76,7 @@ const Process: React.FC = () => {
                     onClick={() => scrollToSection('book-call')} 
                     className="elegant-button mt-4"
                   >
-                    Book Your Free Discovery Call
+                    Book your discovery call to start your business transformation journey.
                   </button>
                 </div>
               </div>
