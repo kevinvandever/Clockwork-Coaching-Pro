@@ -29,6 +29,22 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
+
+.elegant-button {
+  @apply bg-gradient-to-r from-primary to-accent text-white font-medium px-8 py-4 rounded-xl 
+    hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 
+    relative overflow-hidden uppercase tracking-wider text-base;
+}
+
+.elegant-button::after {
+  @apply content-[''] absolute inset-0 bg-white/20 transform -translate-x-full 
+    skew-x-12 transition-transform duration-700 ease-out;
+}
+
+.elegant-button:hover::after {
+  @apply translate-x-full;
+}
+
     --border: 38 30% 90%;
     --input: 38 30% 90%;
     --ring: 38 75% 58%;
