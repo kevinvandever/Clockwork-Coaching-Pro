@@ -50,19 +50,22 @@ const HeroSection: React.FC = () => {
         </div>
       </section>
 
-      <section className="bg-secondary/50 py-16">
-        <div className="elegant-container">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <section className="bg-white py-16">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <h3 className="font-display text-xl font-medium text-primary mb-2">Curated Tools</h3>
+              <div className="h-1 w-16 bg-primary mx-auto mb-4"></div>
+              <h3 className="font-display text-xl font-medium text-neutral-900">Curated Tools</h3>
             </div>
 
             <div className="text-center">
-              <h3 className="font-display text-xl font-medium text-primary mb-2">Customized Coaching</h3>
+              <div className="h-1 w-16 bg-primary mx-auto mb-4"></div>
+              <h3 className="font-display text-xl font-medium text-neutral-900">Customized Coaching</h3>
             </div>
 
             <div className="text-center">
-              <h3 className="font-display text-xl font-medium text-primary mb-2">Consistent Revenue</h3>
+              <div className="h-1 w-16 bg-primary mx-auto mb-4"></div>
+              <h3 className="font-display text-xl font-medium text-neutral-900">Consistent Revenue</h3>
             </div>
           </div>
         </div>
