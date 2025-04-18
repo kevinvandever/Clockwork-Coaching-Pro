@@ -24,7 +24,7 @@ const ProcessSection: React.FC = () => {
   ];
 
   return (
-    <section id="process" className="py-6 px-4 md:px-8 bg-white">
+    <section id="process" className="py-8 md:py-12 bg-primary/5"> {/* Changed py-6 to py-8 and md:py-16 to md:py-12 */}
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">

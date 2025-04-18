@@ -40,7 +40,7 @@ const CallBookingSection: React.FC = () => {
   };
 
   return (
-    <section id="book-call" className="py-10 px-4 md:px-8 bg-gradient-to-br from-primary/10 to-accent/5 relative">
+    <section id="book-call" className="py-8 md:py-12 px-4 md:px-8 bg-gradient-to-br from-primary/10 to-accent/5 relative">
       <div className="absolute top-0 left-0 w-full h-20 bg-white" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 0)' }}></div>
 
       <div className="container mx-auto max-w-5xl relative z-10">
