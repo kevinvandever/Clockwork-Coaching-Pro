@@ -20,8 +20,8 @@ const Process: React.FC = () => {
       <main>
         <div className="elegant-section bg-gradient-to-b from-white to-neutral-50">
           <div className="elegant-container">
-            <div className="max-w-4xl mx-auto text-center mb-12">
-              <h2 className="text-lg md:text-xl font-display font-medium mb-4">
+            <div className="max-w-3xl mx-auto text-center mb-12">
+              <h2 className="text-base md:text-lg font-display font-medium mb-4 whitespace-nowrap px-4">
                 ✨ You've Worked Too Hard to Fall Behind Now
               </h2>
               <div className="w-20 h-0.5 bg-primary/80 mx-auto mb-6"></div>
