@@ -30,7 +30,7 @@ const AboutSection: React.FC = () => {
           </div>
 
           <div className="relative fade-in">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl transform rotate-3 scale-105 shadow-xl"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl transform rotate-3 scale-105 shadow-xl elegant-vertical-bar"></div>
             <Link href="/process" onClick={() => window.scrollTo(0, 0)}>
               <div className="relative bg-white p-8 rounded-xl shadow-lg hover-card cursor-pointer transition-transform hover:scale-[1.02]">
                 <h3 className="text-2xl font-display font-medium mb-4 text-neutral-900">We understand your challenges</h3>
