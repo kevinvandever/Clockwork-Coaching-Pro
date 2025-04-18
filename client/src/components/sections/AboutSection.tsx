@@ -3,28 +3,27 @@ import { Link } from 'wouter';
 
 const AboutSection: React.FC = () => {
   return (
-    <section id="about" className="pt-2 pb-0 md:pt-2 md:pb-0 bg-white relative overflow-hidden" style={{marginBottom: '-4rem'}}>
+    <section id="about" className="py-8 bg-white relative overflow-hidden">
       <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -translate-x-24 -translate-y-24 blur-xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/5 rounded-full translate-x-20 translate-y-1/3 blur-xl"></div>
 
       <div className="elegant-container relative z-10">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="fade-in">
             <p className="elegant-subheading text-primary">HERE TO HELP</p>
-            <h2 className="text-3xl md:text-4xl font-display font-medium mb-6 text-neutral-900 gradient-text">
+            <h2 className="text-2xl md:text-3xl font-display font-medium mb-4 text-neutral-900 gradient-text">
               ✨ You've Worked Too Hard to Fall Behind Now.
             </h2>
-            <div className="section-divider"></div>
 
-            <div className="accent-border mb-4 bg-gradient-to-r from-primary/5 to-transparent px-4 py-3 rounded-r-lg">
-              <p className="text-neutral-700 leading-relaxed">
-                You've put in the time. You've built your business through hard work and real connections. You've seen new trends come and go—some were helpful, most weren't. Now, you're ready to take your business to the next level by implementing the right systems and strategies.
+            <div className="accent-border mb-3 bg-gradient-to-r from-primary/5 to-transparent px-3 py-2 rounded-r-lg">
+              <p className="text-neutral-700">
+                You've built your business through hard work and real connections. Now it's time to implement the right systems and strategies to take it to the next level.
               </p>
             </div>
 
-            <div className="accent-border mb-4 bg-gradient-to-r from-primary/5 to-transparent px-4 py-3 rounded-r-lg">
-              <p className="text-neutral-700 leading-relaxed">
-                And you handled it all just fine. But this feels different. Things are changing faster than ever. And there's something new: AI. Real tools that other agents are using to help more clients, stay in touch, and run their businesses easier.
+            <div className="accent-border bg-gradient-to-r from-primary/5 to-transparent px-3 py-2 rounded-r-lg">
+              <p className="text-neutral-700">
+                With AI and new tools transforming the industry, we'll help you stay ahead and serve more clients while maintaining that personal touch.
               </p>
             </div>
           </div>
