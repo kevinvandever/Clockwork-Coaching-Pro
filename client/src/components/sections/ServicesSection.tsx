@@ -33,9 +33,9 @@ const ServicesSection: React.FC = () => {
   ];
 
   return (
-    <section id="services" className="py-8 md:py-12 pb-0 md:pb-0 bg-white">
+    <section id="services" className="pt-24 pb-0 bg-white">
       <div className="elegant-container">
-        <div className="text-center mb-8">
+        <div className="text-center mb-8 mt-16">
           <p className="elegant-subheading text-neutral-500">WORK WITH US</p>
           <h2 className="text-3xl md:text-4xl font-display font-medium mb-6">
             Choose Your Path to Growth
