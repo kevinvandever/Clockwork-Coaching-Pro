@@ -18,10 +18,10 @@ const HeroSection: React.FC = () => {
             <ABTest 
               id="hero-heading" 
               variants={[
-                <h1 className="elegant-heading mb-6 text-neutral-900">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-sans font-medium leading-[1.1] mb-6 text-neutral-900">
                   Don't Get Left Behind
                 </h1>,
-                <h1 className="elegant-heading mb-6 text-neutral-900">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-sans font-medium leading-[1.1] mb-6 text-neutral-900">
                   Future-Proof Your Business Today
                 </h1>
               ]}
