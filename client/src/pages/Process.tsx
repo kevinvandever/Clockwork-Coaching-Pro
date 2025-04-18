@@ -21,9 +21,8 @@ const Process: React.FC = () => {
         <div className="elegant-section bg-gradient-to-b from-white to-neutral-50">
           <div className="elegant-container">
             <div className="max-w-3xl mx-auto text-center mb-16">
-              <p className="elegant-subheading text-primary/80">OUR METHODOLOGY</p>
               <h2 className="text-4xl md:text-5xl font-display font-medium mb-6">
-                The Clockwork System
+                You've Worked Too Hard to Fall Behind Now
               </h2>
               <div className="w-20 h-0.5 bg-primary/80 mx-auto mb-8"></div>
               <p className="text-neutral-600 text-lg leading-relaxed">
