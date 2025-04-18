@@ -22,9 +22,11 @@ const AboutSection: React.FC = () => {
               </p>
             </div>
 
-            <p className="text-neutral-700 mb-5 leading-relaxed">
-              And you handled it all just fine. But this feels different. Things are changing faster than ever. And there's something new: AI. Real tools that other agents are using to help more clients, stay in touch, and run their businesses easier.
-            </p>
+            <div className="accent-border mb-6 bg-gradient-to-r from-primary/5 to-transparent px-6 py-4 rounded-r-lg">
+              <p className="text-neutral-700 leading-relaxed">
+                And you handled it all just fine. But this feels different. Things are changing faster than ever. And there's something new: AI. Real tools that other agents are using to help more clients, stay in touch, and run their businesses easier.
+              </p>
+            </div>
           </div>
 
           <div className="relative fade-in">
