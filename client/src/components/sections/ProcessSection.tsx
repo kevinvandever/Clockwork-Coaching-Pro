@@ -1,9 +1,12 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { useNavigation } from '@/hooks/useNavigation';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const ProcessSection: React.FC = () => {
   const { scrollToSection } = useNavigation();
+  const isMobile = useIsMobile();
 
   const steps = [
     {
@@ -23,8 +26,46 @@ const ProcessSection: React.FC = () => {
     }
   ];
 
+  const MobileLayout = () => (
+    <div className="space-y-8">
+      {steps.map((step) => (
+        <div key={step.number} className="flex items-center space-x-4">
+          <div className="w-12 h-12 bg-primary rounded-full flex-shrink-0 flex items-center justify-center text-white text-xl font-bold">
+            {step.number}
+          </div>
+          <div className="flex-1">
+            <h3 className="font-display text-xl font-bold text-primary mb-2">
+              {step.title}
+            </h3>
+            <p className="text-neutral-700 text-sm">
+              {step.description}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+
+  const DesktopLayout = () => (
+    <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      {steps.map((step) => (
+        <div key={step.number} className="text-center">
+          <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
+            {step.number}
+          </div>
+          <h3 className="font-display text-2xl font-bold text-primary mb-4">
+            {step.title}
+          </h3>
+          <p className="text-neutral-700">
+            {step.description}
+          </p>
+        </div>
+      ))}
+    </div>
+  );
+
   return (
-    <section id="process" className="py-8 md:py-12 pt-6 md:pt-6 bg-primary/5"> {/* Added pt-6 for 1/4" space */}
+    <section id="process" className="py-8 md:py-12 pt-6 md:pt-6 bg-primary/5">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
@@ -32,21 +73,7 @@ const ProcessSection: React.FC = () => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {steps.map((step) => (
-            <div key={step.number} className="text-center">
-              <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
-                {step.number}
-              </div>
-              <h3 className="font-display text-2xl font-bold text-primary mb-4">
-                {step.title}
-              </h3>
-              <p className="text-neutral-700">
-                {step.description}
-              </p>
-            </div>
-          ))}
-        </div>
+        {isMobile ? <MobileLayout /> : <DesktopLayout />}
 
         <div className="text-center mt-12">
           <Button 
