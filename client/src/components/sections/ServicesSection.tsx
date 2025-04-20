@@ -35,8 +35,8 @@ const ServicesSection: React.FC = () => {
   return (
     <section id="services" className="py-2 md:py-3 pb-0 md:pb-0 bg-white">
       <div className="elegant-container">
-        <div className="py-16 md:py-24 bg-gradient-to-b from-primary/10 via-primary/5 to-white">
-          <div className="max-w-4xl mx-auto text-center mb-16">
+        <div className="py-8 md:py-12 bg-gradient-to-b from-primary/10 via-primary/5 to-white">
+          <div className="max-w-4xl mx-auto text-center mb-8">
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
               The Clockwork System
             </h2>
