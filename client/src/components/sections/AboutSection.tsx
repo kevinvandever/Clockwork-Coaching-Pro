@@ -13,7 +13,7 @@ const AboutSection: React.FC = () => {
           <div className="fade-in">
             <p className="elegant-subheading text-primary">JOE AND KEVIN ARE HERE TO HELP</p>
             <h2 className="text-2xl md:text-3xl font-display font-medium mb-4 text-neutral-900 gradient-text">
-              ✨ You've Worked Too Hard to Fall Behind Now.
+              ✨ Keep Your Business Moving Forward
             </h2>
 
             <div className="grid grid-cols-2 gap-4 mb-6">
