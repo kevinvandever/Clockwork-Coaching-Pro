@@ -8,7 +8,7 @@ const ServicesSection: React.FC = () => {
   const services = [
     {
       title: "🛠️ Clockwork Bootcamp",
-      type: "5-WEEK PROGRAM",
+      type: "5-WEEK SPRINT",
       description: "A foundational program designed to get Realtors up to speed fast. We'll help you eliminate inefficiencies, streamline your systems, and find the 2–3 AI tools that can make the biggest impact in your business—without the overwhelm.",
       image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       ctaText: "LEARN MORE",
@@ -16,7 +16,7 @@ const ServicesSection: React.FC = () => {
     },
     {
       title: "🔄 Clockwork Pro",
-      type: "1:1 COACHING",
+      type: "MONTHLY 1:1 COACHING",
       description: "Ongoing monthly 1:1 coaching for agents who want to stay ahead. We'll keep you in the loop on the latest tools, trends, and market shifts—while continuing to refine and optimize the systems we built together.",
       image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       ctaText: "JOIN NOW",
@@ -38,7 +38,7 @@ const ServicesSection: React.FC = () => {
         <div className="py-8 md:py-12 bg-gradient-to-b from-primary/10 via-primary/5 to-white">
           <div className="max-w-4xl mx-auto text-center mb-8">
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
-              The Clockwork System
+              Three Ways to Work With Us
             </h2>
             <p className="text-xl md:text-2xl text-neutral-700 leading-relaxed">
               Your Business Works. Now Let's Make It Run Like Clockwork.
