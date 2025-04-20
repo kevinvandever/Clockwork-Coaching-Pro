@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'wouter';
 import { useNavigation } from '@/hooks/useNavigation';
@@ -8,16 +9,16 @@ const ObstaclesSection: React.FC = () => {
 
   const obstacles = [
     {
-      title: "Inconsistent Income",
-      description: "Stop the revenue roller coaster and build a dependable income"
+      title: "Too Busy to Learn",
+      description: "You're too busy working in your business to work on it"
     },
     {
-      title: "Dependent on Referrals",
-      description: "Referrals are great, but it's impossible to know when they will come"
+      title: "Referral Roller Coaster",
+      description: "Referrals are great—but unpredictable"
     },
     {
-      title: "No Time to Learn",
-      description: "Too busy working inside your business to learn outside of it"
+      title: "Outdated Systems",
+      description: "You're stuck using the same playbook in a new market"
     }
   ];
 
@@ -26,11 +27,8 @@ const ObstaclesSection: React.FC = () => {
       <div className="container mx-auto">
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-            Common Challenges Real Estate Professionals Face
+            What's Holding You Back?
           </h2>
-          <p className="text-xl text-neutral-700 max-w-3xl mx-auto">
-            Are these obstacles standing in the way of your business growth?
-          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
