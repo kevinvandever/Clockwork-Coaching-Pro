@@ -44,7 +44,7 @@ const HeroSection: React.FC = () => {
                 trackConversion('cta_click');
               }}
             >
-              BOOK YOUR FREE DISCOVERY CALL
+              Book a Free Strategy Call
             </Link>
           </div>
         </div>
