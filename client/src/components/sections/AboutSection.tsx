@@ -11,7 +11,7 @@ const AboutSection: React.FC = () => {
       <div className="elegant-container relative z-10">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="fade-in">
-            <p className="elegant-subheading text-primary">HERE TO HELP</p>
+            <p className="elegant-subheading text-primary">JOE AND KEVIN ARE HERE TO HELP</p>
             <h2 className="text-2xl md:text-3xl font-display font-medium mb-4 text-neutral-900 gradient-text">
               ✨ You've Worked Too Hard to Fall Behind Now.
             </h2>
