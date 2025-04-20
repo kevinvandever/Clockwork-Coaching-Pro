@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'wouter';
 
@@ -33,10 +32,69 @@ const AboutSection: React.FC = () => {
               </div>
             </div>
 
-            <div className="accent-border bg-gradient-to-r from-primary/5 to-transparent px-3 py-2 rounded-r-lg">
+            <div className="accent-border bg-gradient-to-r from-primary/5 to-transparent px-3 py-2 rounded-r-lg mb-8">
               <p className="text-neutral-700">
                 You've built your business through hard work and real connections. Now it's time to implement the right systems and strategies to take it to the next level.
               </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="group relative flex flex-col">
+                <div className="aspect-[4/3] w-full mb-6 overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Clockwork Bootcamp"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <p className="uppercase text-xs font-medium tracking-wider text-neutral-500 mb-2">
+                  5-WEEK PROGRAM
+                </p>
+                <h3 className="font-display text-2xl font-medium text-neutral-900 mb-4">
+                  🛠️ Clockwork Bootcamp
+                </h3>
+                <p className="text-neutral-600 mb-8 text-sm leading-relaxed flex-grow">
+                  A foundational program designed to get Realtors up to speed fast. We'll help you eliminate inefficiencies, streamline your systems, and find the 2–3 AI tools that can make the biggest impact in your business—without the overwhelm.
+                </p>
+              </div>
+
+              <div className="group relative flex flex-col">
+                <div className="aspect-[4/3] w-full mb-6 overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Clockwork Pro"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <p className="uppercase text-xs font-medium tracking-wider text-neutral-500 mb-2">
+                  1:1 COACHING
+                </p>
+                <h3 className="font-display text-2xl font-medium text-neutral-900 mb-4">
+                  🔄 Clockwork Pro
+                </h3>
+                <p className="text-neutral-600 mb-8 text-sm leading-relaxed flex-grow">
+                  Ongoing monthly 1:1 coaching for agents who want to stay ahead. We'll keep you in the loop on the latest tools, trends, and market shifts—while continuing to refine and optimize the systems we built together.
+                </p>
+              </div>
+
+              <div className="group relative flex flex-col">
+                <div className="aspect-[4/3] w-full mb-6 overflow-hidden rounded-lg shadow-lg">
+                  <img 
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="The Clockwork Lab"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <p className="uppercase text-xs font-medium tracking-wider text-neutral-500 mb-2">
+                  COMING SOON
+                </p>
+                <h3 className="font-display text-2xl font-medium text-neutral-900 mb-4">
+                  🔬 The Clockwork Lab
+                </h3>
+                <p className="text-neutral-600 mb-8 text-sm leading-relaxed flex-grow">
+                  A testing ground and resource library for agents who want to stay curious, experiment smarter, and learn from what's working now. Tools, templates, trainings, and community—all in one place.
+                </p>
+              </div>
             </div>
           </div>
 
