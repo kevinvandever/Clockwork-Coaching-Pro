@@ -33,30 +33,33 @@ const Process: React.FC = () => {
     <>
       <Navigation />
       <main>
-        <div className="pt-24 bg-gradient-to-b from-primary/5 to-white">
+        <div className="pt-24 bg-gradient-to-b from-primary/10 via-primary/5 to-white">
           <div className="container mx-auto px-4 py-16 md:py-24">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-display font-bold mb-6">
+              <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
                 The Clockwork System
               </h1>
-              <p className="text-xl md:text-2xl text-neutral-700 mb-8">
+              <p className="text-xl md:text-2xl text-neutral-700 mb-12 leading-relaxed">
                 Your Business Works. Now Let's Make It Run Like Clockwork.
               </p>
             </div>
 
-            <div className="mt-16 max-w-5xl mx-auto">
+            <div className="mt-16 max-w-6xl mx-auto">
               <div className="grid md:grid-cols-2 gap-8 md:gap-12">
                 {steps.map((step, index) => (
-                  <div key={index} className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-                    <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                        <span className="text-white font-display font-bold text-xl">{index + 1}</span>
+                  <div 
+                    key={index} 
+                    className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-primary/10"
+                  >
+                    <div className="flex items-start gap-6">
+                      <div className="w-14 h-14 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                        <span className="text-white font-display font-bold text-2xl">{index + 1}</span>
                       </div>
                       <div>
-                        <h3 className="text-xl font-display font-bold text-neutral-900 mb-3">
+                        <h3 className="text-2xl font-display font-bold text-neutral-900 mb-3 leading-tight">
                           {step.title}
                         </h3>
-                        <p className="text-neutral-700 leading-relaxed">
+                        <p className="text-neutral-700 leading-relaxed text-lg">
                           {step.description}
                         </p>
                       </div>
@@ -65,15 +68,15 @@ const Process: React.FC = () => {
                 ))}
               </div>
 
-              <div className="text-center mt-16">
-                <p className="text-xl text-neutral-800 font-display italic mb-8">
+              <div className="text-center mt-20">
+                <p className="text-2xl text-neutral-800 font-display italic mb-8 leading-relaxed">
                   This is how the top 1% stay the top 1%.
                 </p>
                 <a 
                   href={CALENDAR_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-lg transition-colors"
+                  className="inline-block bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white font-bold py-5 px-10 rounded-xl transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl text-lg"
                 >
                   Book Your Discovery Call
                 </a>
