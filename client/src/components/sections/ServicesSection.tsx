@@ -9,7 +9,7 @@ const ServicesSection: React.FC = () => {
     {
       title: "🛠️ Clockwork Bootcamp",
       type: "5-WEEK PROGRAM",
-      description: "A foundational program designed to get Realtors up to speed fast. We'll help you eliminate inefficiencies, streamline your systems, and find the 2–3 AI tools that can make the biggest impact in your business—without the overwhelm.",
+      description: "5-week sprint to clean up your business and install the right systems fast.",
       image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       ctaText: "LEARN MORE",
       ctaAction: 'book-call'
@@ -17,15 +17,15 @@ const ServicesSection: React.FC = () => {
     {
       title: "🔄 Clockwork Pro",
       type: "1:1 COACHING",
-      description: "Ongoing monthly 1:1 coaching for agents who want to stay ahead. We'll keep you in the loop on the latest tools, trends, and market shifts—while continuing to refine and optimize the systems we built together.",
+      description: "Monthly 1:1 coaching for agents who want ongoing tools, guidance, and strategy.",
       image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       ctaText: "JOIN NOW",
       ctaAction: 'book-call'
     },
     {
-      title: "🔬 The Clockwork Lab",
+      title: "🔬 Clockwork Lab",
       type: "COMING SOON",
-      description: "A testing ground and resource library for agents who want to stay curious, experiment smarter, and learn from what's working now. Tools, templates, trainings, and community—all in one place.",
+      description: "A private hub for testing tools, sharing systems, and staying ahead of the curve.",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       ctaText: "GET NOTIFIED",
       ctaAction: '/notifications'
