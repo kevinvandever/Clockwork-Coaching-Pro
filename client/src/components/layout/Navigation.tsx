@@ -70,7 +70,7 @@ const Navigation: React.FC = () => {
               </li>
               <li>
                 <button 
-                  onClick={() => scrollToSection('process')}
+                  onClick={() => scrollToSection('clockwork-system')}
                   className="transition duration-300 uppercase text-sm tracking-wider font-medium text-neutral-700 hover:text-primary"
                 >
                   Process
@@ -137,7 +137,7 @@ const Navigation: React.FC = () => {
             </li>
             <li>
               <button 
-                onClick={() => {setIsMobileMenuOpen(false); scrollToSection('process');}}
+                onClick={() => {setIsMobileMenuOpen(false); scrollToSection('clockwork-system');}}
                 className="block py-3.5 border-b border-neutral-100 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium w-full text-left"
               >
                 Process

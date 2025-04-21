@@ -40,7 +40,7 @@ const Home: React.FC = () => {
         <ObstaclesSection />
         <AboutSection />
         <ServicesSection />
-        <section id="process">
+        <section id="clockwork-system">
           <ProcessSection />
         </section>
         <CallBookingSection />
