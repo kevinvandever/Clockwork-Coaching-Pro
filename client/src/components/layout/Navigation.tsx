@@ -71,28 +71,18 @@ const Navigation: React.FC = () => {
               </li>
               <li>
                 <Link 
-                  href="/#process"
-                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${activeSection === 'process' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
-                  onClick={(e) => {
-                    if (location === '/') {
-                      e.preventDefault();
-                      scrollToSection('process');
-                    }
-                  }}
+                  href="/process"
+                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${location === '/process' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
+                  onClick={() => window.scrollTo(0, 0)}
                 >
                   Process
                 </Link>
               </li>
               <li>
                 <Link 
-                  href="/#services"
-                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${activeSection === 'services' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
-                  onClick={(e) => {
-                    if (location === '/') {
-                      e.preventDefault();
-                      scrollToSection('services');
-                    }
-                  }}
+                  href="/services"
+                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${location === '/services' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
+                  onClick={() => window.scrollTo(0, 0)}
                 >
                   Services
                 </Link>
@@ -157,26 +147,18 @@ const Navigation: React.FC = () => {
             </li>
             <li>
               <Link 
-                href="/#process"
-                className={`block py-3.5 border-b border-neutral-100 ${activeSection === 'process' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium w-full text-left`}
-                onClick={(e) => {
-                    e.preventDefault();
-                    setIsMobileMenuOpen(false);
-                    scrollToSection('process');
-                  }}
+                href="/process"
+                className={`block py-3.5 border-b border-neutral-100 ${location === '/process' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium w-full text-left`}
+                onClick={() => {setIsMobileMenuOpen(false); window.scrollTo(0, 0);}}
               >
                 Process
               </Link>
             </li>
             <li>
               <Link 
-                href="/#services"
-                className={`block py-3.5 border-b border-neutral-100 ${activeSection === 'services' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium w-full text-left`}
-                onClick={(e) => {
-                    e.preventDefault();
-                    setIsMobileMenuOpen(false);
-                    scrollToSection('services');
-                  }}
+                href="/services"
+                className={`block py-3.5 border-b border-neutral-100 ${location === '/services' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium w-full text-left`}
+                onClick={() => {setIsMobileMenuOpen(false); window.scrollTo(0, 0);}}
               >
                 Services
               </Link>
