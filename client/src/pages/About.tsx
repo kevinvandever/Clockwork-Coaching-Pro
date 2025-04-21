@@ -111,7 +111,7 @@ const About: React.FC = () => {
                 <div className="w-20 h-0.5 bg-primary mb-8"></div>
                 
                 <img 
-                  src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                  src="/images/9B8D29A3-8C27-4ADB-838D-42D9CB42764A_1_105_c.jpeg" 
                   alt="Coaching session" 
                   className="w-full h-auto rounded-lg shadow-lg mb-8"
                 />
