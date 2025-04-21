@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <Link 
-                  href="/process"
+                  href="/#process"
                   className="text-neutral-500 hover:text-primary transition duration-300 text-sm"
                 >
                   Process
