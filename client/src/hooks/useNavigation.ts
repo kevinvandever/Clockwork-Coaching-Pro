@@ -6,7 +6,7 @@ export const useNavigation = () => {
     
     if (targetElement) {
       window.scrollTo({
-        top: targetElement.offsetTop - 100,
+        top: targetElement.offsetTop - 80,
         behavior: 'smooth'
       });
     }
