@@ -77,6 +77,12 @@ const Navigation: React.FC = () => {
                     e.preventDefault();
                     if (location !== '/') {
                       window.location.href = '/#process';
+                      setTimeout(() => {
+                        const element = document.getElementById('process');
+                        if (element) {
+                          element.scrollIntoView({ behavior: 'smooth' });
+                        }
+                      }, 100);
                     } else {
                       scrollToSection('process');
                     }
@@ -93,6 +99,12 @@ const Navigation: React.FC = () => {
                     e.preventDefault();
                     if (location !== '/') {
                       window.location.href = '/#services';
+                      setTimeout(() => {
+                        const element = document.getElementById('services');
+                        if (element) {
+                          element.scrollIntoView({ behavior: 'smooth' });
+                        }
+                      }, 100);
                     } else {
                       scrollToSection('services');
                     }
