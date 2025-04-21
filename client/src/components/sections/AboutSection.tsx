@@ -12,9 +12,6 @@ const AboutSection: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="fade-in">
             <p className="elegant-subheading text-primary">JOE AND KEVIN ARE HERE TO HELP</p>
-            <h2 className="text-2xl md:text-3xl font-display font-medium mb-4 text-neutral-900 gradient-text">
-              ✨ Transform Your Real Estate Business with Modern Systems
-            </h2>
 
             <div className="grid grid-cols-2 gap-4 mb-6">
               <div className="relative overflow-hidden rounded-lg">
@@ -32,18 +29,11 @@ const AboutSection: React.FC = () => {
                 />
               </div>
             </div>
-
-            <div className="accent-border bg-gradient-to-r from-primary/5 to-transparent px-3 py-2 rounded-r-lg">
-              <p className="text-neutral-700">
-                You've built your business through hard work and real connections. Now it's time to implement the right systems and strategies to take it to the next level.
-              </p>
-            </div>
           </div>
 
           <div className="relative fade-in">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl transform rotate-3 scale-105 shadow-xl elegant-vertical-bar"></div>
-            <Link href="/process" onClick={() => window.scrollTo(0, 0)}>
-              <div className="relative bg-white p-8 rounded-xl shadow-lg hover-card cursor-pointer transition-transform hover:scale-[1.02]">
+            <div className="relative bg-white p-8 rounded-xl shadow-lg">
                 <h3 className="text-2xl font-display font-medium mb-4 text-neutral-900">We understand your challenges</h3>
                 <p className="text-neutral-700 mb-4 leading-relaxed">
                   As industry veterans, we've seen firsthand how technology is transforming real estate. The pace of change can be overwhelming, especially when you're focused on serving clients.
