@@ -132,11 +132,11 @@ const Navigation: React.FC = () => {
 
         {/* Mobile Menu */}
         <div 
-          className={`md:hidden fixed left-0 right-0 top-[65px] bg-white shadow-lg transition-all duration-300 ease-in-out ${
-            isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
-          } overflow-hidden z-50`}
+          className={`md:hidden fixed left-0 right-0 top-[65px] bottom-0 bg-white shadow-lg transition-all duration-300 ease-in-out ${
+            isMobileMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0 pointer-events-none'
+          } overflow-y-auto z-50`}
         >
-          <ul className="py-4 px-6 space-y-0">
+          <ul className="py-4 px-6 space-y-2">
             <li>
               <Link 
                 href="/"
