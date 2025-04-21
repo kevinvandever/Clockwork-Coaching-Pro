@@ -38,23 +38,11 @@ const ServicesSection: React.FC = () => {
         <div className="py-8 md:py-12 bg-gradient-to-b from-primary/10 via-primary/5 to-white">
           <div className="max-w-4xl mx-auto text-center mb-8">
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
-              Three Ways to Work With Us
+              The Clockwork System
             </h2>
-            <div className="grid md:grid-cols-3 gap-8 mt-12">
-              <div className="bg-white rounded-xl p-8 shadow-lg">
-                <h3 className="text-2xl font-display font-bold mb-4">Clockwork Bootcamp</h3>
-                <p className="text-neutral-700">5-week sprint to clean up your business and install the right systems fast.</p>
-              </div>
-              <div className="bg-white rounded-xl p-8 shadow-lg">
-                <h3 className="text-2xl font-display font-bold mb-4">Clockwork Pro</h3>
-                <p className="text-neutral-700">Monthly 1:1 coaching for agents who want ongoing tools, guidance, and strategy.</p>
-              </div>
-              <div className="bg-white rounded-xl p-8 shadow-lg opacity-75">
-                <h3 className="text-2xl font-display font-bold mb-4">The Clockwork Lab</h3>
-                <p className="text-neutral-700">A private hub for testing tools, sharing systems, and staying ahead of the curve.</p>
-                <span className="inline-block mt-4 text-sm font-medium text-primary">Coming Soon</span>
-              </div>
-            </div>
+            <p className="text-xl md:text-2xl text-neutral-700 leading-relaxed">
+              Your Business Works. Now Let's Make It Run Like Clockwork.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-24">
