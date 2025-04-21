@@ -72,7 +72,7 @@ const Navigation: React.FC = () => {
               <li>
                 <Link 
                   href="/#process"
-                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${activeSection === 'process' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
+                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${location === '/' && activeSection === 'process' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
                   onClick={() => scrollToSection('process')}
                 >
                   Process
@@ -81,7 +81,7 @@ const Navigation: React.FC = () => {
               <li>
                 <Link 
                   href="/#services"
-                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${activeSection === 'services' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
+                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${location === '/' && activeSection === 'services' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
                   onClick={() => scrollToSection('services')}
                 >
                   Services

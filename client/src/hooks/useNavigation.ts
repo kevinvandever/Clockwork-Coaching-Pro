@@ -10,12 +10,12 @@ export const useNavigation = () => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.2) {
             setActiveSection(entry.target.id);
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: [0.2, 0.5, 0.8] }
     );
 
     const sections = ['hero', 'obstacles', 'about', 'services', 'process', 'contact'];
