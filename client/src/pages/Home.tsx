@@ -34,24 +34,12 @@ const Home: React.FC = () => {
     <>
       <Navigation />
       <main>
-        <section id="hero">
-          <HeroSection />
-        </section>
-        <section id="obstacles">
-          <ObstaclesSection />
-        </section>
-        <section id="about">
-          <AboutSection />
-        </section>
-        <section id="services">
-          <ServicesSection />
-        </section>
-        <section id="process">
-          <ProcessSection />
-        </section>
-        <section id="contact">
-          <CallBookingSection />
-        </section>
+        <HeroSection />
+        <ObstaclesSection />
+        <AboutSection />
+        <ServicesSection />
+        <ProcessSection />
+        <CallBookingSection />
       </main>
       <Footer />
       <CookieConsent />
