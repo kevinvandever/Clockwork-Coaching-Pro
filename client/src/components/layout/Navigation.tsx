@@ -74,7 +74,7 @@ const Navigation: React.FC = () => {
                   className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${location === '/services' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
                   onClick={() => window.scrollTo(0, 0)}
                 >
-                  Services
+                  Process
                 </Link>
               </li>
               
@@ -142,7 +142,7 @@ const Navigation: React.FC = () => {
                 className={`block py-3.5 border-b border-neutral-100 ${location === '/services' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium`}
                 onClick={() => {setIsMobileMenuOpen(false); window.scrollTo(0, 0);}}
               >
-                Services
+                Process
               </Link>
             </li>
             

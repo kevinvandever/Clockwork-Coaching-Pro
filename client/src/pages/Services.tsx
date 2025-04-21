@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
@@ -6,11 +7,11 @@ import CallBookingSection from '@/components/sections/CallBookingSection';
 import CookieConsent from '@/components/shared/CookieConsent';
 import { useNavigation } from '@/hooks/useNavigation';
 
-const Services: React.FC = () => {
+const Process: React.FC = () => {
   const { scrollToSection } = useNavigation();
 
   React.useEffect(() => {
-    document.title = 'Services | Clockwork Coaching';
+    document.title = 'The Clockwork System | Clockwork Coaching';
   }, []);
 
   return (
@@ -19,10 +20,10 @@ const Services: React.FC = () => {
       <main>
         <div className="pt-16 bg-primary/5">
           <div className="elegant-container py-12 text-center">
-            <h1 className="elegant-heading text-neutral-900 mb-6">Our Services</h1>
+            <h1 className="elegant-heading text-neutral-900 mb-6">The Clockwork System</h1>
             <div className="w-20 h-0.5 bg-primary mx-auto mb-8"></div>
             <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-              Explore our specialized coaching programs designed for real estate professionals.
+              Your Business Works. Now Let's Make It Run Like Clockwork.
             </p>
           </div>
         </div>
@@ -82,10 +83,6 @@ const Services: React.FC = () => {
           </div>
         </div>
 
-        {/* Work with Us */}
-        <div className="py-16 md:py-24 bg-white">
-          {/* Work with Us content would go here */}
-        </div>
         <CallBookingSection />
       </main>
       <Footer />
@@ -94,4 +91,4 @@ const Services: React.FC = () => {
   );
 };
 
-export default Services;
+export default Process;
