@@ -76,7 +76,7 @@ const Navigation: React.FC = () => {
                   Process
                 </button>
               </li>
-              
+
               <li>
                 <Link 
                   href="/contact"
@@ -143,7 +143,7 @@ const Navigation: React.FC = () => {
                 Process
               </button>
             </li>
-            
+
             <li>
               <Link 
                 href="/contact"
