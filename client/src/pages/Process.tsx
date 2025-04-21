@@ -33,8 +33,8 @@ const Process: React.FC = () => {
       <Navigation />
       <main>
         <div className="pt-24 bg-gradient-to-b from-primary/10 via-primary/5 to-white">
-          <div className="container mx-auto px-4 py-16 md:py-24">
-            <div className="mt-16 max-w-6xl mx-auto"> {/* Removed the heading and tagline div */}
+          <div className="container mx-auto px-4 py-8 md:py-16">
+            <div className="max-w-6xl mx-auto">
               <div className="grid md:grid-cols-2 gap-8 md:gap-12">
                 {steps.map((step, index) => (
                   <div 
