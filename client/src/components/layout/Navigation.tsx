@@ -6,6 +6,31 @@ import { useIsMobile } from '@/hooks/use-mobile';
 const Navigation: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState('');
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.target.id === 'clockwork-system') {
+            setActiveSection('process');
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    const section = document.getElementById('clockwork-system');
+    if (section) {
+      observer.observe(section);
+    }
+
+    return () => {
+      if (section) {
+        observer.unobserve(section);
+      }
+    };
+  }, []);
   const { scrollToSection } = useNavigation();
   const [location] = useLocation();
   const isMobile = useIsMobile();
@@ -71,7 +96,7 @@ const Navigation: React.FC = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('services')}
-                  className="transition duration-300 uppercase text-sm tracking-wider font-medium text-neutral-700 hover:text-primary"
+                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${activeSection === 'process' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
                 >
                   Process
                 </button>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { useNavigation } from '@/hooks/useNavigation';
 import { useIsMobile } from '@/hooks/use-mobile';
