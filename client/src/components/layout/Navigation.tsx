@@ -74,16 +74,8 @@ const Navigation: React.FC = () => {
                   href="/#process"
                   className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${activeSection === 'process' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
                   onClick={(e) => {
-                    e.preventDefault();
-                    if (location !== '/') {
-                      window.location.href = '/#process';
-                      setTimeout(() => {
-                        const element = document.getElementById('process');
-                        if (element) {
-                          element.scrollIntoView({ behavior: 'smooth' });
-                        }
-                      }, 100);
-                    } else {
+                    if (location === '/') {
+                      e.preventDefault();
                       scrollToSection('process');
                     }
                   }}
@@ -96,16 +88,8 @@ const Navigation: React.FC = () => {
                   href="/#services"
                   className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${activeSection === 'services' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
                   onClick={(e) => {
-                    e.preventDefault();
-                    if (location !== '/') {
-                      window.location.href = '/#services';
-                      setTimeout(() => {
-                        const element = document.getElementById('services');
-                        if (element) {
-                          element.scrollIntoView({ behavior: 'smooth' });
-                        }
-                      }, 100);
-                    } else {
+                    if (location === '/') {
+                      e.preventDefault();
                       scrollToSection('services');
                     }
                   }}
