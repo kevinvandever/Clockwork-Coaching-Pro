@@ -74,8 +74,8 @@ const Navigation: React.FC = () => {
                   href="/#process"
                   className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${activeSection === 'process' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
                   onClick={(e) => {
+                    e.preventDefault();
                     if (location !== '/') {
-                      e.preventDefault();
                       window.location.href = '/#process';
                     } else {
                       scrollToSection('process');
@@ -90,8 +90,8 @@ const Navigation: React.FC = () => {
                   href="/#services"
                   className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${activeSection === 'services' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
                   onClick={(e) => {
+                    e.preventDefault();
                     if (location !== '/') {
-                      e.preventDefault();
                       window.location.href = '/#services';
                     } else {
                       scrollToSection('services');
@@ -164,9 +164,9 @@ const Navigation: React.FC = () => {
                 href="/#process"
                 className={`block py-3.5 border-b border-neutral-100 ${activeSection === 'process' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium w-full text-left`}
                 onClick={(e) => {
+                  e.preventDefault();
                   setIsMobileMenuOpen(false);
                   if (location !== '/') {
-                    e.preventDefault();
                     window.location.href = '/#process';
                   } else {
                     scrollToSection('process');
@@ -181,9 +181,9 @@ const Navigation: React.FC = () => {
                 href="/#services"
                 className={`block py-3.5 border-b border-neutral-100 ${activeSection === 'services' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium w-full text-left`}
                 onClick={(e) => {
+                  e.preventDefault();
                   setIsMobileMenuOpen(false);
                   if (location !== '/') {
-                    e.preventDefault();
                     window.location.href = '/#services';
                   } else {
                     scrollToSection('services');
