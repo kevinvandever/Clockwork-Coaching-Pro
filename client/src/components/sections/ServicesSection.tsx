@@ -125,7 +125,7 @@ const ServicesSection: React.FC = () => {
                 </Link>
               ) : (
                 <button
-                  onClick={() => service.ctaAction ? scrollToSection(service.ctaAction) : null}
+                  onClick={() => scrollToSection('services')} // Corrected this line
                   className="elegant-button mt-auto self-start"
                 >
                   {service.ctaText}
