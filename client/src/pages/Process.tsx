@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
@@ -7,7 +6,7 @@ import { CALENDAR_URL } from '@/lib/constants';
 
 const Process: React.FC = () => {
   React.useEffect(() => {
-    document.title = 'The Clockwork System | Clockwork Coaching';
+    document.title = 'Clockwork Coaching'; // Updated document title
   }, []);
 
   const steps = [
@@ -35,16 +34,7 @@ const Process: React.FC = () => {
       <main>
         <div className="pt-24 bg-gradient-to-b from-primary/10 via-primary/5 to-white">
           <div className="container mx-auto px-4 py-16 md:py-24">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
-                The Clockwork System
-              </h1>
-              <p className="text-xl md:text-2xl text-neutral-700 mb-12 leading-relaxed">
-                Your Business Works. Now Let's Make It Run Like Clockwork.
-              </p>
-            </div>
-
-            <div className="mt-16 max-w-6xl mx-auto">
+            <div className="mt-16 max-w-6xl mx-auto"> {/* Removed the heading and tagline div */}
               <div className="grid md:grid-cols-2 gap-8 md:gap-12">
                 {steps.map((step, index) => (
                   <div 
