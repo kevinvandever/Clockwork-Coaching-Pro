@@ -176,14 +176,10 @@ const Navigation: React.FC = () => {
                 href="/#process"
                 className={`block py-3.5 border-b border-neutral-100 ${activeSection === 'process' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium w-full text-left`}
                 onClick={(e) => {
-                  e.preventDefault();
-                  setIsMobileMenuOpen(false);
-                  if (location !== '/') {
-                    window.location.href = '/#process';
-                  } else {
+                    e.preventDefault();
+                    setIsMobileMenuOpen(false);
                     scrollToSection('process');
-                  }
-                }}
+                  }}
               >
                 Process
               </Link>
@@ -193,14 +189,10 @@ const Navigation: React.FC = () => {
                 href="/#services"
                 className={`block py-3.5 border-b border-neutral-100 ${activeSection === 'services' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium w-full text-left`}
                 onClick={(e) => {
-                  e.preventDefault();
-                  setIsMobileMenuOpen(false);
-                  if (location !== '/') {
-                    window.location.href = '/#services';
-                  } else {
+                    e.preventDefault();
+                    setIsMobileMenuOpen(false);
                     scrollToSection('services');
-                  }
-                }}
+                  }}
               >
                 Services
               </Link>

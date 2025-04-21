@@ -38,6 +38,7 @@ export const useNavigation = () => {
 
   const scrollToSection = useCallback((sectionId: string) => {
     if (location !== '/') {
+      sessionStorage.setItem('scrollTarget', sectionId);
       window.location.href = '/#' + sectionId;
     } else {
       const targetElement = document.getElementById(sectionId);
@@ -46,6 +47,25 @@ export const useNavigation = () => {
           top: targetElement.offsetTop - 80,
           behavior: 'smooth'
         });
+      }
+    }
+  }, [location]);
+
+  // Check for stored scroll target on home page load
+  useEffect(() => {
+    if (location === '/') {
+      const scrollTarget = sessionStorage.getItem('scrollTarget');
+      if (scrollTarget) {
+        sessionStorage.removeItem('scrollTarget');
+        setTimeout(() => {
+          const targetElement = document.getElementById(scrollTarget);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: 'smooth'
+            });
+          }
+        }, 100);
       }
     }
   }, [location]);
