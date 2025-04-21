@@ -50,9 +50,9 @@ const HeroSection: React.FC = () => {
         </div>
       </section>
 
-      <section className="bg-[hsl(38,75%,58%)] py-3">
+      <section className="hidden md:block bg-[hsl(38,75%,58%)] py-3">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-3 gap-8">
             <div className="text-center">
               <h3 className="font-display text-xl font-medium text-white uppercase tracking-wider">Curated Tools</h3>
             </div>
