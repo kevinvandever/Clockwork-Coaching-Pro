@@ -100,7 +100,7 @@ const About: React.FC = () => {
         </section>
 
         {/* Our Approach Section */}
-        <section className="elegant-section bg-white -mt-16">
+        <section className="elegant-section bg-white -mt-32">
           <div className="elegant-container">
             <div className="grid md:grid-cols-5 gap-8">
               <div className="md:col-span-2">
