@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
 import ServicesSection from '@/components/sections/ServicesSection';
@@ -12,7 +12,9 @@ const Process: React.FC = () => {
 
   React.useEffect(() => {
     document.title = 'The Clockwork System | Clockwork Coaching';
-  }, []);
+    // Trigger the process section highlight on mount
+    scrollToSection('process');
+  }, [scrollToSection]);
 
   return (
     <>
