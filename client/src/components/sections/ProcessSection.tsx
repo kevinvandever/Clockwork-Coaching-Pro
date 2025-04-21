@@ -66,6 +66,7 @@ const ProcessSection: React.FC = () => {
 
   return (
     <section id="process" className="py-8 md:py-12 pt-6 md:pt-6 bg-primary/5">
+      <div className="h-1 w-full bg-gradient-to-r from-transparent via-primary/20 to-transparent mb-8"></div>
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
