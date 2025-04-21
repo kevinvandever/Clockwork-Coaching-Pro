@@ -10,9 +10,9 @@ export const useNavigation = () => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
+          if (entry.isIntersecting && entry.target.id === 'clockwork-system') {
             setActiveSection('process');
-          } else {
+          } else if (!entry.isIntersecting && entry.target.id === 'clockwork-system') {
             setActiveSection('');
           }
         });
