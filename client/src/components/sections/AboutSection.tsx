@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'wouter';
 
@@ -18,14 +17,14 @@ const AboutSection: React.FC = () => {
                 <img 
                   src="/images/32677DBA-A5C7-49EE-9E59-47CD3EDFFE0B_1_201_a.jpeg"
                   alt="Joe Quiros"
-                  className="w-full h-48 object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="relative overflow-hidden rounded-lg">
                 <img 
                   src="/images/65A38D1C-91C6-4936-B507-D4207B334B31_1_105_c.jpeg"
                   alt="Kevin Vandever"
-                  className="w-full h-48 object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
