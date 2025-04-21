@@ -87,9 +87,8 @@ const ServicesSection: React.FC = () => {
         </div>
 
         <div className="text-center mb-8">
-          <p className="elegant-subheading text-neutral-500">WORK WITH US</p>
           <h2 className="text-3xl md:text-4xl font-display font-medium mb-6">
-            Choose Your Path to Growth
+            Three Ways to Work With Us
           </h2>
           <div className="w-20 h-0.5 bg-primary mx-auto"></div>
         </div>
