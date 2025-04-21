@@ -40,7 +40,9 @@ const Home: React.FC = () => {
         <ObstaclesSection />
         <AboutSection />
         <ServicesSection />
-        <ProcessSection />
+        <section id="process">
+          <ProcessSection />
+        </section>
         <CallBookingSection />
       </main>
       <Footer />
