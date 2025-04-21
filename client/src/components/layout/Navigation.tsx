@@ -6,31 +6,7 @@ import { useIsMobile } from '@/hooks/use-mobile';
 const Navigation: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState('');
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && entry.target.id === 'clockwork-system') {
-            setActiveSection('process');
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    const section = document.getElementById('clockwork-system');
-    if (section) {
-      observer.observe(section);
-    }
-
-    return () => {
-      if (section) {
-        observer.unobserve(section);
-      }
-    };
-  }, []);
+  const { activeSection } = useNavigation();
   const { scrollToSection } = useNavigation();
   const [location] = useLocation();
   const isMobile = useIsMobile();
