@@ -10,25 +10,29 @@ export const useNavigation = () => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting && entry.target.id === 'clockwork-system') {
-            setActiveSection('process');
-          } else if (!entry.isIntersecting && entry.target.id === 'clockwork-system') {
-            setActiveSection('');
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
           }
         });
       },
       { threshold: 0.3 }
     );
 
-    const section = document.getElementById('clockwork-system');
-    if (section) {
-      observer.observe(section);
-    }
+    const sections = ['hero', 'obstacles', 'about', 'services', 'process', 'contact'];
+    sections.forEach(sectionId => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        observer.observe(section);
+      }
+    });
 
     return () => {
-      if (section) {
-        observer.unobserve(section);
-      }
+      sections.forEach(sectionId => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          observer.unobserve(section);
+        }
+      });
     };
   }, [location]);
 

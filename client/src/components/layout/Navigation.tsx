@@ -71,7 +71,7 @@ const Navigation: React.FC = () => {
               </li>
               <li>
                 <button 
-                  onClick={() => scrollToSection('clockwork-system')}
+                  onClick={() => scrollToSection('process')}
                   className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${activeSection === 'process' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
                 >
                   Process
