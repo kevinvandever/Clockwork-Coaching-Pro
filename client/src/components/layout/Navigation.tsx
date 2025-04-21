@@ -154,7 +154,7 @@ const Navigation: React.FC = () => {
             <li>
               <button 
                 onClick={() => {setIsMobileMenuOpen(false); scrollToSection('services');}}
-                className="block py-3.5 border-b border-neutral-100 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium w-full text-left"
+                className={`block py-3.5 border-b border-neutral-100 ${activeSection === 'services' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium w-full text-left`}
               >
                 Services
               </button>
