@@ -5,8 +5,8 @@ import { Toaster } from "@/components/ui/toaster";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import About from "@/pages/About";
-import Services from "@/pages/Services";
-import Process from "@/pages/Process";
+import Process from "@/pages/Process"; // Updated import statement
+import ProcessPage from "@/pages/Process"; // Added import for the renamed page
 import Contact from "@/pages/Contact";
 import Booking from "@/pages/Booking";
 import JoinClub from './pages/JoinClub';
@@ -30,7 +30,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
-      <Route path="/services" component={Services} />
+      <Route path="/process" component={ProcessPage} /> {/* Updated route path */}
       <Route path="/process" component={Process} />
       <Route path="/contact" component={Contact} />
       <Route path="/booking" component={Booking} />

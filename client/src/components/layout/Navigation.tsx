@@ -70,8 +70,8 @@ const Navigation: React.FC = () => {
               </li>
               <li>
                 <Link 
-                  href="/services"
-                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${location === '/services' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
+                  href="/process"
+                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${location === '/process' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
                   onClick={() => window.scrollTo(0, 0)}
                 >
                   Process
