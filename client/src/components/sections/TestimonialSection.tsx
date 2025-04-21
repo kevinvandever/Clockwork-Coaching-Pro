@@ -2,7 +2,7 @@ import React from 'react';
 
 const TestimonialSection: React.FC = () => {
   return (
-    <section className="py-12 md:py-16 bg-neutral-50">
+    <section className="py-12 bg-neutral-50">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
