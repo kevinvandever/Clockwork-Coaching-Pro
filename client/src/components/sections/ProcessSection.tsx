@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { Button } from '@/components/ui/button';
 import { useNavigation } from '@/hooks/useNavigation';
 import { useIsMobile } from '@/hooks/use-mobile';
 
@@ -74,17 +73,6 @@ const ProcessSection: React.FC = () => {
         </div>
 
         {isMobile ? <MobileLayout /> : <DesktopLayout />}
-
-        <div className="text-center mt-12">
-          <Button 
-            variant="cta" 
-            size="lg" 
-            onClick={() => window.location.href = '/contact'}
-            className="text-lg px-8 py-4"
-          >
-            BOOK YOUR FREE DISCOVERY CALL
-          </Button>
-        </div>
       </div>
     </section>
   );
