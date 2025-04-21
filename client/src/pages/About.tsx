@@ -14,15 +14,6 @@ const About: React.FC = () => {
     <>
       <Navigation />
       <main>
-        <div className="pt-24 bg-primary/5">
-          <div className="elegant-container py-12 text-center">
-            <h1 className="elegant-heading text-neutral-900 mb-6">About Us</h1>
-            <div className="w-20 h-0.5 bg-primary mx-auto mb-8"></div>
-            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-              Learn more about how Clockwork Coaching can help transform your real estate business.
-            </p>
-          </div>
-        </div>
 
         {/* Co-Founders Hero Section */}
         <section className="elegant-section bg-white">
