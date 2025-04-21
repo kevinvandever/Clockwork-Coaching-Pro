@@ -33,7 +33,7 @@ const ServicesSection: React.FC = () => {
   ];
 
   return (
-    <section id="services" className="py-2 md:py-3 pb-0 md:pb-0 bg-white">
+    <section id="process" className="py-2 md:py-3 pb-0 md:pb-0 bg-white"> {/*This line was changed*/}
       <div className="elegant-container">
         <div className="py-8 md:py-12 bg-gradient-to-b from-primary/10 via-primary/5 to-white">
           <div className="max-w-4xl mx-auto text-center mb-8">
@@ -125,7 +125,7 @@ const ServicesSection: React.FC = () => {
                 </Link>
               ) : (
                 <button
-                  onClick={() => scrollToSection('services')} // Corrected this line
+                  onClick={() => scrollToSection('services')}
                   className="elegant-button mt-auto self-start"
                 >
                   {service.ctaText}
