@@ -15,7 +15,9 @@ const Process: React.FC = () => {
     <>
       <Navigation />
       <main>
-        <ProcessSection />
+        <section id="process">
+          <ProcessSection />
+        </section>
         <CallBookingSection />
       </main>
       <Footer />
