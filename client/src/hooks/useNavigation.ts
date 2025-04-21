@@ -37,6 +37,11 @@ export const useNavigation = () => {
   }, [location]);
 
   const scrollToSection = useCallback((sectionId: string) => {
+    if (sectionId === 'process' && location !== '/process') {
+      window.location.href = '/process';
+      return;
+    }
+    
     if (location !== '/') {
       window.location.href = '/#' + sectionId;
     } else {
