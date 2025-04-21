@@ -99,10 +99,8 @@ const About: React.FC = () => {
           </div>
         </section>
 
-        
-
         {/* Our Approach Section */}
-        <section className="elegant-section bg-white">
+        <section className="elegant-section bg-white -mt-16">
           <div className="elegant-container">
             <div className="grid md:grid-cols-5 gap-8">
               <div className="md:col-span-2">
