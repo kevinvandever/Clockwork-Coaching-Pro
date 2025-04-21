@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
     <>
       <section id="hero" className="relative h-[70vh] flex items-center bg-white">
         <div className="absolute inset-0 z-0">
-          <div className="h-full w-full bg-[url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center opacity-40"></div>
+          <div className="h-full w-full bg-[url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')] bg-cover bg-top opacity-40"></div>
         </div>
 
         <div className="elegant-container relative z-10 py-24 md:py-32">
