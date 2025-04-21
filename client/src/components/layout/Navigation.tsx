@@ -77,7 +77,14 @@ const Navigation: React.FC = () => {
                   Process
                 </button>
               </li>
-
+              <li>
+                <button 
+                  onClick={() => scrollToSection('services')}
+                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${activeSection === 'services' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
+                >
+                  Services
+                </button>
+              </li>
               <li>
                 <Link 
                   href="/contact"
@@ -138,13 +145,20 @@ const Navigation: React.FC = () => {
             </li>
             <li>
               <button 
-                onClick={() => {setIsMobileMenuOpen(false); scrollToSection('services');}}
+                onClick={() => {setIsMobileMenuOpen(false); scrollToSection('process');}}
                 className="block py-3.5 border-b border-neutral-100 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium w-full text-left"
               >
                 Process
               </button>
             </li>
-
+            <li>
+              <button 
+                onClick={() => {setIsMobileMenuOpen(false); scrollToSection('services');}}
+                className="block py-3.5 border-b border-neutral-100 text-neutral-700 hover:text-primary uppercase text-sm tracking-wider font-medium w-full text-left"
+              >
+                Services
+              </button>
+            </li>
             <li>
               <Link 
                 href="/contact"
