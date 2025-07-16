@@ -1,4 +1,4 @@
-import { users, type User, type InsertUser } from "@shared/schema";
+import { users, type User, type InsertUser, leads, type Lead, type InsertLead } from "@shared/schema";
 
 // modify the interface with any CRUD methods
 // you might need
@@ -6,16 +6,31 @@ import { users, type User, type InsertUser } from "@shared/schema";
 export interface IStorage {
   getUser(id: number): Promise<User | undefined>;
   getUserByUsername(username: string): Promise<User | undefined>;
+  getUserByEmail(email: string): Promise<User | undefined>;
   createUser(user: InsertUser): Promise<User>;
+  createLead(lead: InsertLead): Promise<Lead>;
 }
 
 export class MemStorage implements IStorage {
   private users: Map<number, User>;
-  currentId: number;
+  private leads: Map<number, Lead>;
+  private currentUserId: number;
+  private currentLeadId: number;
 
   constructor() {
     this.users = new Map();
-    this.currentId = 1;
+    this.leads = new Map();
+    this.currentUserId = 1;
+    this.currentLeadId = 1;
+    
+    // Add a test user for development
+    this.createUser({
+      username: "testuser@clockworkcoaching.com",
+      password: "password123",
+      firstName: "Test",
+      lastName: "User",
+      phone: null
+    });
   }
 
   async getUser(id: number): Promise<User | undefined> {
@@ -28,11 +43,36 @@ export class MemStorage implements IStorage {
     );
   }
 
+  async getUserByEmail(email: string): Promise<User | undefined> {
+    return Array.from(this.users.values()).find(
+      (user) => user.username === email,
+    );
+  }
+
   async createUser(insertUser: InsertUser): Promise<User> {
-    const id = this.currentId++;
-    const user: User = { ...insertUser, id };
+    const id = this.currentUserId++;
+    const user: User = { 
+      ...insertUser, 
+      id, 
+      createdAt: new Date(),
+      firstName: insertUser.firstName ?? null,
+      lastName: insertUser.lastName ?? null,
+      phone: insertUser.phone ?? null
+    };
     this.users.set(id, user);
     return user;
+  }
+
+  async createLead(insertLead: InsertLead): Promise<Lead> {
+    const id = this.currentLeadId++;
+    const lead: Lead = { 
+      ...insertLead, 
+      id,
+      phone: insertLead.phone ?? null,
+      message: insertLead.message ?? null
+    };
+    this.leads.set(id, lead);
+    return lead;
   }
 }
 

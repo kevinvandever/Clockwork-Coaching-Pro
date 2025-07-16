@@ -1,88 +1,133 @@
 import React, { useState } from 'react';
-import { Link } from 'wouter';
+import { useLocation, Link } from 'wouter';
 import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
 import CookieConsent from '@/components/shared/CookieConsent';
 import { Toaster } from '@/components/ui/toaster';
 import { toast } from '@/hooks/use-toast';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
 const JoinClub: React.FC = () => {
+  const [, setLocation] = useLocation();
   const [email, setEmail] = useState('');
-  const handleSubmit = async (type: 'notify' | 'message') => {
+  const [password, setPassword] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  
+  const handleLogin = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+    
     try {
-      const response = await fetch('/api/booking-leads', {
+      const response = await fetch('/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
           email,
-          type: `club_${type}`,
+          password,
         }),
       });
 
       if (response.ok) {
         toast({
-          title: "Success!",
-          description: "We've received your request. We'll be in touch soon!",
+          title: "Welcome to the Club!",
+          description: "You've successfully logged in.",
         });
-        setEmail('');
+        setLocation('/club');
       } else {
-        throw new Error('Failed to submit');
+        const errorData = await response.json();
+        throw new Error(errorData.message || 'Login failed');
       }
     } catch (error) {
       toast({
-        title: "Error",
-        description: "Something went wrong. Please try again.",
+        title: "Login Failed",
+        description: error instanceof Error ? error.message : "Invalid email or password. Please try again.",
         variant: "destructive",
       });
+    } finally {
+      setIsLoading(false);
     }
   };
 
   return (
     <>
       <Navigation />
-      <div className="min-h-[60vh] flex flex-col items-center justify-center py-24">
-        <h1 className="text-4xl md:text-5xl font-display font-bold mb-6 text-center">
-          Clockwork Coaching Club
-        </h1>
-        <div className="text-center max-w-2xl mx-auto px-4">
-          <p className="text-xl text-neutral-700 mb-8">
-            Coming Soon! Our exclusive membership platform is under development.
-          </p>
-
-          <div className="bg-primary/5 p-8 rounded-lg mb-8">
-            <h2 className="text-2xl font-display font-medium mb-6">
-              Stay Updated
-            </h2>
-            <div className="max-w-md mx-auto">
-              <Link
-                href="/notifications"
-                className="elegant-button w-full"
-              >
-                Get Notified When We Launch
-              </Link>
-            </div>
+      <div className="min-h-[calc(100vh-200px)] flex flex-col items-center justify-center py-24">
+        <div className="w-full max-w-md mx-auto px-4">
+          <div className="text-center mb-8">
+            <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">
+              <span className="text-primary">Enter</span> the Club
+            </h1>
+            <p className="text-neutral-600 text-lg">
+              Access your exclusive Clockwork Coaching Club membership
+            </p>
           </div>
 
-          <div className="bg-primary/5 p-8 rounded-lg">
-            <h2 className="text-2xl font-display font-medium mb-4">
-              What to Expect
-            </h2>
-            <ul className="space-y-4">
-              <li className="flex items-center justify-center">
-                <i className="fas fa-check-circle text-primary mr-3"></i>
-                <span>Exclusive member resources and tools</span>
-              </li>
-              <li className="flex items-center justify-center">
-                <i className="fas fa-check-circle text-primary mr-3"></i>
-                <span>Priority access to coaching sessions</span>
-              </li>
-              <li className="flex items-center justify-center">
-                <i className="fas fa-check-circle text-primary mr-3"></i>
-                <span>Community networking opportunities</span>
-              </li>
-            </ul>
+          <Card className="shadow-lg border-0 bg-white/80 backdrop-blur-sm">
+            <CardHeader className="text-center pb-6">
+              <CardTitle className="text-2xl font-display">Welcome Back</CardTitle>
+              <CardDescription className="text-base">
+                Sign in to access your club benefits
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <form onSubmit={handleLogin} className="space-y-6">
+                <div className="space-y-2">
+                  <Label htmlFor="email" className="text-sm font-medium">
+                    Email Address
+                  </Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="Enter your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                    className="h-12 text-base"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="password" className="text-sm font-medium">
+                    Password
+                  </Label>
+                  <Input
+                    id="password"
+                    type="password"
+                    placeholder="Enter your password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    required
+                    className="h-12 text-base"
+                  />
+                </div>
+                <Button
+                  type="submit"
+                  disabled={isLoading}
+                  className="w-full h-12 text-base font-medium bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-all duration-300"
+                >
+                  {isLoading ? 'Signing In...' : 'Enter the Club'}
+                </Button>
+              </form>
+            </CardContent>
+          </Card>
+          
+          <div className="mt-8 text-center space-y-3">
+            <p className="text-sm text-neutral-600">
+              Don't have an account yet?{' '}
+              <Link href="/register" className="text-primary hover:text-primary/80 font-medium">
+                Create an account
+              </Link>
+            </p>
+            <p className="text-sm text-neutral-600">
+              Need help?{' '}
+              <Link href="/contact" className="text-primary hover:text-primary/80 font-medium">
+                Contact us
+              </Link>
+            </p>
           </div>
         </div>
       </div>

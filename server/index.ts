@@ -37,7 +37,16 @@ app.use((req, res, next) => {
 });
 
 (async () => {
-  const server = await registerRoutes(app);
+  let server;
+  try {
+    log('Starting server initialization...');
+    server = await registerRoutes(app);
+    log('Server routes registered successfully');
+  } catch (error) {
+    log(`Error during server initialization: ${error.message}`, 'error');
+    console.error('Full error:', error);
+    process.exit(1);
+  }
 
   app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
     const status = err.status || err.statusCode || 500;
@@ -59,12 +68,25 @@ app.use((req, res, next) => {
   // ALWAYS serve the app on port 5000
   // this serves both the API and the client.
   // It is the only port that is not firewalled.
-  const port = 5000;
-  server.listen({
-    port,
-    host: "0.0.0.0",
-    reusePort: true,
-  }, () => {
-    log(`serving on port ${port}`);
+  const port = parseInt(process.env.PORT || "3000", 10);
+  const host = "127.0.0.1"; // Explicitly bind to localhost IPv4
+  
+  server.on('error', (err) => {
+    log(`Server error: ${err.message}`, 'error');
+    console.error(err);
+  });
+  
+  process.on('uncaughtException', (err) => {
+    log(`Uncaught exception: ${err.message}`, 'error');
+    console.error(err);
+  });
+  
+  process.on('unhandledRejection', (reason, promise) => {
+    log(`Unhandled rejection at promise: ${promise}, reason: ${reason}`, 'error');
+    console.error(reason);
+  });
+  
+  server.listen(port, host, () => {
+    log(`serving on http://localhost:${port}`);
   });
 })();

@@ -11,6 +11,8 @@ import Services from "@/pages/Services";
 import Contact from "@/pages/Contact";
 import Booking from "@/pages/Booking";
 import JoinClub from './pages/JoinClub';
+import Register from './pages/Register';
+import Club from './pages/Club';
 import NotificationsContact from './pages/NotificationsContact';
 import { useEffect } from 'react';
 import AbTestResults from './pages/AbTestResults';
@@ -36,6 +38,8 @@ function Router() {
       <Route path="/contact" component={Contact} />
       <Route path="/booking" component={Booking} />
       <Route path="/join-club" component={JoinClub} />
+      <Route path="/register" component={Register} />
+      <Route path="/club" component={Club} />
       <Route path="/notifications" component={NotificationsContact} />
       <Route path="/abtest-results" component={AbTestResults} />
       <Route path="/test-headings/:variant?" component={TestHeadings} />

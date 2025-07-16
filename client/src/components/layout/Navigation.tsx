@@ -102,7 +102,7 @@ const Navigation: React.FC = () => {
                   className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${location === '/join-club' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
                   onClick={() => window.scrollTo(0, 0)}
                 >
-                  The Club
+                  Enter the Club
                 </Link>
               </li>
             </ul>
@@ -178,7 +178,7 @@ const Navigation: React.FC = () => {
                 className={`block py-3.5 ${location === '/join-club' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium`}
                 onClick={() => {setIsMobileMenuOpen(false); window.scrollTo(0, 0);}}
               >
-                The Club
+                Enter the Club
               </Link>
             </li>
           </ul>
