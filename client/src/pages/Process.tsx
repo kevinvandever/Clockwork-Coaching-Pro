@@ -8,7 +8,7 @@ import CookieConsent from '@/components/shared/CookieConsent';
 
 const Process: React.FC = () => {
   React.useEffect(() => {
-    document.title = 'The Clockwork System | Clockwork Coaching';
+    document.title = 'Our Process | Clockwork Coaching';
   }, []);
 
   return (
