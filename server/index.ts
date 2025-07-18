@@ -69,8 +69,6 @@ app.use((req, res, next) => {
   // this serves both the API and the client.
   // It is the only port that is not firewalled.
   const port = parseInt(process.env.PORT || "3000", 10);
-  const host = "127.0.0.1"; // Explicitly bind to localhost IPv4
-  
   server.on('error', (err) => {
     log(`Server error: ${err.message}`, 'error');
     console.error(err);
@@ -86,7 +84,7 @@ app.use((req, res, next) => {
     console.error(reason);
   });
   
-  server.listen(port, host, () => {
+  server.listen(port, () => {
     log(`serving on http://localhost:${port}`);
   });
 })();

@@ -99,7 +99,7 @@ const Register: React.FC = () => {
           title: "Registration Successful!",
           description: "Your account has been created. You can now sign in.",
         });
-        setLocation('/join-club');
+        setLocation('/club');
       } else {
         const errorData = await response.json();
         throw new Error(errorData.message || 'Registration failed');

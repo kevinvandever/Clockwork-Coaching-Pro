@@ -54,7 +54,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         user: {
           id: user.id,
           email: user.username,
-          firstName: 'Member' // Default for now
+          firstName: user.firstName || 'Member'
         }
       });
     } catch (error) {
@@ -105,6 +105,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
         lastName,
         phone: phone || null,
       });
+
+      // Auto-login the user after successful registration
+      (req.session as any).userId = newUser.id;
 
       return res.status(201).json({
         success: true,

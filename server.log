@@ -1,0 +1,10 @@
+
+> rest-express@1.0.0 dev
+> tsx server/index.ts
+
+6:15:48 PM [express] Starting server initialization...
+6:15:48 PM [express] Server routes registered successfully
+6:15:48 PM [express] serving on http://localhost:8080
+6:18:36 PM [express] POST /api/abtest/impression 200 in 1ms
+10:47:08 AM [vite] hmr update /src/components/sections/AboutSection.tsx, /src/index.css?v=HIzvnBUsrjErVFjbv_0mj
+10:47:16 AM [vite] hmr update /src/components/sections/AboutSection.tsx, /src/index.css?v=HIzvnBUsrjErVFjbv_0mj

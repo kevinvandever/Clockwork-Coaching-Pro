@@ -6,8 +6,7 @@ import { useIsMobile } from '@/hooks/use-mobile';
 const Navigation: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const { activeSection } = useNavigation();
-  const { scrollToSection } = useNavigation();
+  const { activeSection, scrollToSection } = useNavigation();
   const [location] = useLocation();
   const isMobile = useIsMobile();
 
@@ -31,13 +30,18 @@ const Navigation: React.FC = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const handleBookCallClick = () => {
-    // Navigate to booking page
-    window.location.href = '/contact'; // Changed to redirect to the combined contact page
+  const handleNavClick = (sectionId: string) => {
+    if (location !== '/') {
+      window.location.href = `/#${sectionId}`;
+    } else {
+      scrollToSection(sectionId);
+    }
     if (isMobileMenuOpen) {
       setIsMobileMenuOpen(false);
     }
   };
+
+  const isHome = location === '/';
 
   return (
     <header className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-sm py-2' : 'bg-white md:bg-transparent py-3 md:py-4'}`}>
@@ -54,47 +58,43 @@ const Navigation: React.FC = () => {
               <li>
                 <Link 
                   href="/"
-                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${location === '/' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
+                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${isHome && !activeSection ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
                   onClick={() => window.scrollTo(0, 0)}
                 >
                   Home
                 </Link>
               </li>
               <li>
-                <Link 
-                  href="/about"
-                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${location === '/about' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
-                  onClick={() => window.scrollTo(0, 0)}
+                <button 
+                  onClick={() => handleNavClick('about')}
+                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${isHome && activeSection === 'about' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
                 >
                   About
-                </Link>
+                </button>
               </li>
               <li>
-                <Link 
-                  href="/process"
-                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${location === '/process' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
-                  onClick={() => window.scrollTo(0, 0)}
+                <button 
+                  onClick={() => handleNavClick('process')}
+                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${isHome && activeSection === 'process' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
                 >
                   Process
-                </Link>
+                </button>
               </li>
               <li>
-                <Link 
-                  href="/services"
-                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${location === '/services' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
-                  onClick={() => window.scrollTo(0, 0)}
+                <button 
+                  onClick={() => handleNavClick('services')}
+                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${isHome && activeSection === 'services' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
                 >
                   Services
-                </Link>
+                </button>
               </li>
               <li>
-                <Link 
-                  href="/contact"
-                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${location === '/contact' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
-                  onClick={() => window.scrollTo(0, 0)}
+                <button 
+                  onClick={() => handleNavClick('book-call')}
+                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${isHome && activeSection === 'book-call' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
                 >
-                  Contact Us
-                </Link>
+                  Contact
+                </button>
               </li>
               <li>
                 <Link 
@@ -130,47 +130,43 @@ const Navigation: React.FC = () => {
             <li>
               <Link 
                 href="/"
-                className={`block py-3.5 border-b border-neutral-100 ${location === '/' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium`}
+                className={`block py-3.5 border-b border-neutral-100 ${isHome && !activeSection ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium`}
                 onClick={() => {setIsMobileMenuOpen(false); window.scrollTo(0, 0);}}
               >
                 Home
               </Link>
             </li>
             <li>
-              <Link 
-                href="/about"
-                className={`block py-3.5 border-b border-neutral-100 ${location === '/about' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium`}
-                onClick={() => {setIsMobileMenuOpen(false); window.scrollTo(0, 0);}}
+              <button 
+                onClick={() => handleNavClick('about')}
+                className={`block py-3.5 border-b border-neutral-100 ${isHome && activeSection === 'about' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium w-full text-left`}
               >
                 About
-              </Link>
+              </button>
             </li>
             <li>
-              <Link 
-                href="/process"
-                className={`block py-3.5 border-b border-neutral-100 ${location === '/process' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium w-full text-left`}
-                onClick={() => {setIsMobileMenuOpen(false); window.scrollTo(0, 0);}}
+              <button 
+                onClick={() => handleNavClick('process')}
+                className={`block py-3.5 border-b border-neutral-100 ${isHome && activeSection === 'process' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium w-full text-left`}
               >
                 Process
-              </Link>
+              </button>
             </li>
             <li>
-              <Link 
-                href="/services"
-                className={`block py-3.5 border-b border-neutral-100 ${location === '/services' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium w-full text-left`}
-                onClick={() => {setIsMobileMenuOpen(false); window.scrollTo(0, 0);}}
+              <button 
+                onClick={() => handleNavClick('services')}
+                className={`block py-3.5 border-b border-neutral-100 ${isHome && activeSection === 'services' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium w-full text-left`}
               >
                 Services
-              </Link>
+              </button>
             </li>
             <li>
-              <Link 
-                href="/contact"
-                className={`block py-3.5 border-b border-neutral-100 ${location === '/contact' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium`}
-                onClick={() => {setIsMobileMenuOpen(false); window.scrollTo(0, 0);}}
+              <button 
+                onClick={() => handleNavClick('book-call')}
+                className={`block py-3.5 border-b border-neutral-100 ${isHome && activeSection === 'book-call' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium w-full text-left`}
               >
-                Contact Us
-              </Link>
+                Contact
+              </button>
             </li>
             <li>
               <Link 
