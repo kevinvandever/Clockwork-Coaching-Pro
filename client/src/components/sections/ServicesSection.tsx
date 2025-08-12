@@ -86,10 +86,14 @@ const ServicesSection: React.FC = () => {
                 <i className="fas fa-check text-primary mt-1 mr-3"></i>
                 <span>Full training and documentation included</span>
               </li>
+              <li className="flex items-start opacity-0 pointer-events-none">
+                <i className="fas fa-check text-primary mt-1 mr-3"></i>
+                <span>Invisible spacer item</span>
+              </li>
             </ul>
 
-            <div className="text-center mb-6 mt-12">
-              <p className="text-sm text-neutral-600 mb-2 invisible">Limited availability</p>
+            <div className="text-center mb-6">
+              <p className="text-sm text-neutral-600 mb-2">Limited availability</p>
               <p className="text-lg font-medium text-neutral-900">
                 Starting at $2,500
               </p>
