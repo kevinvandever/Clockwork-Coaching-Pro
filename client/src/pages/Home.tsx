@@ -12,7 +12,18 @@ import CookieConsent from '@/components/shared/CookieConsent';
 
 const Home: React.FC = () => {
   useEffect(() => {
-    document.title = 'Clockwork Coaching | Transform Your Real Estate Business';
+    document.title = 'Automation Consulting for Real Estate | ClockworkCoaching.Club';
+    
+    // Update meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Free automation audit for real estate professionals. Save 15+ hours per week with done-for-you systems. Book your free 2-week audit today.');
+    } else {
+      const newMetaDescription = document.createElement('meta');
+      newMetaDescription.name = 'description';
+      newMetaDescription.content = 'Free automation audit for real estate professionals. Save 15+ hours per week with done-for-you systems. Book your free 2-week audit today.';
+      document.head.appendChild(newMetaDescription);
+    }
 
     const link = document.createElement('link');
     link.href = "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap";
