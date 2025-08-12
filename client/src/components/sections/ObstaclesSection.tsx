@@ -60,7 +60,7 @@ const ObstaclesSection: React.FC = () => {
             <p className="text-neutral-600 leading-relaxed">
               Using the same workflows from 2010 in 2025's market
             </p>
-          </divv>
+          </div>
 
           <div className="text-center group">
             <div className="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
