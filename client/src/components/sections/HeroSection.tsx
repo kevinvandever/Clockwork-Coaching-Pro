@@ -5,7 +5,7 @@ const HeroSection: React.FC = () => {
   const { scrollToSection } = useNavigation();
 
   const handleCTAClick = () => {
-    scrollToSection('book-call');
+    window.open('https://calendar.app.google/wYppJc52fLw3HYy36', '_blank');
   };
 
   return (

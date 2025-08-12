@@ -54,7 +54,7 @@ const ServicesSection: React.FC = () => {
 
             <div className="mt-auto">
               <button
-                onClick={() => scrollToSection('book-call')}
+                onClick={() => window.open('https://calendar.app.google/wYppJc52fLw3HYy36', '_blank')}
                 className="elegant-button w-full"
               >
                 Apply for Your Free Audit
