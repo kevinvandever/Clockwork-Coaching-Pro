@@ -3,7 +3,7 @@ import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
 import CookieConsent from '@/components/shared/CookieConsent';
 
-const calendarUrl = 'https://calendar.app.google/HAGdU8iJDvstoJmD6';
+const calendarUrl = 'https://calendar.app.google/wYppJc52fLw3HYy36';
 
 const Booking: React.FC = () => {
   React.useEffect(() => {

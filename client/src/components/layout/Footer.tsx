@@ -18,12 +18,14 @@ const Footer: React.FC = () => {
           <p className="text-neutral-600 mb-8 max-w-md mx-auto">
             Top producers use systems. Let us build yours.
           </p>
-          <Link
-            href="/booking"
+          <a
+            href="https://calendar.app.google/wYppJc52fLw3HYy36"
+            target="_blank"
+            rel="noopener noreferrer"
             className="elegant-button"
           >
             Get Your Free Automation Audit
-          </Link>
+          </a>
         </div>
       </div>
 

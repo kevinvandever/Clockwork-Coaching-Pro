@@ -89,7 +89,7 @@ const CallBookingSection: React.FC = () => {
             </div>
 
             <a
-              href="https://calendly.com/clockworkcoaching"
+              href="https://calendar.app.google/wYppJc52fLw3HYy36"
               target="_blank"
               rel="noopener noreferrer"
               className="elegant-button inline-block"
