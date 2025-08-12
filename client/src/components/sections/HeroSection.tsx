@@ -14,10 +14,10 @@ const HeroSection: React.FC = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/images/9B8D29A3-8C27-4ADB-838D-42D9CB42764A_1_105_c.jpeg')"
+          backgroundImage: "url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')"
         }}
       >
-        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
       {/* Scarcity/Urgency Banner */}
       <div className="fixed top-0 left-0 right-0 bg-red-600 text-white py-2 px-4 text-center text-sm z-50">
