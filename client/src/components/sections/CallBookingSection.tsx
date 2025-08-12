@@ -56,7 +56,7 @@ const CallBookingSection: React.FC = () => {
               Get your free audit and discover exactly which systems you need to implement first.
             </p>
 
-          <div className="flex flex-col sm:flex-row gap-8 items-center justify-center md:justify-start mb-8">
+          <div className="flex flex-col sm:flex-row gap-8 items-center justify-center mb-8">
               <div className="text-center">
                 <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden">
                   <img 
