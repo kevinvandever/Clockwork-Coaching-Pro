@@ -49,7 +49,7 @@ const CallBookingSection: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-display font-medium mb-6 text-neutral-900">
               Book Your Free Discovery Call
             </h2>
-            <div className="w-20 h-0.5 bg-primary mb-6 mx-auto md:mx-0"></div>
+            <div className="w-20 h-0.5 bg-primary mb-6 mx-auto"></div>
 
             <p className="text-neutral-700 mb-8 leading-relaxed">
               Ready to transform your real estate business with AI automation? 
