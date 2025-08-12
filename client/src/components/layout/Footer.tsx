@@ -10,7 +10,14 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-white border-t border-gray-100 py-12">
       <div className="elegant-container">
-        
+        <div className="text-center py-12">
+          <h3 className="text-2xl md:text-3xl font-display font-medium mb-4">
+            Ready to Build a Predictable Pipeline?
+          </h3>
+          <p className="text-neutral-600 mb-8 max-w-md mx-auto">
+            Top producers use systems. Let us build yours.
+          </p>
+        </div>
 
         <div className="border-t border-neutral-200 py-8">
           <div className="text-center text-neutral-600 mb-4">
