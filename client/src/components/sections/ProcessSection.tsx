@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useNavigation } from '@/hooks/useNavigation';
 
@@ -28,7 +27,7 @@ const ProcessSection: React.FC = () => {
       number: "4",
       title: "Choose Your Path",
       description: "Keep the roadmap and implement yourself, or have us build everything for you ($2,500). Either way, the audit is yours to keep.",
-      icon: "fas fa-path"
+      icon: "fas fa-route"
     }
   ];
 
@@ -49,9 +48,7 @@ const ProcessSection: React.FC = () => {
                 <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <i className={`${step.icon} text-2xl text-white`}></i>
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white font-bold text-sm">
-                  {step.number}
-                </div>
+                
               </div>
               <h3 className="font-display text-xl font-medium mb-4 text-neutral-900">
                 {step.title}
