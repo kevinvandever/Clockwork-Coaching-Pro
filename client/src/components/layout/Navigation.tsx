@@ -74,8 +74,8 @@ const Navigation: React.FC = () => {
               </li>
               <li>
                 <button
-                  onClick={() => scrollToSection('book-call')}
-                  className="elegant-button text-sm"
+                  onClick={() => handleNavClick('book-call')}
+                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${isHome && activeSection === 'book-call' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
                 >
                   Free Audit
                 </button>
@@ -136,13 +136,12 @@ const Navigation: React.FC = () => {
               </button>
             </li>
             <li>
-              <Link 
-                href="/booking"
-                className={`block py-3.5 border-b border-neutral-100 ${location === '/booking' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium`}
-                onClick={() => {setIsMobileMenuOpen(false);}}
+              <button 
+                onClick={() => handleNavClick('book-call')}
+                className={`block py-3.5 border-b border-neutral-100 ${isHome && activeSection === 'book-call' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium w-full text-left`}
               >
                 Free Audit
-              </Link>
+              </button>
             </li>
             <li>
               <button 

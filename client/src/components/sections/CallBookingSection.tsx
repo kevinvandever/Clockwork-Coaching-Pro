@@ -53,18 +53,8 @@ const CallBookingSection: React.FC = () => {
 
             <p className="text-neutral-700 mb-8 leading-relaxed">
               Ready to transform your real estate business with AI automation? 
-            Get your free audit and discover exactly which systems you need to implement first.
-          </p>
-          <div className="text-center">
-            <a
-              href="https://calendly.com/clockworkcoaching"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="elegant-button inline-block"
-            >
-              GET YOUR FREE AUDIT
-            </a>
-          </div>
+              Get your free audit and discover exactly which systems you need to implement first.
+            </p>
 
           <div className="flex flex-col sm:flex-row gap-6 items-center justify-center md:justify-start mb-8">
               <div className="text-center">
@@ -92,13 +82,14 @@ const CallBookingSection: React.FC = () => {
               </div>
             </div>
 
-            <Link 
-              to="/contact" 
-              onClick={scrollToTop}
+            <a
+              href="https://calendly.com/clockworkcoaching"
+              target="_blank"
+              rel="noopener noreferrer"
               className="elegant-button inline-block"
             >
               FIND A TIME THAT WORKS FOR YOU
-            </Link>
+            </a>
           </div>
 
           {/* Right Column - Get in Touch */}
