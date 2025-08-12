@@ -66,7 +66,10 @@ const CallBookingSection: React.FC = () => {
                   />
                 </div>
                 <h3 className="font-display text-lg font-medium text-neutral-900">Joe Quiros</h3>
-                <p className="text-sm text-primary">Co-founder & Real Estate Expert</p>
+                <p className="text-sm text-primary mb-2">Co-founder & Real Estate Expert</p>
+                <a href="mailto:JoeQ@clockworkcoaching.club" className="text-primary hover:text-primary/80 text-sm">
+                  JoeQ@clockworkcoaching.club
+                </a>
               </div>
 
               <div className="text-center">
@@ -78,7 +81,10 @@ const CallBookingSection: React.FC = () => {
                   />
                 </div>
                 <h3 className="font-display text-lg font-medium text-neutral-900">Kevin Vandever</h3>
-                <p className="text-sm text-primary">Co-founder & Technology Strategist</p>
+                <p className="text-sm text-primary mb-2">Co-founder & Technology Strategist</p>
+                <a href="mailto:KV@clockworkcoaching.club" className="text-primary hover:text-primary/80 text-sm">
+                  KV@clockworkcoaching.club
+                </a>
               </div>
             </div>
 
@@ -92,61 +98,11 @@ const CallBookingSection: React.FC = () => {
             </a>
           </div>
 
-          {/* Right Column - Get in Touch */}
+          {/* Right Column - Description */}
           <div className="text-center md:text-left">
-            <div className="text-center mb-16">
-              <p className="text-lg md:text-xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed">
-                We help real estate professionals leverage technology to capture more opportunities, build predictable pipelines and reclaim time.
-              </p>
-
-              {/* Team Photos */}
-              <div className="flex flex-col md:flex-row justify-center items-center gap-12 mb-12">
-                <div className="text-center">
-                  <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4 border-4 border-white/20">
-                    <img 
-                      src="/images/Joe-Quiros-(cropped 300x300 square, saved for print)-JTG_0661.jpeg" 
-                      alt="Joe Quiros"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <h3 className="text-xl font-medium text-white mb-2">Joe Quiros</h3>
-                  <p className="text-white/80 mb-3">Real Estate Coach & Strategist</p>
-                  <a href="mailto:JoeQ@clockworkcoaching.club" className="text-primary hover:text-primary/80 text-sm">
-                    JoeQ@clockworkcoaching.club
-                  </a>
-                </div>
-
-                <div className="text-center">
-                  <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4 border-4 border-white/20">
-                    <img 
-                      src="/images/9B8D29A3-8C27-4ADB-838D-42D9CB42764A_1_105_c.jpeg" 
-                      alt="Kevin Villalobos"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <h3 className="text-xl font-medium text-white mb-2">Kevin Villalobos</h3>
-                  <p className="text-white/80 mb-3">Automation & Systems Expert</p>
-                  <a href="mailto:KV@clockworkcoaching.club" className="text-primary hover:text-primary/80 text-sm">
-                    KV@clockworkcoaching.club
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-start">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto">
-                <div className="text-center">
-                  <div className="flex items-center justify-center gap-4">
-                    <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                      <i className="fas fa-envelope text-primary"></i>
-                    </div>
-                    <div>
-                      <p className="font-medium text-white">Contact Us Directly</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <p className="text-lg md:text-xl text-neutral-700 leading-relaxed">
+              We help real estate professionals leverage technology to capture more opportunities, build predictable pipelines and reclaim time.
+            </p>
           </div>
         </div>
       </div>
