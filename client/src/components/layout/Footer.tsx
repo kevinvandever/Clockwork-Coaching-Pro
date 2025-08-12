@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useNavigation } from '@/hooks/useNavigation';
 import { Link, useLocation } from 'wouter';
@@ -34,7 +33,7 @@ const Footer: React.FC = () => {
               </a>
             </div>
           </div>
-          
+
           <div>
             <h4 className="text-sm uppercase tracking-wider font-medium text-neutral-900 mb-6">Navigation</h4>
             <ul className="space-y-3">
@@ -72,7 +71,7 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-sm uppercase tracking-wider font-medium text-neutral-900 mb-6">Contact Us</h4>
             <ul className="space-y-4 text-neutral-500">
@@ -104,14 +103,46 @@ const Footer: React.FC = () => {
             </ul>
           </div>
         </div>
-        
-        <div className="border-t border-gray-100 mt-12 pt-8 text-center text-neutral-500 text-xs">
-          <p>&copy; {new Date().getFullYear()} Clockwork Coaching. All rights reserved.</p>
-          <p className="mt-2">
-            <a href="#" className="hover:text-primary transition duration-300">Privacy Policy</a> &nbsp;|&nbsp; 
-            <a href="#" className="hover:text-primary transition duration-300">Terms of Service</a>
+
+        <div className="border-t border-neutral-200 py-12">
+        <div className="text-center">
+          <h3 className="text-2xl md:text-3xl font-display font-medium mb-4">
+            Ready to Build a Predictable Pipeline?
+          </h3>
+          <p className="text-neutral-600 mb-8 max-w-md mx-auto">
+            Top producers use systems. Let us build yours.
+          </p>
+          <Link
+            href="/booking"
+            className="elegant-button"
+          >
+            Get Your Free Automation Audit
+          </Link>
+        </div>
+      </div>
+
+        <div className="border-t border-neutral-200 py-8">
+        <div className="mb-6">
+          <p className="text-xs text-neutral-500 text-center">
+            Results based on actual client implementations. Individual results vary based on market conditions and implementation commitment.
           </p>
         </div>
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="mb-4 md:mb-0">
+            <p className="text-sm text-neutral-600">
+              © 2024 Clockwork Coaching. All rights reserved.
+            </p>
+          </div>
+          <div className="flex space-x-6">
+            <a href="/privacy" className="text-sm text-neutral-600 hover:text-primary transition duration-300">
+              Privacy Policy
+            </a>
+            <a href="/terms" className="text-sm text-neutral-600 hover:text-primary transition duration-300">
+              Terms of Service
+            </a>
+          </div>
+        </div>
+      </div>
       </div>
     </footer>
   );

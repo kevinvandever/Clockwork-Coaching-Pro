@@ -1,34 +1,23 @@
 import React from 'react';
-import { useNavigation } from '@/hooks/useNavigation';
 import { Link } from 'wouter';
 
 const ServicesSection: React.FC = () => {
-  const { scrollToSection } = useNavigation();
-
   const services = [
     {
-      title: "🎯 Clockwork Bootcamp",
-      type: "5-WEEK PROGRAM",
-      description: "5-week sprint to clean up your business and install the right systems fast.",
+      title: "Free AI Automation Audit",
+      type: "COMPREHENSIVE ANALYSIS",
+      description: "We analyze your entire workflow, identify your biggest time-wasters, map out which tasks to automate first, and deliver a custom automation roadmap. Limited availability (normally $1,500).",
       image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      ctaText: "LEARN MORE",
-      ctaAction: 'book-call'
+      ctaText: "Apply for Your Free Audit",
+      ctaAction: '/booking'
     },
     {
-      title: "💼 Clockwork Pro",
-      type: "1:1 COACHING",
-      description: "Monthly 1:1 coaching for agents who want ongoing tools, guidance, and strategy.",
+      title: "4-Week Implementation Sprint",
+      type: "DONE-FOR-YOU SYSTEMS",
+      description: "We build and connect your automations, create custom workflows for your business, and provide full training and documentation included. Starting at $2,500.",
       image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      ctaText: "JOIN NOW",
-      ctaAction: 'book-call'
-    },
-    {
-      title: "✏️ Clockwork Coaching Club",
-      type: "COMING SOON",
-      description: "An exclusive Circle community where real estate professionals connect, share strategies, access resources and tools, and grow together.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      ctaText: "GET NOTIFIED",
-      ctaAction: '/join-club'
+      ctaText: "See Implementation Details",
+      ctaAction: '/booking'
     }
   ];
 
@@ -37,12 +26,12 @@ const ServicesSection: React.FC = () => {
       <div className="elegant-container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-display font-medium mb-6">
-            Three Ways to Work With Us
+            How We Transform Your Business
           </h2>
           <div className="w-20 h-0.5 bg-primary mx-auto"></div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-10">
+        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
           {services.map((service, index) => (
             <div 
               key={index} 
@@ -68,18 +57,9 @@ const ServicesSection: React.FC = () => {
                 {service.description}
               </p>
 
-              {service.ctaAction.startsWith('/') ? (
-                <Link href={service.ctaAction} className="elegant-button mt-auto self-start">
-                  {service.ctaText}
-                </Link>
-              ) : (
-                <button
-                  onClick={() => scrollToSection('services')}
-                  className="elegant-button mt-auto self-start"
-                >
-                  {service.ctaText}
-                </button>
-              )}
+              <Link href={service.ctaAction} className="elegant-button mt-auto self-start">
+                {service.ctaText}
+              </Link>
             </div>
           ))}
         </div>

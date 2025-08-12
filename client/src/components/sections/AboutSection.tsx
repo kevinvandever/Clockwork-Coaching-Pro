@@ -15,8 +15,7 @@ const AboutSection: React.FC = () => {
           </h2>
           <div className="w-20 h-0.5 bg-primary mx-auto mb-6"></div>
           <p className="text-neutral-600 mb-12 max-w-3xl mx-auto">
-            We combine decades of real estate experience with cutting-edge technology expertise to help established<br />
-            agents adapt and thrive in today's rapidly changing market.
+            We help real estate professionals leverage technology to capture more opportunities, build predictable pipelines and reclaim time.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">

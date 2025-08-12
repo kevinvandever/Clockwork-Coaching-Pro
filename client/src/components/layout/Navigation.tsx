@@ -54,7 +54,7 @@ const Navigation: React.FC = () => {
           </div>
 
           <nav className="hidden md:block">
-            <ul className="flex justify-between w-[700px]">
+            <ul className="flex justify-between w-[600px]">
               <li>
                 <Link 
                   href="/"
@@ -73,19 +73,19 @@ const Navigation: React.FC = () => {
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => handleNavClick('process')}
-                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${isHome && activeSection === 'process' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
+                <Link 
+                  href="/booking"
+                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${location === '/booking' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
                 >
-                  Process
-                </button>
+                  Free Audit
+                </Link>
               </li>
               <li>
                 <button 
                   onClick={() => handleNavClick('services')}
                   className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${isHome && activeSection === 'services' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
                 >
-                  Services
+                  Implementation
                 </button>
               </li>
               <li>
@@ -95,15 +95,6 @@ const Navigation: React.FC = () => {
                 >
                   Contact
                 </button>
-              </li>
-              <li>
-                <Link 
-                  href="/join-club"
-                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${location === '/join-club' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
-                  onClick={() => window.scrollTo(0, 0)}
-                >
-                  Enter the Club
-                </Link>
               </li>
             </ul>
           </nav>
@@ -145,37 +136,29 @@ const Navigation: React.FC = () => {
               </button>
             </li>
             <li>
-              <button 
-                onClick={() => handleNavClick('process')}
-                className={`block py-3.5 border-b border-neutral-100 ${isHome && activeSection === 'process' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium w-full text-left`}
+              <Link 
+                href="/booking"
+                className={`block py-3.5 border-b border-neutral-100 ${location === '/booking' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium`}
+                onClick={() => {setIsMobileMenuOpen(false);}}
               >
-                Process
-              </button>
+                Free Audit
+              </Link>
             </li>
             <li>
               <button 
                 onClick={() => handleNavClick('services')}
                 className={`block py-3.5 border-b border-neutral-100 ${isHome && activeSection === 'services' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium w-full text-left`}
               >
-                Services
+                Implementation
               </button>
             </li>
             <li>
               <button 
                 onClick={() => handleNavClick('book-call')}
-                className={`block py-3.5 border-b border-neutral-100 ${isHome && activeSection === 'book-call' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium w-full text-left`}
+                className={`block py-3.5 ${isHome && activeSection === 'book-call' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium w-full text-left`}
               >
                 Contact
               </button>
-            </li>
-            <li>
-              <Link 
-                href="/join-club"
-                className={`block py-3.5 ${location === '/join-club' ? 'text-primary' : 'text-neutral-700 hover:text-primary'} uppercase text-sm tracking-wider font-medium`}
-                onClick={() => {setIsMobileMenuOpen(false); window.scrollTo(0, 0);}}
-              >
-                Enter the Club
-              </Link>
             </li>
           </ul>
         </div>
