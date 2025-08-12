@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useNavigation } from '@/hooks/useNavigation';
 
@@ -26,7 +25,7 @@ const ServicesSection: React.FC = () => {
                 Free AI Automation Audit
               </h3>
             </div>
-            
+
             <ul className="space-y-3 mb-8">
               <li className="flex items-start">
                 <i className="fas fa-check text-primary mt-1 mr-3"></i>
@@ -45,20 +44,22 @@ const ServicesSection: React.FC = () => {
                 <span>Deliver a custom automation roadmap</span>
               </li>
             </ul>
-            
+
             <div className="text-center mb-6">
               <p className="text-sm text-neutral-600 mb-2">Limited availability</p>
               <p className="text-lg font-medium text-neutral-900">
-                (normally <span className="line-through">$1,500</span>)
+                (normally $1,500)
               </p>
             </div>
-            
-            <button
-              onClick={() => scrollToSection('book-call')}
-              className="elegant-button w-full"
-            >
-              Apply for Your Free Audit
-            </button>
+
+            <div className="mt-auto">
+              <button
+                onClick={() => scrollToSection('book-call')}
+                className="elegant-button w-full"
+              >
+                Apply for Your Free Audit
+              </button>
+            </div>
           </div>
 
           {/* 4-Week Implementation Sprint */}
@@ -71,7 +72,7 @@ const ServicesSection: React.FC = () => {
                 4-Week Implementation Sprint
               </h3>
             </div>
-            
+
             <ul className="space-y-3 mb-8">
               <li className="flex items-start">
                 <i className="fas fa-check text-primary mt-1 mr-3"></i>
@@ -86,19 +87,21 @@ const ServicesSection: React.FC = () => {
                 <span>Full training and documentation included</span>
               </li>
             </ul>
-            
+
             <div className="text-center mb-6">
               <p className="text-lg font-medium text-neutral-900">
                 Starting at $2,500
               </p>
             </div>
-            
-            <button
-              onClick={() => scrollToSection('book-call')}
-              className="elegant-button w-full bg-neutral-700 hover:bg-neutral-600"
-            >
-              See Implementation Details
-            </button>
+
+            <div className="mt-auto">
+              <button
+                onClick={() => scrollToSection('book-call')}
+                className="elegant-button w-full bg-neutral-700 hover:bg-neutral-600"
+              >
+                See Implementation Details
+              </button>
+            </div>
           </div>
         </div>
       </div>
