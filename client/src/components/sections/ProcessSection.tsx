@@ -60,14 +60,7 @@ const ProcessSection: React.FC = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <button
-            onClick={() => scrollToSection('book-call')}
-            className="elegant-button"
-          >
-            Start Your Free Audit Application
-          </button>
-        </div>
+        
       </div>
     </section>
   );
