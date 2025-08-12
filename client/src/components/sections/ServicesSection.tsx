@@ -88,7 +88,8 @@ const ServicesSection: React.FC = () => {
               </li>
             </ul>
 
-            <div className="text-center mb-6">
+            <div className="text-center mb-6 mt-12">
+              <p className="text-sm text-neutral-600 mb-2 invisible">Limited availability</p>
               <p className="text-lg font-medium text-neutral-900">
                 Starting at $2,500
               </p>
