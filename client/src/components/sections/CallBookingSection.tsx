@@ -97,6 +97,7 @@ const CallBookingSection: React.FC = () => {
               Get Your Free Automation Audit
             </a>
           </div>
+        </div>
       </div>
     </section>
   );
