@@ -42,9 +42,9 @@ const CallBookingSection: React.FC = () => {
   return (
     <section id="book-call" className="py-16 md:py-24 bg-gray-50">
       <div className="elegant-container">
-        <div className="grid md:grid-cols-2 gap-12">
-          {/* Left Column - Book Your Free Discovery Call */}
-          <div className="text-center md:text-left">
+        <div className="max-w-4xl mx-auto">
+          {/* Main Content - Book Your Free Discovery Call */}
+          <div className="text-center">
             <p className="elegant-subheading text-primary">SPEAK WITH OUR CO-FOUNDERS</p>
             <h2 className="text-3xl md:text-4xl font-display font-medium mb-6 text-neutral-900">
               Book Your Free Discovery Call
@@ -56,7 +56,7 @@ const CallBookingSection: React.FC = () => {
               Get your free audit and discover exactly which systems you need to implement first.
             </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 items-center justify-center md:justify-start mb-8">
+          <div className="flex flex-col sm:flex-row gap-8 items-center justify-center md:justify-start mb-8">
               <div className="text-center">
                 <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden">
                   <img 
@@ -66,7 +66,7 @@ const CallBookingSection: React.FC = () => {
                   />
                 </div>
                 <h3 className="font-display text-lg font-medium text-neutral-900">Joe Quiros</h3>
-                <p className="text-sm text-primary mb-2">Co-founder & Real Estate Expert</p>
+                <p className="text-sm text-primary">Co-founder & Real Estate Expert</p>
                 <a href="mailto:JoeQ@clockworkcoaching.club" className="text-primary hover:text-primary/80 text-sm">
                   JoeQ@clockworkcoaching.club
                 </a>
@@ -81,7 +81,7 @@ const CallBookingSection: React.FC = () => {
                   />
                 </div>
                 <h3 className="font-display text-lg font-medium text-neutral-900">Kevin Vandever</h3>
-                <p className="text-sm text-primary mb-2">Co-founder & Technology Strategist</p>
+                <p className="text-sm text-primary">Co-founder & Technology Strategist</p>
                 <a href="mailto:KV@clockworkcoaching.club" className="text-primary hover:text-primary/80 text-sm">
                   KV@clockworkcoaching.club
                 </a>
@@ -97,14 +97,6 @@ const CallBookingSection: React.FC = () => {
               Get Your Free Automation Audit
             </a>
           </div>
-
-          {/* Right Column - Description */}
-          <div className="text-center md:text-left">
-            <p className="text-lg md:text-xl text-neutral-700 leading-relaxed">
-              We help real estate professionals leverage technology to capture more opportunities, build predictable pipelines and reclaim time.
-            </p>
-          </div>
-        </div>
       </div>
     </section>
   );
