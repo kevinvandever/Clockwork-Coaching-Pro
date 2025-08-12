@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
             </p>
           </div>
           <div className="text-center text-neutral-600">
-            <p>&copy; 2024 Clockwork Coaching. All rights reserved.</p>
+            <p>&copy; 2025 Clockwork Coaching. All rights reserved.</p>
           </div>
         </div>
       </div>
