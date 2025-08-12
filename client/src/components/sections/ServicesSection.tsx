@@ -100,12 +100,9 @@ const ServicesSection: React.FC = () => {
             </div>
 
             <div className="mt-auto">
-              <button
-                onClick={() => scrollToSection('book-call')}
-                className="elegant-button w-full bg-neutral-700 hover:bg-neutral-600"
-              >
-                See Implementation Details
-              </button>
+              <p className="text-sm text-neutral-600 text-center">
+                Available after your free audit
+              </p>
             </div>
           </div>
         </div>
