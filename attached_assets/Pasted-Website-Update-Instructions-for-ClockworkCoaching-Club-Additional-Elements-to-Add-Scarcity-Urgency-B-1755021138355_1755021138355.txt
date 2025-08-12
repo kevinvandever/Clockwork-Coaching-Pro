@@ -1,0 +1,85 @@
+Website Update Instructions for ClockworkCoaching.Club
+Additional Elements to Add
+Scarcity/Urgency Banner (Above the fold):
+" Limited Time: Free AI Automation Audits for real estate professionals"
+Trust/Credibility Section (Below hero):
+"Why Free? We're building case studies with our early clients."
+Disclaimer (Footer area):
+"Results based on actual client implementations. Individual results vary based on market conditions and implementation commitment."
+
+1. Homepage Hero Section
+Update To:
+Headline: "From Chaos to Clockwork in 6 Weeks" Subheadline: "Our AI Automation Audit uncovers the exact systems you need to double your deals" CTA Button: "Get Your Free Audit" → Link to calendar
+Remove:
+"FUTURE-PROOF YOUR BUSINESS WITH DONE-FOR-YOU AI SYSTEMS AND PERSONALIZED 1:1 COACHING"
+The three boxes below (Curated Tools, Customized Coaching, Consistent Revenue)
+
+2. Pain Points Section ("What's Holding You Back?")
+Replace Current Points With:
+"Feast or Famine Income" Great months followed by scary-quiet ones
+"Reactive, Not Proactive" Constantly catching up instead of getting ahead
+"Manual Everything" Using the same workflows from 2010 in 2025's market
+
+3. Services Section ("Three Ways to Work With Us")
+Replace Entirely With:
+Section Title: "How We Transform Your Business"
+Free AI Automation Audit
+We analyze your entire workflow
+Identify your biggest time-wasters
+Map out which tasks to automate first
+Deliver a custom automation roadmap
+Limited availability (normally $1,500)
+CTA: "Apply for Your Free Audit"
+4-Week Implementation Sprint
+We build and connect your automations
+Create custom workflows for your business
+Full training and documentation included
+Starting at $2,500
+CTA: "See Implementation Details"
+Remove:
+Clockwork Bootcamp
+Clockwork Pro
+Clockwork Coaching Club (Coming Soon)
+
+4. Process Section ("Three Steps to Small Business Success")
+Update To:
+Title: "How to Qualify for Your Free AI Automation Audit"
+Apply for Your Audit 15-minute qualification call to ensure we're a good fit. We only work with agents ready to scale.
+Deep-Dive Discovery Sessions Comprehensive workflow analysis where we map your entire business engine and assess your specific processes.
+Receive Your Transformation Roadmap Complete automation blueprint with ROI projections, prioritized "Quick Wins" and timeline.
+Choose Your Path Keep the roadmap and implement yourself, or have us build everything for you ($2,500). Either way, the audit is yours to keep.
+
+5. About Section Updates
+Company Description:
+"We help real estate professionals leverage technology to capture more opportunities, build predictable pipelines and reclaim time."
+Keep:
+Both founder bios exactly as they are
+Contact information
+
+6. Navigation Menu
+Simplify To:
+Home
+About
+Free Audit
+Implementation
+Contact
+Remove:
+Services (redundant)
+Enter the Club
+
+7. Footer CTA Section
+Replace With:
+Headline: "Ready to Build a Predictable Pipeline?" Subtext: "Top producers use systems. Let us build yours." Button: "Get Your Free Automation Audit"
+
+8. SEO & Meta Updates
+Page Title:
+"Automation Consulting for Real Estate | ClockworkCoaching.Club"
+Meta Description:
+"Free automation audit for real estate professionals. Save 15+ hours per week with done-for-you systems. Book your free 2-week audit today."
+
+
+Technical Notes
+Keep all booking links pointing to existing calendar system
+Ensure mobile responsiveness for all changes
+Set up tracking for near future cold email landing page conversions if possible
+
