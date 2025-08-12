@@ -1,30 +1,14 @@
+
 import React from 'react';
-import { Link } from 'wouter';
+import { useNavigation } from '@/hooks/useNavigation';
 
 const ServicesSection: React.FC = () => {
-  const services = [
-    {
-      title: "Free AI Automation Audit",
-      type: "COMPREHENSIVE ANALYSIS",
-      description: "We analyze your entire workflow, identify your biggest time-wasters, map out which tasks to automate first, and deliver a custom automation roadmap. Limited availability (normally $1,500).",
-      image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      ctaText: "Apply for Your Free Audit",
-      ctaAction: '/booking'
-    },
-    {
-      title: "4-Week Implementation Sprint",
-      type: "DONE-FOR-YOU SYSTEMS",
-      description: "We build and connect your automations, create custom workflows for your business, and provide full training and documentation included. Starting at $2,500.",
-      image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      ctaText: "See Implementation Details",
-      ctaAction: '/booking'
-    }
-  ];
+  const { scrollToSection } = useNavigation();
 
   return (
-    <section id="services" className="py-16 md:py-24 bg-white">
-      <div className="elegant-container">
-        <div className="text-center mb-12">
+    <section id="services" className="py-16 px-4 md:px-8 bg-white">
+      <div className="container mx-auto">
+        <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-display font-medium mb-6">
             How We Transform Your Business
           </h2>
@@ -32,36 +16,90 @@ const ServicesSection: React.FC = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {services.map((service, index) => (
-            <div 
-              key={index} 
-              className="group relative flex flex-col"
-            >
-              <div className="aspect-[4/3] w-full mb-6 overflow-hidden rounded-lg shadow-lg">
-                <img 
-                  src={service.image} 
-                  alt={service.title} 
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
-                />
+          {/* Free AI Automation Audit */}
+          <div className="bg-primary/5 p-8 rounded-lg hover-card">
+            <div className="text-center mb-6">
+              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i className="fas fa-search text-2xl text-primary"></i>
               </div>
-
-              <p className="uppercase text-xs font-medium tracking-wider text-neutral-500 mb-2">
-                {service.type}
-              </p>
-
-              <h3 className="font-display text-2xl font-medium text-neutral-900 mb-4">
-                {service.title}
+              <h3 className="text-2xl font-display font-medium text-neutral-900 mb-4">
+                Free AI Automation Audit
               </h3>
-
-              <p className="text-neutral-600 mb-8 text-sm leading-relaxed flex-grow">
-                {service.description}
-              </p>
-
-              <Link href={service.ctaAction} className="elegant-button mt-auto self-start">
-                {service.ctaText}
-              </Link>
             </div>
-          ))}
+            
+            <ul className="space-y-3 mb-8">
+              <li className="flex items-start">
+                <i className="fas fa-check text-primary mt-1 mr-3"></i>
+                <span>We analyze your entire workflow</span>
+              </li>
+              <li className="flex items-start">
+                <i className="fas fa-check text-primary mt-1 mr-3"></i>
+                <span>Identify your biggest time-wasters</span>
+              </li>
+              <li className="flex items-start">
+                <i className="fas fa-check text-primary mt-1 mr-3"></i>
+                <span>Map out which tasks to automate first</span>
+              </li>
+              <li className="flex items-start">
+                <i className="fas fa-check text-primary mt-1 mr-3"></i>
+                <span>Deliver a custom automation roadmap</span>
+              </li>
+            </ul>
+            
+            <div className="text-center mb-6">
+              <p className="text-sm text-neutral-600 mb-2">Limited availability</p>
+              <p className="text-lg font-medium text-neutral-900">
+                (normally <span className="line-through">$1,500</span>)
+              </p>
+            </div>
+            
+            <button
+              onClick={() => scrollToSection('book-call')}
+              className="elegant-button w-full"
+            >
+              Apply for Your Free Audit
+            </button>
+          </div>
+
+          {/* 4-Week Implementation Sprint */}
+          <div className="bg-neutral-50 p-8 rounded-lg hover-card">
+            <div className="text-center mb-6">
+              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i className="fas fa-rocket text-2xl text-primary"></i>
+              </div>
+              <h3 className="text-2xl font-display font-medium text-neutral-900 mb-4">
+                4-Week Implementation Sprint
+              </h3>
+            </div>
+            
+            <ul className="space-y-3 mb-8">
+              <li className="flex items-start">
+                <i className="fas fa-check text-primary mt-1 mr-3"></i>
+                <span>We build and connect your automations</span>
+              </li>
+              <li className="flex items-start">
+                <i className="fas fa-check text-primary mt-1 mr-3"></i>
+                <span>Create custom workflows for your business</span>
+              </li>
+              <li className="flex items-start">
+                <i className="fas fa-check text-primary mt-1 mr-3"></i>
+                <span>Full training and documentation included</span>
+              </li>
+            </ul>
+            
+            <div className="text-center mb-6">
+              <p className="text-lg font-medium text-neutral-900">
+                Starting at $2,500
+              </p>
+            </div>
+            
+            <button
+              onClick={() => scrollToSection('book-call')}
+              className="elegant-button w-full bg-neutral-700 hover:bg-neutral-600"
+            >
+              See Implementation Details
+            </button>
+          </div>
         </div>
       </div>
     </section>

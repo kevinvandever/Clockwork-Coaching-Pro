@@ -1,104 +1,39 @@
-import React, { useEffect } from 'react';
+
+import React from 'react';
 import { useNavigation } from '@/hooks/useNavigation';
-import { useIsMobile } from '@/hooks/use-mobile';
 
 const ProcessSection: React.FC = () => {
   const { scrollToSection } = useNavigation();
-  const isMobile = useIsMobile();
 
   const steps = [
     {
-      number: 1,
-      title: "Book Your Discovery Call",
-      description: "Click the button below to book your call with a Co-founder"
+      number: "1",
+      title: "Apply for Your Audit",
+      description: "15-minute qualification call to ensure we're a good fit. We only work with agents ready to scale.",
+      icon: "fas fa-phone"
     },
     {
-      number: 2,
-      title: "Design the Strategy",
-      description: "Together we'll craft a custom strategy to supercharge your business"
+      number: "2", 
+      title: "Deep-Dive Discovery Sessions",
+      description: "Comprehensive workflow analysis where we map your entire business engine and assess your specific processes.",
+      icon: "fas fa-search"
     },
     {
-      number: 3,
-      title: "Implement & Win",
-      description: "We'll be there every step of the way as we put the plan into action"
+      number: "3",
+      title: "Receive Your Transformation Roadmap", 
+      description: "Complete automation blueprint with ROI projections, prioritized \"Quick Wins\" and timeline.",
+      icon: "fas fa-map"
+    },
+    {
+      number: "4",
+      title: "Choose Your Path",
+      description: "Keep the roadmap and implement yourself, or have us build everything for you ($2,500). Either way, the audit is yours to keep.",
+      icon: "fas fa-path"
     }
   ];
 
-  const MobileLayout = () => (
-    <div className="space-y-8">
-      {steps.map((step) => (
-        <div key={step.number} className="flex items-center space-x-4">
-          <div className="w-12 h-12 bg-primary rounded-full flex-shrink-0 flex items-center justify-center text-white text-xl font-bold">
-            {step.number}
-          </div>
-          <div className="flex-1">
-            <h3 className="font-display text-xl font-bold text-primary mb-2">
-              {step.title}
-            </h3>
-            <p className="text-neutral-700 text-sm">
-              {step.description}
-            </p>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-
-  const DesktopLayout = () => (
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="text-center group">
-            <div className="relative mb-8">
-              <div className="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                <span className="text-2xl font-display font-bold text-white">1</span>
-              </div>
-            </div>
-            <h3 className="font-display text-xl font-medium mb-4">Apply for Your Audit</h3>
-            <p className="text-neutral-600 leading-relaxed text-sm">
-              15-minute qualification call to ensure we're a good fit. We only work with agents ready to scale.
-            </p>
-          </div>
-
-          <div className="text-center group">
-            <div className="relative mb-8">
-              <div className="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                <span className="text-2xl font-display font-bold text-white">2</span>
-              </div>
-            </div>
-            <h3 className="font-display text-xl font-medium mb-4">Deep-Dive Discovery Sessions</h3>
-            <p className="text-neutral-600 leading-relaxed text-sm">
-              Comprehensive workflow analysis where we map your entire business engine and assess your specific processes.
-            </p>
-          </div>
-
-          <div className="text-center group">
-            <div className="relative mb-8">
-              <div className="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                <span className="text-2xl font-display font-bold text-white">3</span>
-              </div>
-            </div>
-            <h3 className="font-display text-xl font-medium mb-4">Receive Your Transformation Roadmap</h3>
-            <p className="text-neutral-600 leading-relaxed text-sm">
-              Complete automation blueprint with ROI projections, prioritized "Quick Wins" and timeline.
-            </p>
-          </div>
-
-          <div className="text-center group">
-            <div className="relative mb-8">
-              <div className="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                <span className="text-2xl font-display font-bold text-white">4</span>
-              </div>
-            </div>
-            <h3 className="font-display text-xl font-medium mb-4">Choose Your Path</h3>
-            <p className="text-neutral-600 leading-relaxed text-sm">
-              Keep the roadmap and implement yourself, or have us build everything for you ($2,500). Either way, the audit is yours to keep.
-            </p>
-          </div>
-        </div>
-  );
-
   return (
-    <section id="process" className="py-8 md:py-12 pt-6 md:pt-6 bg-primary/5">
-      <div className="h-1 w-full bg-gradient-to-r from-transparent via-primary/20 to-transparent mb-8"></div>
+    <section id="process" className="py-16 px-4 md:px-8 bg-neutral-50">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-display font-medium mb-6">
@@ -107,7 +42,35 @@ const ProcessSection: React.FC = () => {
           <div className="w-20 h-0.5 bg-primary mx-auto"></div>
         </div>
 
-        {isMobile ? <MobileLayout /> : <DesktopLayout />}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {steps.map((step, index) => (
+            <div key={index} className="text-center group">
+              <div className="relative mb-8">
+                <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <i className={`${step.icon} text-2xl text-white`}></i>
+                </div>
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white font-bold text-sm">
+                  {step.number}
+                </div>
+              </div>
+              <h3 className="font-display text-xl font-medium mb-4 text-neutral-900">
+                {step.title}
+              </h3>
+              <p className="text-neutral-600 leading-relaxed">
+                {step.description}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <button
+            onClick={() => scrollToSection('book-call')}
+            className="elegant-button"
+          >
+            Start Your Free Audit Application
+          </button>
+        </div>
       </div>
     </section>
   );

@@ -88,18 +88,22 @@ const CallBookingSection: React.FC = () => {
               rel="noopener noreferrer"
               className="elegant-button inline-block"
             >
-              FIND A TIME THAT WORKS FOR YOU
+              Get Your Free Automation Audit
             </a>
           </div>
 
           {/* Right Column - Get in Touch */}
           <div className="text-center md:text-left">
             <p className="elegant-subheading text-primary">OTHER WAYS TO REACH US</p>
-            <h2 className="text-3xl md:text-4xl font-display font-medium mb-6 text-neutral-900">
-              Get in Touch
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-display font-medium mb-6 text-white">
+            Ready to Build a Predictable Pipeline?
+          </h2>
             <div className="w-20 h-0.5 bg-primary mb-6 mx-auto md:mx-0"></div>
 
+            <p className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Top producers use systems. Let us build yours.
+          </p>
+            
             <div className="space-y-6">
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">

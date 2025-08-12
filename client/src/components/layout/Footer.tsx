@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
             <h4 className="text-sm uppercase tracking-wider font-medium text-neutral-900 mb-6">Navigation</h4>
             <ul className="space-y-3">
               <li>
-                <Link 
+                <Link
                   href="/about"
                   className="text-neutral-500 hover:text-primary transition duration-300 text-sm"
                 >
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link 
+                <Link
                   href="/services"
                   className="text-neutral-500 hover:text-primary transition duration-300 text-sm"
                 >
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link 
+                <Link
                   href="/#process"
                   className="text-neutral-500 hover:text-primary transition duration-300 text-sm"
                 >
@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link 
+                <Link
                   href="/contact"
                   className="text-neutral-500 hover:text-primary transition duration-300 text-sm"
                 >
@@ -91,7 +91,7 @@ const Footer: React.FC = () => {
                 <div className="bg-primary/10 p-3 rounded-full w-10 h-10 flex items-center justify-center mr-4">
                   <i className="fas fa-calendar-alt text-primary text-lg"></i>
                 </div>
-                <a 
+                <a
                   href={CALENDAR_URL}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -122,27 +122,15 @@ const Footer: React.FC = () => {
       </div>
 
         <div className="border-t border-neutral-200 py-8">
-        <div className="mb-6">
-          <p className="text-xs text-neutral-500 text-center">
-            Results based on actual client implementations. Individual results vary based on market conditions and implementation commitment.
-          </p>
-        </div>
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-4 md:mb-0">
-            <p className="text-sm text-neutral-600">
-              © 2024 Clockwork Coaching. All rights reserved.
+          <div className="text-center text-neutral-600 mb-4">
+            <p className="text-sm">
+              Results based on actual client implementations. Individual results vary based on market conditions and implementation commitment.
             </p>
           </div>
-          <div className="flex space-x-6">
-            <a href="/privacy" className="text-sm text-neutral-600 hover:text-primary transition duration-300">
-              Privacy Policy
-            </a>
-            <a href="/terms" className="text-sm text-neutral-600 hover:text-primary transition duration-300">
-              Terms of Service
-            </a>
+          <div className="text-center text-neutral-600">
+            <p>&copy; 2024 Clockwork Coaching. All rights reserved.</p>
           </div>
         </div>
-      </div>
       </div>
     </footer>
   );
