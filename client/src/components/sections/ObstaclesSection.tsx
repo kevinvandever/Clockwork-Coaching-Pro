@@ -62,25 +62,7 @@ const ObstaclesSection: React.FC = () => {
             </p>
           </div>
 
-          <div className="text-center group">
-            <div className="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-              <i className="fas fa-fire text-2xl text-yellow-600"></i>
-            </div>
-            <h3 className="font-display text-2xl font-medium mb-4 text-neutral-900">Burning Out</h3>
-            <p className="text-neutral-600 leading-relaxed">
-              Working harder but not seeing proportional results
-            </p>
-          </div>
-
-          <div className="text-center group">
-            <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-              <i className="fas fa-hand-paper text-2xl text-blue-600"></i>
-            </div>
-            <h3 className="font-display text-2xl font-medium mb-4 text-neutral-900">Stuck in Overwhelm</h3>
-            <p className="text-neutral-600 leading-relaxed">
-              Too many options, not enough clarity on what actually works
-            </p>
-          </div>
+          
         </div>
       </div>
     </section>
