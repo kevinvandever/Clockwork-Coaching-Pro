@@ -1,4 +1,3 @@
-
 import { useCallback, useEffect, useState } from 'react';
 import { useLocation } from 'wouter';
 
@@ -18,8 +17,8 @@ export const useNavigation = () => {
       { threshold: 0.5 }
     );
 
-    const sections = ['hero', 'obstacles', 'about', 'services', 'process', 'contact'];
-    sections.forEach(sectionId => {
+    const sectionsToObserve = ['hero', 'obstacles', 'about', 'services', 'process', 'book-call'];
+    sectionsToObserve.forEach(sectionId => {
       const section = document.getElementById(sectionId);
       if (section) {
         observer.observe(section);
@@ -27,7 +26,7 @@ export const useNavigation = () => {
     });
 
     return () => {
-      sections.forEach(sectionId => {
+      sectionsToObserve.forEach(sectionId => {
         const section = document.getElementById(sectionId);
         if (section) {
           observer.unobserve(section);

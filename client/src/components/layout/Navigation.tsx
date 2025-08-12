@@ -73,12 +73,12 @@ const Navigation: React.FC = () => {
                 </button>
               </li>
               <li>
-                <Link 
-                  href="/booking"
-                  className={`transition duration-300 uppercase text-sm tracking-wider font-medium ${location === '/booking' ? 'text-primary' : 'text-neutral-700 hover:text-primary'}`}
+                <button
+                  onClick={() => scrollToSection('book-call')}
+                  className="elegant-button text-sm"
                 >
                   Free Audit
-                </Link>
+                </button>
               </li>
               <li>
                 <button 

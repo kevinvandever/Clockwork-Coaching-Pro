@@ -50,12 +50,23 @@ const CallBookingSection: React.FC = () => {
               Book Your Free Discovery Call
             </h2>
             <div className="w-20 h-0.5 bg-primary mb-6 mx-auto md:mx-0"></div>
-            
-            <p className="text-neutral-700 mb-8 leading-relaxed">
-              Take advantage of this unique opportunity to speak directly with one of our co-founders about how Clockwork Coaching can transform your real estate business.
-            </p>
 
-            <div className="flex flex-col sm:flex-row gap-6 items-center justify-center md:justify-start mb-8">
+            <p className="text-neutral-700 mb-8 leading-relaxed">
+              Ready to transform your real estate business with AI automation? 
+            Get your free audit and discover exactly which systems you need to implement first.
+          </p>
+          <div className="text-center">
+            <a
+              href="https://calendly.com/clockworkcoaching"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="elegant-button inline-block"
+            >
+              GET YOUR FREE AUDIT
+            </a>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-6 items-center justify-center md:justify-start mb-8">
               <div className="text-center">
                 <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden">
                   <img 
@@ -67,7 +78,7 @@ const CallBookingSection: React.FC = () => {
                 <h3 className="font-display text-lg font-medium text-neutral-900">Joe Quiros</h3>
                 <p className="text-sm text-primary">Co-founder & Real Estate Expert</p>
               </div>
-              
+
               <div className="text-center">
                 <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden">
                   <img 
@@ -97,7 +108,7 @@ const CallBookingSection: React.FC = () => {
               Get in Touch
             </h2>
             <div className="w-20 h-0.5 bg-primary mb-6 mx-auto md:mx-0"></div>
-            
+
             <div className="space-y-6">
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
