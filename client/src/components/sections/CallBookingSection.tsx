@@ -40,7 +40,7 @@ const CallBookingSection: React.FC = () => {
   };
 
   return (
-    <section id="book-call" className="py-16 md:py-24 bg-gray-50">
+    <section id="book-call" className="py-4 md:py-6 bg-gray-50">
       <div className="elegant-container">
         <div className="max-w-4xl mx-auto">
           {/* Main Content - Book Your Free Discovery Call */}

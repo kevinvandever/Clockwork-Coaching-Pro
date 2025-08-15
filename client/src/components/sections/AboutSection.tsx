@@ -3,7 +3,7 @@ import { Link } from 'wouter';
 
 const AboutSection: React.FC = () => {
   return (
-    <section id="about" className="py-16 md:py-24 bg-white relative overflow-hidden">
+    <section id="about" className="py-4 md:py-6 bg-white relative overflow-hidden">
       <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -translate-x-24 -translate-y-24 blur-xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/5 rounded-full translate-x-20 translate-y-1/3 blur-xl"></div>
 
