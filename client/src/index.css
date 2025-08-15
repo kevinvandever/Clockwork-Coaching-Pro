@@ -107,7 +107,7 @@
   }
 
   .elegant-container {
-    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-6;
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-2 md:py-4;
   }
 
   .elegant-heading {
@@ -288,7 +288,7 @@
   }
 
   .elegant-section {
-    @apply py-8 sm:py-12;
+    @apply py-6 sm:py-8;
   }
 
   .elegant-section p + p {
