@@ -34,7 +34,7 @@ const ProcessSection: React.FC = () => {
   return (
     <section id="process" className="py-4 md:py-6 px-4 md:px-8 bg-neutral-50">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-display font-medium mb-6">
             How to Qualify for Your Free AI Automation Audit
           </h2>
@@ -44,7 +44,7 @@ const ProcessSection: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
             <div key={index} className="text-center group">
-              <div className="relative mb-8">
+              <div className="relative mb-6">
                 <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <i className={`${step.icon} text-2xl text-white`}></i>
                 </div>

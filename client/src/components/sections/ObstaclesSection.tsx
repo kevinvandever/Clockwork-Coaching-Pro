@@ -24,14 +24,14 @@ const ObstaclesSection: React.FC = () => {
   return (
     <section id="obstacles" className="py-4 md:py-6 px-4 md:px-8 bg-primary/5">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-display font-medium mb-6">
             What's Holding You Back?
           </h2>
           <div className="w-20 h-0.5 bg-primary mx-auto"></div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-10">
+        <div className="grid md:grid-cols-3 gap-8">
           <div className="text-center group">
             <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
               <i className="fas fa-chart-line text-2xl text-red-600"></i>

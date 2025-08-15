@@ -24,7 +24,7 @@ const HeroSection: React.FC = () => {
         🔥 Limited Time: Free AI Automation Audits for real estate professionals
       </div>
 
-      <div className="container mx-auto pt-20 relative z-10">
+      <div className="container mx-auto pt-16 relative z-10">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-display font-medium mb-6 text-white leading-tight">
             From Chaos to Clockwork in 6 Weeks
@@ -41,7 +41,7 @@ const HeroSection: React.FC = () => {
         </div>
 
         {/* Trust/Credibility Section */}
-        <div className="mt-12 text-center">
+        <div className="mt-8 text-center">
           <p className="text-white/80 italic">
             Why Free? We're building case studies with our early clients.
           </p>

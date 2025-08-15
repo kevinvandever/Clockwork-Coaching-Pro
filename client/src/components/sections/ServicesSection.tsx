@@ -7,14 +7,14 @@ const ServicesSection: React.FC = () => {
   return (
     <section id="services" className="py-4 md:py-6 px-4 md:px-8 bg-white">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-display font-medium mb-6">
             How We Transform Your Business
           </h2>
           <div className="w-20 h-0.5 bg-primary mx-auto"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Free AI Automation Audit */}
           <div className="bg-primary/5 p-8 rounded-lg hover-card">
             <div className="text-center mb-6">

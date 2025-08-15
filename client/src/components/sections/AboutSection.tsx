@@ -14,7 +14,7 @@ const AboutSection: React.FC = () => {
             The Team Behind Clockwork Coaching
           </h2>
           <div className="w-20 h-0.5 bg-primary mx-auto mb-6"></div>
-          <p className="text-neutral-600 mb-12 max-w-3xl mx-auto">
+          <p className="text-neutral-600 mb-8 max-w-3xl mx-auto">
             We help real estate professionals leverage technology to capture more opportunities, build predictable pipelines and reclaim time.
           </p>
 
