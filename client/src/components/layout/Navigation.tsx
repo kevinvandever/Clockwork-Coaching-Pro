@@ -44,7 +44,7 @@ const Navigation: React.FC = () => {
   const isHome = location === '/';
 
   return (
-    <header className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-sm py-2' : 'bg-white md:bg-transparent py-3 md:py-4'}`}>
+    <header className={`sticky top-8 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-sm py-2' : 'bg-white md:bg-transparent py-3 md:py-4'}`}>
       <div className="elegant-container">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
@@ -113,7 +113,7 @@ const Navigation: React.FC = () => {
 
         {/* Mobile Menu */}
         <div 
-          className={`md:hidden fixed left-0 right-0 top-[65px] bottom-0 bg-white shadow-lg transition-all duration-300 ease-in-out ${
+          className={`md:hidden fixed left-0 right-0 top-[97px] bottom-0 bg-white shadow-lg transition-all duration-300 ease-in-out ${
             isMobileMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0 pointer-events-none'
           } overflow-y-auto z-50`}
         >

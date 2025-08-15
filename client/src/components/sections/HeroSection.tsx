@@ -20,11 +20,11 @@ const HeroSection: React.FC = () => {
         <div className="absolute inset-0 bg-black/50"></div>
       </div>
       {/* Scarcity/Urgency Banner */}
-      <div className="fixed top-0 left-0 right-0 bg-red-600 text-white py-2 px-4 text-center text-sm z-50">
+      <div className="fixed top-0 left-0 right-0 bg-red-600 text-white py-2 px-4 text-center text-sm z-40">
         🔥 Limited Time: Free AI Automation Audits for real estate professionals
       </div>
 
-      <div className="container mx-auto pt-16 relative z-10">
+      <div className="container mx-auto pt-20 relative z-10">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-display font-medium mb-6 text-white leading-tight">
             From Chaos to Clockwork in 6 Weeks
