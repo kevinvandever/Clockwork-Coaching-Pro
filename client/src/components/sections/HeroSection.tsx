@@ -9,7 +9,7 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center relative px-4 md:px-8">
+    <section id="hero" className="min-h-screen flex items-start md:items-center justify-center relative px-4 md:px-8">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -24,7 +24,7 @@ const HeroSection: React.FC = () => {
         🔥 Limited Time: Free AI Automation Audits for real estate professionals
       </div>
 
-      <div className="container mx-auto pt-16 relative z-10">
+      <div className="container mx-auto pt-24 md:pt-16 relative z-10">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-display font-medium mb-6 text-white leading-tight">
             From Chaos to Clockwork in 6 Weeks
