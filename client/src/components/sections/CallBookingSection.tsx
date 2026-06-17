@@ -1,44 +1,6 @@
-import React, { useState } from 'react';
-import { Link } from 'wouter';
-import { useNavigation } from '@/hooks/useNavigation';
-import { useScrollToTop } from '@/hooks/useScrollToTop';
-import { toast } from '@/hooks/use-toast'; // Assuming this hook exists
+import React from 'react';
 
 const CallBookingSection: React.FC = () => {
-  const [email, setEmail] = useState('');
-  const scrollToTop = useScrollToTop();
-
-  const handleSubmit = async (type: 'notify') => {
-    try {
-      const response = await fetch('/api/booking-leads', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          email,
-          type: `home_${type}`,
-        }),
-      });
-
-      if (response.ok) {
-        toast({
-          title: "Success!",
-          description: "We've received your request. We'll be in touch soon!",
-        });
-        setEmail('');
-      } else {
-        throw new Error('Failed to submit');
-      }
-    } catch (error) {
-      toast({
-        title: "Error",
-        description: "Something went wrong. Please try again.",
-        variant: "destructive",
-      });
-    }
-  };
-
   return (
     <section id="book-call" className="py-4 md:py-6 bg-gray-50">
       <div className="elegant-container">

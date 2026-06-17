@@ -1,0 +1,13 @@
+[build]
+  command = "vite build"
+  publish = "dist/public"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Static marketing site: client-side router (wouter) handles all routes,
+# so send every path to index.html.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
