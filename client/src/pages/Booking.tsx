@@ -43,7 +43,7 @@ const Booking: React.FC = () => {
               <div className="p-8 border border-primary/20 bg-white shadow-sm hover:shadow-md transition duration-300">
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
                   <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                    src="/images/32677DBA-A5C7-49EE-9E59-47CD3EDFFE0B_1_201_a.jpeg" 
                     alt="Joe Quiros" 
                     className="w-32 h-32 rounded-full object-cover"
                   />
@@ -62,7 +62,7 @@ const Booking: React.FC = () => {
               <div className="p-8 border border-primary/20 bg-white shadow-sm hover:shadow-md transition duration-300">
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
                   <img 
-                    src="https://images.unsplash.com/photo-1531123414780-f74242c2b052?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                    src="/images/65A38D1C-91C6-4936-B507-D4207B334B31_1_105_c.jpeg" 
                     alt="Kevin Vandever" 
                     className="w-32 h-32 rounded-full object-cover"
                   />
@@ -72,7 +72,7 @@ const Booking: React.FC = () => {
                     </h3>
                     <p className="text-primary mb-4">Co-founder & Technology Strategist</p>
                     <p className="text-neutral-700 mb-6 leading-relaxed">
-                      A technology expert with a background in automation and AI, Kevin helps real estate professionals leverage technology to streamline operations and increase profitability.
+                      Kevin's the tech half of Clockwork. He's spent his career building software and AI, and he's happiest taking a painful, manual process and making it just disappear. For agents, that means less time buried in admin and more time actually selling.
                     </p>
                   </div>
                 </div>

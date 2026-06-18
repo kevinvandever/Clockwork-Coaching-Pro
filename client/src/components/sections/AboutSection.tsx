@@ -57,10 +57,10 @@ const AboutSection: React.FC = () => {
                 <h3 className="text-2xl font-display font-medium mb-1">Kevin Vandever</h3>
                 <p className="text-primary mb-4">Co-founder & Technology Strategist</p>
                 <p className="text-sm leading-relaxed mb-4">
-                  A seasoned technology leader with extensive experience mentoring teams 
-                  and implementing AI solutions, Kevin specializes in helping professionals 
-                  leverage cutting-edge technology to streamline operations and achieve 
-                  exponential growth.
+                  Kevin's the tech half of Clockwork. He's spent his career building
+                  software and AI, and he's happiest taking a painful, manual process
+                  and making it just disappear. For agents, that means less time buried
+                  in admin and more time actually selling.
                 </p>
                 <a href="mailto:KV@clockworkcoaching.club" className="text-primary text-sm hover:text-primary/80 inline-flex items-center gap-2">
                   <i className="far fa-envelope"></i>
